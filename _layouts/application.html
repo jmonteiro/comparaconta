@@ -1,1 +1,33 @@
-{{ content }}
+<!doctype html>
+<html class="no-js" lang="pt_BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="{{site.baseurl}}/css/application.css">
+  <script src="{{site.baseurl}}/js/application.js"></script>
+</head>
+
+<body class="bg-gray-100 font-sans leading-relaxed tracking-wide w-screen h-screen">
+  <header class="bg-blue-600 text-white py-4 shadow-lg w-full">
+    <div class="container mx-auto text-center">
+      <h1 class="text-2xl font-bold">{{site.title}}</h1>
+      <p class="text-lg">{{site.description}}</p>
+    </div>
+  </header>
+
+  {{ content }}
+
+  <footer class="bg-blue-600 text-white py-4 w-full mt-6">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">&copy; 2024 {{site.title}} - Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+</html>

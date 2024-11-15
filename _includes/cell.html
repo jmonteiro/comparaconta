@@ -1,0 +1,20 @@
+{% if include.cell.text %}
+  {% if include.cell.url %}
+    <a href="{{include.cell.url}}" rel="noopener noreferrer" target="_blank">
+  {% endif %}
+  {{include.cell.text}}
+  {% if include.cell.url %}
+    </a>
+  {% endif %}
+  {% if include.cell.subtext %}
+    <span>{{include.cell.subtext}}</span>
+  {% endif %}
+  {% if include.cell.alt %}
+    <span title="{{include.cell.alt}}">?</span>
+  {% endif %}
+  {% if include.cell.source %}
+    <a href="{{include.cell.source}}" rel="noopener noreferrer" target="_blank">Fonte</a>
+  {% endif %}
+{% else %}
+  {{include.cell}}
+{% endif %}

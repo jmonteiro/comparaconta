@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "tailwindcss": "tailwindcss -i ./css/application.scss -o ./css/application.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}

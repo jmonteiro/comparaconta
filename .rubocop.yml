@@ -1,0 +1,14 @@
+inherit_mode:
+  merge:
+    - Exclude
+
+require:
+  - standard
+  - standard-custom
+
+inherit_gem:
+  standard-custom: config/base.yml
+  standard: config/ruby-3.3.yml
+
+AllCops:
+  NewCops: enable

@@ -6,6 +6,7 @@ group :jekyll_plugins do
 end
 
 group :development do
-  gem "standard", "1.41.1"
+  gem "overmind"
   gem "ruby-lsp"
+  gem "standard", "1.41.1"
 end

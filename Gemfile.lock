@@ -358,6 +358,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll
+  jekyll-redirect-from
   overmind
   ruby-lsp
   standard (= 1.41.1)

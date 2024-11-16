@@ -1,13 +1,17 @@
 ---
 layout: application
+redirect_from:
+- /corretora-estrangeira
+- /corretora-exterior
+- /corretoras-exterior
 ---
 <section class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-900 p-4 mt-6 mx-4 rounded-md shadow-md">
   <p class="text-md font-semibold">Aviso:</p>
   <p class="text-sm mt-1">
     Esta tabela é apenas informativa. Não nos responsabilizamos por eventuais mudanças nas taxas e condições das corretoras.
     Recomendamos que você verifique diretamente no site da corretora. Se qualquer informação estiver incompleta ou incorreta,
-    por favor, abra uma "<a href="https://github.com/jmonteiro/corretoras/issues" target="_blank">Issue</a>" em
-    <a href="https://github.com/jmonteiro/corretoras" target="_blank">jmonteiro/corretoras</a>.
+    por favor, abra uma "<a href="https://github.com/jmonteiro/comparaconta/issues" target="_blank">Issue</a>" em
+    <a href="https://github.com/jmonteiro/comparaconta" target="_blank">jmonteiro/comparaconta</a>.
   </p>
 </section>
 

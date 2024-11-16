@@ -2,5 +2,8 @@
 /.jekyll-metadata
 /.sass-cache
 /_site
-/vendor
 /node_modules
+/vendor
+
+# Built with: npm run tailwindcss
+/css/application.css

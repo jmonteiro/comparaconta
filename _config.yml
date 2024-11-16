@@ -7,22 +7,17 @@ github_url: https://github.com/jmonteiro/comparaconta
 
 exclude:
 # Directories:
-- .github
-- .ruby-lsp
 - bin
 - node_modules
 # Files:
-- .gitignore
-- .rubocop.yml
-- .ruby-version
 - Gemfile*
 - LICENSE
 - Procfile.dev
 - README.md
 - package-lock.json
 - package.json
+- redirects.json
 - tailwind.config.js
 
-
 plugins:
-  - jekyll-redirect-from
+- jekyll-redirect-from

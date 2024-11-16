@@ -357,6 +357,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll
   overmind
   ruby-lsp
   standard (= 1.41.1)

@@ -1,12 +1,14 @@
 source "https://rubygems.org"
 
+gem "jekyll", require: false
+
 group :jekyll_plugins do
-  gem "github-pages"
-  gem "webrick"
+  gem "github-pages", require: false
+  gem "webrick", require: false
 end
 
 group :development do
-  gem "overmind"
-  gem "ruby-lsp"
-  gem "standard", "1.41.1"
+  gem "overmind", require: false
+  gem "ruby-lsp", require: false
+  gem "standard", "1.41.1", require: false
 end

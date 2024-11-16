@@ -1,9 +1,8 @@
 source "https://rubygems.org"
 
-gem "jekyll", require: false
+gem "jekyll", "~> 4.3", require: false
 
 group :jekyll_plugins do
-  gem "github-pages", require: false
   gem "jekyll-redirect-from", require: false
 end
 

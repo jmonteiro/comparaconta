@@ -64,11 +64,11 @@
     source: https://www.interactivebrokers.com/en/trading/products-exchanges.php
   intl_acoes:
     text: Sim
-    subtext: 135+ bolsas de 33+ paises em 23+ moedas
+    subtext: 150+ mercados em 34+ países em 26+ moedas
     source: https://www.interactivebrokers.com/en/trading/products-exchanges.php
   intl_outros:
     text: Sim
-    subtext: 135+ bolsas de 33+ paises em 23+ moedas
+    subtext: 150+ mercados em 34+ países em 26+ moedas
     source: https://www.interactivebrokers.com/en/trading/products-exchanges.php
   crypto:
     text: Depende

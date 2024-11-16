@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+export BUNDLE_AUTO_INSTALL=1
+export JEKYLL_ENV=production
+exec bundle exec jekyll build

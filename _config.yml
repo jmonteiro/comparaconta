@@ -2,9 +2,8 @@
 title: ComparaConta.com
 url: https://comparaconta.com
 baseurl: ""
-description: |
-  Tabela comparativa colaborativa de corretoras no exterior para residentes fiscais brasileiros.
-  Compare custos, benefícios, e características de corretoras internacionais.
+github_repository: jmonteiro/comparaconta
+github_url: https://github.com/jmonteiro/comparaconta
 
 plugins:
   - jekyll-redirect-from

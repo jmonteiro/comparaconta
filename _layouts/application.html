@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>{{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
+  <title>{{site.title}} | {{page.title}}</title>
+  <meta name="description" content="{{page.description}}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
@@ -17,8 +17,8 @@
 <body class="bg-gray-100 font-sans leading-relaxed tracking-wide w-screen h-screen">
   <header class="bg-blue-600 text-white py-4 shadow-lg w-full">
     <div class="container mx-auto text-center">
-      <h1 class="text-2xl font-bold">{{site.title}}</h1>
-      <p class="text-lg">{{site.description}}</p>
+      <h1 class="text-2xl font-bold">{{page.title}}</h1>
+      <p class="text-lg">{{page.description}}</p>
     </div>
   </header>
 
@@ -26,7 +26,15 @@
 
   <footer class="bg-blue-600 text-white py-4 w-full mt-6">
     <div class="container mx-auto text-center">
-      <p class="text-sm">&copy; 2024 {{site.title}} - Todos os direitos reservados</p>
+      <p class="text-sm">
+        &copy; {{ "now" | date: "%Y" }} {{site.title}}
+        | Página compilada em {{ "now" | date: "%H:%M %d/%m/%Y" }} (<a href="{{site.github_url}}" rel="noopener noreferrer" target="_blank" class="text-white">Código fonte</a>)
+      </p>
+      <p class="text-sm">
+        Todos os direitos reservados.
+        Este site tem apenas propósito educacional e comparativo e não possui qualquer vínculo com empresas supracitadas.
+        Informações podem estar incorretas ou desatualizadas.
+      </p>
     </div>
   </footer>
 </body>

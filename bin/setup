@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+bundle install
+npm install
+
+if ! command -v tmux &>/dev/null; then
+    if command -v brew &>/dev/null; then
+        echo "Installing tmux using homebrew..."
+        brew install tmux
+    elif command -v apt &>/dev/null; then
+        echo "Installing tmux using apt..."
+        sudo apt install -y tmux
+    else
+        echo "Can't install tmux, please install it manually"
+    fi
+fi

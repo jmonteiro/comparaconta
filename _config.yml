@@ -5,5 +5,24 @@ baseurl: ""
 github_repository: jmonteiro/comparaconta
 github_url: https://github.com/jmonteiro/comparaconta
 
+exclude:
+# Directories:
+- .github
+- .ruby-lsp
+- bin
+- node_modules
+# Files:
+- .gitignore
+- .rubocop.yml
+- .ruby-version
+- Gemfile*
+- LICENSE
+- Procfile.dev
+- README.md
+- package-lock.json
+- package.json
+- tailwind.config.js
+
+
 plugins:
   - jekyll-redirect-from

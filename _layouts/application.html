@@ -7,15 +7,20 @@
   <meta name="description" content="{{page.description}}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="icon" href="/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png">
 
   <link rel="stylesheet" href="{{site.baseurl}}/css/application.css">
   <script src="{{site.baseurl}}/js/application.js"></script>
 </head>
 
-<body class="bg-gray-100 font-sans leading-relaxed tracking-wide w-screen h-screen">
-  <header class="bg-blue-600 text-white py-4 shadow-lg w-full">
+<body class="w-screen h-screen font-sans leading-relaxed tracking-wide bg-gray-100">
+  <header class="w-full py-4 text-white bg-blue-600 shadow-lg">
     <div class="container mx-auto text-center">
       <h1 class="text-2xl font-bold">{{page.title}}</h1>
       <p class="text-lg">{{page.description}}</p>
@@ -24,7 +29,7 @@
 
   {{ content }}
 
-  <footer class="bg-blue-600 text-white py-4 w-full mt-6">
+  <footer class="w-full py-4 mt-6 text-white bg-blue-600">
     <div class="container mx-auto text-center">
       <p class="text-sm">
         &copy; {{ "now" | date: "%Y" }} {{site.title}}

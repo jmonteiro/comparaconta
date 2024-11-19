@@ -18,7 +18,7 @@
   corretagem_lse:
     text: 0,05% ordem
     subtext: mín $1,70/ordem, máx $39/ordem
-    alt: "Exemplo comprando IWDA a $ 100 a unidade: 1 unidade = $1,70 corretagem. 100 unidades = $5 corretagem. 1.000 unidades = $39 corretagem."
+    alt: "Exemplo comprando IWDA a $100 a unidade: 1 unidade = $1,70 corretagem. 100 unidades = $5 corretagem. 1.000 unidades = $39 corretagem."
     source: https://www.interactivebrokers.co.uk/en/pricing/commissions-stocks-europe.php?re=europe
   deposito_eua:
     text: $0
@@ -86,7 +86,7 @@
   cartao_debito_virtual: Não
   cartao_credito_fisico:
     text: Sim
-    alt: American Express americano sem limite, necessita de no mínimo $ 50k patrimônio líquido), anuidade entre $150 e $795 dependendo do cartão escolhido
+    alt: American Express americano sem limite, necessita de no mínimo $50.000 patrimônio líquido), anuidade entre $150 e $795 dependendo do cartão escolhido
     source: https://www.americanexpress.com/en-idc/acq/landing/index.html?bank=1591
   residentes_fiscais:
     text: 200+ países e territórios, incluindo Brasil
@@ -98,7 +98,7 @@
     source: https://www.interactivebrokers.com/en/accounts/account-guide.php
   margin:
     text: 6,330%
-    alt: Progressiva de 6,330% (até $100k) a 5,330% (acima de $200M), valores para 11/2024.
+    alt: Progressiva de 6,330% (até $100.000) a 5,330% (acima de $200 milhões), valores para 11/2024.
     source: https://www.interactivebrokers.co.uk/en/trading/margin-benchmarks.php
   offshore:
     text: Sim
@@ -107,7 +107,7 @@
     text: Não
   conta_remunerada:
     text: 4,33%
-    subtext: Rende 4,33% ao ano no dólar em dinheiro acima de $10k, para contas com mais de $100k de valor de mercado
+    subtext: Rende 4,33% ao ano no dólar em dinheiro acima de $10.000, para contas com mais de $100.000 de valor de mercado
     source: https://www.interactivebrokers.co.uk/en/accounts/fees/pricing-interest-rates.php
   ano_fundacao: 1978
   sede:
@@ -127,7 +127,7 @@
   - Maior corretora em volume de transações diárias no mundo.
   referral:
     text: Ganhe $1 em ações da corretora IBKR a cada $100 depositado na conta
-    subtext: limitado a $1k dos primeiros $100k depositados em conta
+    subtext: limitado a $1.000 dos primeiros $100.000 depositados em conta
     url: https://ibkr.com/referral/julio682
 
 - nome: Charles Schwab
@@ -218,7 +218,7 @@
     source: https://international.schwab.com/open-account-intro/open-account?country=BR&branchCode=HC#panel--text-4521
   margin:
     text: 12,825%
-    alt: Progressiva de 12,825% (até $25k) a 11,075% (acima de $500k), valores para 11/2024.
+    alt: Progressiva de 12,825% (até $25.000) a 11,075% (acima de $500.000), valores para 11/2024.
     source: https://international.schwab.com/investment-products/margin-loans
   offshore:
     text: Sim
@@ -434,7 +434,7 @@
     source: https://tastytrade.com/accounts/
   margin:
     text: 11%
-    alt: Progressiva de 11% (até $25k) a 8% (acima de $1M), valores para 11/2024.
+    alt: Progressiva de 11% (até $25.000) a 8% (acima de $1 milhão), valores para 11/2024.
     source: https://tastytrade.com/commissions-and-fees/
   offshore:
     text: Sim para entidades americanas
@@ -463,8 +463,8 @@
     text: Avenue.us
     url: https://avenue.us
   deposito_min_abertura:
-    text: R$ 200
-    alt: Não exige depósito mínimo para abertura da conta, mas exige no mínimo câmbio de R$ 200 para investir na Bolsa americana.
+    text: R$200
+    alt: Não exige depósito mínimo para abertura da conta, mas exige no mínimo câmbio de R$200 para investir na Bolsa americana.
     source: https://avenue.us/bolsa/
   abertura:
     text: $0
@@ -472,7 +472,7 @@
   corretagem_eua:
     text: $0 primeiras 3 ordens mensais
     subtext: depois de $2,50 a $7,50/ordem
-    alt: "para ordem até $ 1.000,00: $2,50; de $1.000,01 a $2.500,00: $5,00; acima de $2.500,01: $7,50"
+    alt: "para ordem até $1.000: $2,50; até $2.500: $5,00; acima: $7,50"
     source: https://avenue.us/bolsa/
   corretagem_lse: n/d
   deposito_eua:
@@ -530,7 +530,7 @@
   ach_pull: Não
   cartao_debito_fisico:
     text: Sim (Mastercard)
-    subtext: gratuito 2 dias úteis após câmbio de R$ 200, senão $10
+    subtext: gratuito 2 dias úteis após câmbio de R$200, senão $10
     source: https://avenue.us/cartao-internacional/
   cartao_debito_virtual:
     text: Sim
@@ -592,7 +592,7 @@
     source: https://benomad.zendesk.com/hc/pt-br/articles/360052871234-Tabela-Completa-Tarifas-e-limites
   spread_brasil:
     text: 2%
-    subtext: queda progressiva p/ 1% após $20k em conversões
+    subtext: queda progressiva p/ 1% após $20.000 em conversões
     source: https://benomad.zendesk.com/hc/pt-br/articles/360052871234-Tabela-Completa-Tarifas-e-limites
   acats:
     text: varia conforme destino
@@ -667,7 +667,7 @@
   - Usa a plataforma da DriveWealth, e transferência ACATS entre plataformas DriveWealth são gratuitas.
   referral:
     text: "Código de convidado: <code>S8N39HQ3LR</code>"
-    subtext: 2% de cashback no câmbio nos primeiros 15 dias, limitado a $20 de cashback em $1k depositado
+    subtext: 2% de cashback no câmbio nos primeiros 15 dias, limitado a $20 de cashback em $1.000 depositado
 
 - nome: XP Investimentos
   link:
@@ -675,13 +675,14 @@
     url: https://www.xpi.com.br
   deposito_min_abertura:
     text: $0
-    subtext: precisa ter R$50k investidos na XP Investimentos
+    subtext: precisa ter R$50.000 investidos na XP Investimentos
     source: https://atendimento.xpi.com.br/artigo/3314-quem-pode-ter-a-conta-global-xp
   abertura:
     text: $0
     source: https://atendimento.xpi.com.br/artigo/3314-quem-pode-ter-a-conta-global-xp
   corretagem_eua:
-    text: $1 até $100, $1,50 até $1k, $4 até $2k, $8,60 acima
+    text: $1 a $8,60
+    subtext: "para ordem até $100: $1; até $1.000: $1,50; até $2.000: $4; acima: $8,60"
     source: https://atendimento.xpi.com.br/artigo/3308-quais-sao-os-custos-da-plataforma-de-investimento-global
   corretagem_lse: n/d
   deposito_eua:
@@ -767,7 +768,8 @@
   #   alt: Isento com R$50k no Brasil ou US$10k nos EUA no BTG, ou US$1k em operações de câmbio nos últimos 12 meses. Caso nenhum critério seja alcançado, é cobrado $10/mês de mensalidade.
   #   source: https://www.btgpactual.us/pt/faq
   corretagem_eua:
-    text: $1 até $100, $2,50 até $1k, $5 até $2k, $7,50 acima
+    text: $1 a $7,50
+    subtext: "para ordem até $100: $1; até $1.000: $2,50; até $2.000: $5; acima: $7,50"
     source: https://www.btgpactual.us/pt/fee-schedule
   corretagem_lse: n/d
   deposito_eua:
@@ -879,14 +881,14 @@
   corretagem_lse: n/d
   deposito_eua:
     text: $0 (ACH), $200 (Wire)
-    alt: ACH limitado a $6k por dia
+    alt: ACH limitado a $6.000 por dia
     source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
   saque_eua:
     text: $0 (ACH), $200 (Wire)
     source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
   spread_brasil:
     text: 0,99% a 1,5%
-    alt: 1,5% para clientes Digital e One, 1,25% para clientes Black (R$ 250 mil em patrimônio no banco) e 0,99% para clientes WIN (R$ 1 milhão em patrimônio no banco)
+    alt: 1,5% para clientes Digital e One, 1,25% para clientes Black (R$250.000 em patrimônio no banco) e 0,99% para clientes WIN (R$1 milhão em patrimônio no banco)
     source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
   acats:
     text: $75

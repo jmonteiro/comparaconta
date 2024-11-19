@@ -17,9 +17,6 @@
       {% endif %}
     </div>
   </div>
-  {% if include.cell.subtext or include.cell.source %}
-    <hr class="my-1">
-  {% endif %}
   <div class="flex justify-center">
     <div class="flex items-center gap-1 text-xs text-gray-500">
       {% if include.cell.subtext %}
@@ -60,7 +57,6 @@
     </a>
   {% endif %}
   {% if include.cell.subtext %}
-    <hr class="my-1">
     <div class="flex justify-center">
       <div class="flex items-center gap-1 text-xs text-gray-500">
         <span>{{include.cell.subtext}}</span>

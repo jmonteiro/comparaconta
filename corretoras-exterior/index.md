@@ -131,6 +131,16 @@ redirect_from:
             </td>
           {% endfor %}
         </tr>
+        <tr class="border-b border-gray-200 hover:bg-gray-100">
+          <td class="py-3 px-6 text-left font-medium">
+            Manutenção por inatividade
+          </td>
+          {% for corretora in site.data.corretoras-exterior %}
+            <td class="py-3 px-6 text-center">
+              {% include cell.html cell=corretora.inatividade %}
+            </td>
+          {% endfor %}
+        </tr>
         <tr class="bg-gray-200 text-gray-600 text-sm leading-normal">
           <td class="py-3 px-6 text-left font-medium" colspan="{{site.data.corretoras-exterior.size | plus: 1}}">
             Proteção
@@ -413,7 +423,7 @@ redirect_from:
         </tr>
         <tr class="border-b border-gray-200 hover:bg-gray-100">
           <td class="py-3 px-6 text-left font-medium">
-            Número de funcionários
+            Número de funcionários (aproximado)
           </td>
           {% for corretora in site.data.corretoras-exterior %}
             <td class="py-3 px-6 text-center">

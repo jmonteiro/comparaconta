@@ -71,8 +71,8 @@
     subtext: 150+ mercados em 34+ países em 26+ moedas
     source: https://www.interactivebrokers.com/en/trading/products-exchanges.php
   crypto:
-    text: Depende
-    alt: depende de aprovação da Paxos, responsável por criptoativos na corretora. Apenas uma parte pequena do portfólio na IB pode ser alocada em criptoativos.
+    text: Não
+    alt: depende de aprovação da Paxos, responsável por criptoativos na corretora, que não aprova tem aprovado para Brasileiros. Apenas uma parte pequena do portfólio na IB pode ser alocada em criptoativos.
     source: https://www.interactivebrokers.com/en/search/index.php?query=crypto+for+Brazilian+residents
   fracoes:
     text: Sim
@@ -115,13 +115,14 @@
     alt: Escritórios nos EUA, Canada, Reino Unido, Irlanda, Suíça, Hungria, Índia, China (Hong Kong e Shanghai), Japão, Singapura, e Austrália.
     source: https://www.interactivebrokers.com/en/general/about/info-and-history.php
   funcionarios:
-    text: 3 mil
+    text: "3.000"
     source: https://www.interactivebrokers.com/en/general/about/info-and-history.php
   aum:
     text: $426 bilhões (2023)
     source: https://investingintheweb.com/brokers/interactive-brokers-statistics/
   clientes:
-    text: 3,12 milhões (2024)
+    text: 3,12 milhões
+    subtext: 2024
     source: https://www.interactivebrokers.co.uk/en/home.php
   observacoes:
   - Maior corretora em volume de transações diárias no mundo.
@@ -181,7 +182,7 @@
     source: https://international.schwab.com/contact-us
   horarios:
     text: 24x5
-    subtext: 01:00 de segunda até 01:00 de sábado, horário de Nova Iorque
+    alt: 01:00 de segunda até 01:00 de sábado, horário de Nova Iorque
     source: https://international.schwab.com/contact-us
   idiomas:
     text: Inglês, Espanhol, Português (somente telefone)
@@ -194,7 +195,7 @@
     source: https://www.schwab.com/legal/schwab-pricing-guide-for-individual-investors
   intl_acoes:
     text: Sim
-    subtext: Somente via ligação, com custos elevados
+    subtext: Somente via ligação telefônica, com custos elevados
     source: https://www.schwab.com/legal/schwab-pricing-guide-for-individual-investors
   intl_outros: Não
   crypto: Não
@@ -225,19 +226,20 @@
     source: https://international.schwab.com/open-account-intro/open-account?country=BR&branchCode=HC#panel--text-4521
   conta_bancaria:
     text: Não
-  conta_remunerada: n/d
+  conta_remunerada: Não
   ano_fundacao: 1971
   sede:
     text: Westlake, Texas, EUA
     source: https://international.schwab.com
   funcionarios:
-    text: 33 mil
+    text: "33.000"
     source: https://en.wikipedia.org/wiki/Charles_Schwab_Corporation
   aum:
     text: $9,12 trilhões
     source: https://international.schwab.com/account-protection
   clientes:
-    text: 35,3 milhões (2024)
+    text: 35,3 milhões
+    subtext: 2024
     source: https://international.schwab.com/account-protection
   observacoes:
   - "Fundida com a TD Ameritrade em 2020."
@@ -278,7 +280,7 @@
     text: Não permite transferência de custódia
   inatividade:
     text: €10/mês
-    subtext: caso não haja compra ou venda de ações nos últimos 365 dias
+    subtext: após 365 dias sem movimentação
     source: https://www.xtb.com/br/finvest
   sipc:
     text: Não
@@ -301,7 +303,7 @@
     source: https://www.xtb.com/br/finvest/contactos
   eua_acoes:
     text: Sim
-    subtext: Ações e ETFs Americanas
+    subtext: Ações e ETFs Americanos
     source: https://www.xtb.com/br/finvest/acoes
   eua_outros:
     text: Não
@@ -346,12 +348,13 @@
     alt: Fiscalmente sediada em Belize, possui escritório em mais de 13 países, incluindo representação no Brasil
     source: https://www.xtb.com/br/finvest/porque-a-xtb/quem-somos
   funcionarios:
-    text: 826 (2023)
+    text: "800"
     source: https://en.wikipedia.org/wiki/XTB_S.A.
   aum:
     text: "?"
   clientes:
-    text: 1 milhão (2024)
+    text: 1 milhão
+    subtext: 2024
     source: https://www.xtb.com/br/finvest
   observacoes:
   - Intermediada pela FINVEST DTVM no Brasil
@@ -437,22 +440,24 @@
     alt: Progressiva de 11% (até $25.000) a 8% (acima de $1 milhão), valores para 11/2024.
     source: https://tastytrade.com/commissions-and-fees/
   offshore:
-    text: Sim para entidades americanas
+    text: Sim
+    subtext: para entidades americanas
     source: https://support.tastytrade.com/support/s/solutions/articles/43000435278
   conta_bancaria:
     text: Não
-  conta_remunerada: n/d
+  conta_remunerada: Não
   ano_fundacao: 2017
   sede: Chicago, Illinois, EUA
   funcionarios:
-    text: 200+
+    text: "200"
     source: https://www.linkedin.com/company/tastytrade/
   aum:
     text: $4,26 bilhões
     alt: Da IG Group, holding da tastytrade, em 2023.
     source: https://pres.iggroup.com/ig060/files/fy23-results-statement.pdf
   clientes:
-    text: 358 mil (2023)
+    text: "358.000"
+    subtext: 2023
     alt: Da IG Group, holding da tastytrade.
     source: https://pres.iggroup.com/ig060/files/fy23-results-statement.pdf
   observacoes:
@@ -491,7 +496,8 @@
     text: $75
     source: https://avenue.us/?s=custódia&post_type=faq
   inatividade:
-    text: $0,50/mês após 3 meses sem movimentação para contas até $500 de custódia
+    text: $0,50/mês
+    subtext: após 3 meses sem movimentação para contas até $500 de custódia
     alt: não é cobrada se a conta estiver zerada (sem saldo), mesmo se inativa
     source: https://avenue.us/?s=inatividade&post_type=faq
   sipc:
@@ -560,11 +566,12 @@
   ano_fundacao: 2017
   sede: Miami, FL, EUA
   funcionarios:
-    text: 500
+    text: "500"
     source: https://www.linkedin.com/company/avenueus/people/
   aum: "?"
   clientes:
-    text: 600 mil (2022)
+    text: "600.000"
+    subtext: 2022
     source: https://sterlingtradingtech.com/news-insights/sterling-trading-tech-selected-by-avenue-securities-to-bring-brazilian-investors-unprecedented-access-to-us-markets
   observacoes:
   - Usa a plataforma da Apex.
@@ -615,7 +622,7 @@
     text: Sim
     source: https://benomad.zendesk.com/hc/pt-br/articles/360042474554-Quais-horários-e-canais-de-atendimento-da-Nomad
   horarios:
-    text: 24/7
+    text: 24x7
     source: https://benomad.zendesk.com/hc/pt-br/articles/360042474554-Quais-horários-e-canais-de-atendimento-da-Nomad
   idiomas: Português
   eua_acoes:
@@ -655,13 +662,14 @@
   ano_fundacao: 2018
   sede: São Paulo, SP, Brasil
   funcionarios:
-    text: 500
+    text: "500"
     source: https://www.linkedin.com/company/nomadglobal/people/
   aum:
     text: $400 milhões
     source: https://www.nomadglobal.com/en/about-us
   clientes:
     text: 1 milhão
+    subtext: 2024
     source: https://www.nomadglobal.com/en/about-us
   observacoes:
   - Usa a plataforma da DriveWealth, e transferência ACATS entre plataformas DriveWealth são gratuitas.
@@ -746,10 +754,12 @@
   conta_remunerada: Não
   ano_fundacao: 2001 (Brasil), 2021 (operação nos EUA)
   sede: São Paulo, SP, Brasil
-  funcionarios: 3+ mil
+  funcionarios:
+    text: "3.000"
   aum: "?"
   clientes:
-    text: 1,458 milhão (2023)
+    text: 1,458 milhão
+    subtext: 2023
     source: https://trademap.com.br/agencia/mercados/btg-pactual-bpac11-ultrapassa-xp-xpbr31-em-numero-de-investidores-ativos-na-largada-de-2023
 
 - nome: BTG Pactual
@@ -853,13 +863,14 @@
   ano_fundacao: 1983 (Brasil), 2023 (operação nos EUA)
   sede: São Paulo, SP, Brasil
   funcionarios:
-    text: 6+ mil
+    text: "6.000"
     source: https://www.prnewswire.com/news-releases/btg-pactual-launches-international-accounts-in-the-usa-301971744.html
   aum:
     text: $27,8 bilhões
     source: https://investor.com/rias/btg-pactual-asset-management-us-152538
   clientes:
-    text: 1,642 milhão (2023)
+    text: 1,642 milhão
+    subtext: 2023
     source: https://trademap.com.br/agencia/mercados/btg-pactual-bpac11-ultrapassa-xp-xpbr31-em-numero-de-investidores-ativos-na-largada-de-2023
   observacoes:
   - Usa a plataforma da DriveWealth, e transferência ACATS entre plataformas DriveWealth são gratuitas.
@@ -910,7 +921,7 @@
     text: Sim
     source: https://inter.co/canais-de-atendimento/
   horarios:
-    text: 24/7
+    text: 24x7
     source: https://inter.co/canais-de-atendimento/
   idiomas:
     text: Português
@@ -937,10 +948,12 @@
     source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
   ach_pull: Não
   cartao_debito_fisico:
-    text: Sim (gratuito com $50 em conta)
+    text: Sim (Mastercard)
+    subtext: gratuito com $50 em conta
     source: https://www.inter.co/pra-voce/global-account/
   cartao_debito_virtual:
-    text: Sim (gratuito)
+    text: Sim
+    subtext: gratuito
     source: https://www.inter.co/pra-voce/global-account/
   cartao_credito_fisico: Não
   residentes_fiscais:
@@ -966,13 +979,13 @@
   sede:
     text: Belo Horizonte, MG, Brasil
   funcionarios:
-    text: 3+ mil
+    text: "3.000"
     source: https://www.linkedin.com/company/inter/people/
   aum:
     text: "?"
   clientes:
-    text: 30 milhões (2023)
-    subtext: total do banco Inter, não só da corretora internacional
+    text: 30 milhões
+    subtext: 2023; total do banco Inter, não só da corretora internacional
     source: https://blog.inter.co/muitos-motivos-para-comemorar-inter-alcanca-30-milhoes-de-clientes/
   observacoes:
   - "Usa a plataforma da Apex."
@@ -1003,8 +1016,7 @@
     subtext: 0,9% até $/€ 1 mil, 0,85% até $/€ 5 mil, 0,75% a partir de $/€ 5 mil
     source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
   acats:
-    text: Não
-    subtext: não realiza transferência de custódia para outras corretoras
+    text: Não permite transferência de custódia
     source: https://www.reclameaqui.com.br/c6-bank/dificuldade-de-informacao-precisa-e-clara-assim-como-documentos_qQ2PkxXYRDfLFtqz/
   inatividade:
     text: $0
@@ -1024,7 +1036,7 @@
     text: Não
     source: https://ajuda.c6bank.com.br/s/article/Como-falar-com-um-especialista-no-C6-Bank
   horarios:
-    text: 24/7
+    text: 24x7
   idiomas:
     text: Português
   # Ações, ADRs, ETFs e REITs
@@ -1050,10 +1062,12 @@
   ach_pull:
     text: Não
   cartao_debito_fisico:
-    text: Sim (gratuito)
+    text: Sim (Mastercard)
+    subtext: gratuito
     source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
   cartao_debito_virtual:
-    text: Sim (gratuito)
+    text: Sim
+    subtext: gratuito
     source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
   cartao_credito_fisico:
     text: Não
@@ -1078,12 +1092,12 @@
   ano_fundacao: 2018 (Brasil), 2020 (operação nos EUA)
   sede: São Paulo, SP, Brasil
   funcionarios:
-    text: 3+ mil
+    text: "3.000"
   aum:
     text: "?"
   clientes:
-    text: 30+ milhões (2024)
-    subtext: total do banco C6, não só da corretora internacional
+    text: 30 milhões
+    subtext: 2024; total do banco C6, não só da corretora internacional
     source: https://www.c6bank.com.br/quem-somos/
   observacoes:
   - Conta bancária em dólar e euro sediada nas ilhas Cayman.
@@ -1121,7 +1135,7 @@
     source: https://storage.googleapis.com/northbound-legal-documents/FeeSchedule_V.02_17_03_2024.pdf
   inatividade:
     text: $5/trimestre
-    subtext: taxa de inatividade cobrada se não houver depósito no trimestre
+    subtext: se não houver depósito em conta no trimestre
     source: https://storage.googleapis.com/northbound-legal-documents/FeeSchedule_V.02_17_03_2024.pdf
   sipc:
     text: Sim
@@ -1182,11 +1196,12 @@
   ano_fundacao: 2021
   sede: Austin, Texas, EUA
   funcionarios:
-    text: 50
+    text: "50"
     source: https://www.linkedin.com/company/vestapp/
   aum:
     text: "?"
-  clientes: "?"
+  clientes:
+    text: "?"
   observacoes:
   - Subsidiária da Northbound Securities LLC.
   - "Antiga Sproutify e STAKE."

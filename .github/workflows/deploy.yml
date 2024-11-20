@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: cloudflare
+      url: https://comparaconta.com
     steps:
       - uses: actions/checkout@v4
 
@@ -23,8 +26,6 @@ jobs:
         with:
           node-version-file: .node-version
 
-      # - run: yarn install
-      - run: node --version
       - run: npm install
 
       - name: Build
@@ -33,24 +34,9 @@ jobs:
           BUNDLE_WITHOUT: "test:development"
         run: bin/bridgetown deploy
 
-      - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
         with:
-          path: ./output
-
-  # deploy:
-  #   needs: build
-
-  #   permissions:
-  #     pages: write
-  #     id-token: write
-
-  #   environment:
-  #     name: cloudflare
-  #     url: ${{ steps.deployment.outputs.page_url }}
-
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Deploy to GitHub Pages
-  #       id: deployment
-  #       uses: actions/deploy-pages@v1
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ./output --project-name=comparaconta

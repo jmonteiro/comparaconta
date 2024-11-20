@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 bundle install
-npm install
+yarn install
 
 if ! command -v tmux &>/dev/null; then
     if command -v brew &>/dev/null; then

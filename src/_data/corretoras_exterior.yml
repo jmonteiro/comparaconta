@@ -125,7 +125,7 @@
     subtext: 2024
     source: https://www.interactivebrokers.co.uk/en/home.php
   observacoes:
-  - Maior corretora em volume de transações diárias no mundo.
+  - text: Maior corretora em volume de transações diárias no mundo.
   referral:
     text: Ganhe $1 em ações da corretora IBKR a cada $100 depositado na conta
     subtext: limitado a $1.000 dos primeiros $100.000 depositados em conta
@@ -242,7 +242,7 @@
     subtext: 2024
     source: https://international.schwab.com/account-protection
   observacoes:
-  - "Fundida com a TD Ameritrade em 2020."
+  - text: Fundida com a TD Ameritrade em 2020.
 
 - nome: XTB e FINVEST DTVM
   link:
@@ -461,7 +461,7 @@
     alt: Da IG Group, holding da tastytrade.
     source: https://pres.iggroup.com/ig060/files/fy23-results-statement.pdf
   observacoes:
-  - "Adquirida pela corretora britânica IG Group em 2021 por $1 bilhão."
+  - text: Adquirida pela corretora britânica IG Group em 2021 por $1 bilhão.
 
 - nome: Avenue
   link:
@@ -574,8 +574,8 @@
     subtext: 2022
     source: https://sterlingtradingtech.com/news-insights/sterling-trading-tech-selected-by-avenue-securities-to-bring-brazilian-investors-unprecedented-access-to-us-markets
   observacoes:
-  - Usa a plataforma da Apex.
-  - Adquirida pelo Itaú.
+  - text: Usa a plataforma da Apex.
+  - text: Adquirida pelo Itaú.
 
 - nome: Nomad
   link:
@@ -672,9 +672,9 @@
     subtext: 2024
     source: https://www.nomadglobal.com/en/about-us
   observacoes:
-  - Usa a plataforma da DriveWealth, e transferência ACATS entre plataformas DriveWealth são gratuitas.
+  - text: Usa a plataforma da DriveWealth, e transferência ACATS entre plataformas DriveWealth são gratuitas.
   referral:
-    text: "Código de convidado: <code>S8N39HQ3LR</code>"
+    text: "Código de convidado: S8N39HQ3LR"
     subtext: 2% de cashback no câmbio nos primeiros 15 dias, limitado a $20 de cashback em $1.000 depositado
 
 - nome: XP Investimentos
@@ -873,7 +873,7 @@
     subtext: 2023
     source: https://trademap.com.br/agencia/mercados/btg-pactual-bpac11-ultrapassa-xp-xpbr31-em-numero-de-investidores-ativos-na-largada-de-2023
   observacoes:
-  - Usa a plataforma da DriveWealth, e transferência ACATS entre plataformas DriveWealth são gratuitas.
+  - text: Usa a plataforma da DriveWealth, e transferência ACATS entre plataformas DriveWealth são gratuitas.
 
 - nome: Inter
   link:
@@ -988,7 +988,7 @@
     subtext: 2023; total do banco Inter, não só da corretora internacional
     source: https://blog.inter.co/muitos-motivos-para-comemorar-inter-alcanca-30-milhoes-de-clientes/
   observacoes:
-  - "Usa a plataforma da Apex."
+  - text: Usa a plataforma da Apex.
 
 - nome: C6 BANK
   link:
@@ -1100,7 +1100,7 @@
     subtext: 2024; total do banco C6, não só da corretora internacional
     source: https://www.c6bank.com.br/quem-somos/
   observacoes:
-  - Conta bancária em dólar e euro sediada nas ilhas Cayman.
+  - text: Conta bancária em dólar e euro sediada nas ilhas Cayman.
   - text: Pior banco digital e corretora (desta lista) segundo Reclame Aqui.
     source: https://www.reclameaqui.com.br/empresa/c6-bank/
 
@@ -1203,5 +1203,5 @@
   clientes:
     text: "?"
   observacoes:
-  - Subsidiária da Northbound Securities LLC.
-  - "Antiga Sproutify e STAKE."
+  - text: Subsidiária da Northbound Securities LLC.
+  - text: Antiga Sproutify e STAKE.

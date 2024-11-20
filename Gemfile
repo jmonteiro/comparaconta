@@ -1,13 +1,39 @@
 source "https://rubygems.org"
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem "jekyll", "~> 4.3", require: false
+####
+# Welcome to your project's Gemfile, used by Rubygems & Bundler.
+#
+# To install a plugin, run:
+#
+#   bundle add new-plugin-name -g bridgetown_plugins
+#
+# This will ensure the plugin is added to the correct Bundler group.
+#
+# When you run Bridgetown commands, we recommend using a binstub like so:
+#
+#   bin/bridgetown start (or console, etc.)
+#
+# This will help ensure the proper Bridgetown version is running.
+####
 
-group :jekyll_plugins do
-  gem "jekyll-redirect-from", require: false
-end
+# If you need to upgrade/switch Bridgetown versions, change the line below
+# and then run `bundle update bridgetown`
+gem "bridgetown", "~> 1.3.4"
+
+# Uncomment to add file-based dynamic routing to your project:
+# gem "bridgetown-routes", "~> 1.3.4"
+
+# Uncomment to use the Inspectors API to manipulate the output
+# of your HTML or XML resources:
+# gem "nokogiri", "~> 1.13"
+
+# Or for faster parsing of HTML-only resources via Inspectors, use Nokolexbor:
+# gem "nokolexbor", "~> 0.4"
 
 group :development do
   gem "overmind", require: false
+  gem "puma", "< 7", require: false
   gem "ruby-lsp", require: false
   gem "standard", "1.41.1", require: false
   gem "webrick", require: false

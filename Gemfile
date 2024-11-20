@@ -32,9 +32,6 @@ gem "bridgetown", "~> 1.3.4"
 # gem "nokolexbor", "~> 0.4"
 
 group :development do
-  gem "overmind", require: false
-  gem "puma", "< 7", require: false
   gem "ruby-lsp", require: false
   gem "standard", "1.41.1", require: false
-  gem "webrick", require: false
 end

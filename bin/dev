@@ -17,4 +17,4 @@ fi
 # npm run tailwindcss
 
 export BUNDLE_AUTO_INSTALL=1
-exec bundle exec overmind start -f Procfile.dev "$@"
+exec bundle exec bridgetown start

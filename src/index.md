@@ -4,4 +4,4 @@
 layout: application
 ---
 
-# Bem vindo!
+<meta http-equiv="refresh" content="0; url=/corretoras-exterior" />

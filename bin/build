@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# npm install
-# npm run tailwindcss
+npm install -g yarn
+yarn install
 
 export BUNDLE_AUTO_INSTALL=1
 bundle exec bridgetown build

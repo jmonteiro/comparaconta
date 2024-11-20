@@ -4,4 +4,7 @@
 # npm run tailwindcss
 
 export BUNDLE_AUTO_INSTALL=1
-exec bundle exec ./bin/bridgetown build
+bundle exec bridgetown build
+
+# Jekyll legacy
+cp -R ./output/ _site

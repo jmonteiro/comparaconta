@@ -22,7 +22,8 @@ jobs:
         uses: actions/setup-node@v4
 
       # - run: yarn install
-      # - run: npm install
+      - run: node --version
+      - run: npm install
 
       - name: Build
         env:

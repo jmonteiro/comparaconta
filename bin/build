@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-npm install -g yarn
-yarn install
+# npm install -g yarn
+# yarn install
 
 export BUNDLE_AUTO_INSTALL=1
 export BRIDGETOWN_ENV=production

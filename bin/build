@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-npm install
-npm run tailwindcss
+# npm install
+# npm run tailwindcss
 
 export BUNDLE_AUTO_INSTALL=1
-export JEKYLL_ENV=production
-exec bundle exec jekyll build
+exec bundle exec ./bin/bridgetown build

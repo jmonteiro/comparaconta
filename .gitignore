@@ -36,6 +36,3 @@ yarn-debug.log*
 .yarn-integrity
 
 frontend/styles/jit-refresh.css
-
-# Jekyll legacy
-/_site

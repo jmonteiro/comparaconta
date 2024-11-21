@@ -1,0 +1,106 @@
+---
+nome: Vest
+posicao: 98
+link:
+  text: Vest.investments
+  url: https://vest.investments/pt
+deposito_min_abertura:
+  text: $0
+  source: https://vest.investments/pt
+abertura:
+  text: $0
+  source: https://vest.investments/pt
+corretagem_eua:
+  text: $0
+  source: https://vest.investments/pt
+corretagem_lse:
+  text: n/d
+deposito_eua:
+  text: $0 (ACH, Wire EUA, Wire não-EUA)
+  source: https://intercom.help/helpvest/en/articles/6139642-does-vest-charge-fees
+saque_eua:
+  text: $0,25 (ACH), $25 (Wire EUA), $35 (Wire não-EUA)
+  source: https://intercom.help/helpvest/en/articles/6139642-does-vest-charge-fees
+spread_brasil:
+  text: 1,85%
+  subtext: taxa em PIX para depósito e saque
+  alt: através da FacilitaPay Pagamentos S/A
+  source: https://storage.googleapis.com/northbound-legal-documents/FeeSchedule_V.02_17_03_2024.pdf
+acats:
+  text: $65
+  source: https://storage.googleapis.com/northbound-legal-documents/FeeSchedule_V.02_17_03_2024.pdf
+inatividade:
+  text: $5/trimestre
+  subtext: se não houver depósito em conta no trimestre
+  source: https://storage.googleapis.com/northbound-legal-documents/FeeSchedule_V.02_17_03_2024.pdf
+sipc:
+  text: Sim
+  source: https://vest.investments/pt
+seguro:
+  text: Não
+telefone:
+  text: Não
+  source: https://intercom.help/helpvest/pt-BR
+email:
+  text: Sim
+  source: https://intercom.help/helpvest/pt-BR
+chat_humano:
+  text: Não
+  source: https://intercom.help/helpvest/pt-BR
+horarios:
+  text: "?"
+idiomas:
+  text: Português, Espanhol, Inglês
+  source: https://intercom.help/helpvest/pt-BR
+eua_acoes:
+  text: Sim
+  source: https://intercom.help/helpvest/pt-BR/articles/6139642-a-vest-cobra-taxas
+eua_outros:
+  text: Não
+intl_acoes:
+  text: Não
+intl_outros:
+  text: Não
+crypto:
+  text: Não
+fracoes:
+  text: Sim
+  source: https://intercom.help/helpvest/pt-BR/articles/6139642-a-vest-cobra-taxas
+ach_pull:
+  text: Não
+cartao_debito_fisico:
+  text: Não
+cartao_debito_virtual:
+  text: Não
+cartao_credito_fisico:
+  text: Não
+residentes_fiscais:
+  text: 130+ países, incluindo o Brasil
+  source: https://vest.investments/en/about-us
+relatorio_irpf_brasil:
+  text: Não
+joint:
+  text: Não
+margin:
+  text: Não
+offshore:
+  text: Não
+conta_bancaria:
+  text: Não
+conta_remunerada:
+  text: Não
+ano_fundacao: 2021
+sede: Austin, Texas, EUA
+funcionarios:
+  text: "50"
+  source: https://www.linkedin.com/company/vestapp/
+aum:
+  text: "?"
+clientes:
+  text: "?"
+observacoes:
+- text: Subsidiária da Northbound Securities LLC.
+- text: Antiga Sproutify e STAKE.
+
+# Finish these files with a --- (due to Frontmatter)
+---

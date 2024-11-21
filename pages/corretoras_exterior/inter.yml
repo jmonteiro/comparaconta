@@ -1,0 +1,119 @@
+---
+nome: Inter
+posicao: 13
+link:
+  text: Inter.co
+  url: https://inter.co
+deposito_min_abertura:
+  text: $0
+  alt: Exige o uso prévio do banco Inter no Brasil para abertura da conta internacional.
+  source: https://www.inter.co/pra-voce/global-account/
+abertura:
+  text: $0
+  source: https://www.inter.co/pra-voce/global-account/
+corretagem_eua:
+  text: $0
+  source: https://www.inter.co/pra-voce/global-account/
+corretagem_lse: n/d
+deposito_eua:
+  text: $0 (ACH), $200 (Wire)
+  alt: ACH limitado a $6.000 por dia
+  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+saque_eua:
+  text: $0 (ACH), $200 (Wire)
+  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+spread_brasil:
+  text: 0,99% a 1,5%
+  alt: 1,5% para clientes Digital e One, 1,25% para clientes Black (R$250.000 em patrimônio no banco) e 0,99% para clientes WIN (R$1 milhão em patrimônio no banco)
+  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+acats:
+  text: $75
+  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+inatividade:
+  text: $0
+  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+sipc:
+  text: Sim
+  source: https://www.sipc.org/list-of-members/
+seguro: Não
+telefone:
+  text: Sim
+  source: https://inter.co/canais-de-atendimento/
+email:
+  text: Não
+  source: https://inter.co/canais-de-atendimento/
+chat_humano:
+  text: Sim
+  source: https://inter.co/canais-de-atendimento/
+horarios:
+  text: 24x7
+  source: https://inter.co/canais-de-atendimento/
+idiomas:
+  text: Português
+  source: https://inter.co/canais-de-atendimento/
+# Ações, ETFs, REITs, ADRs
+eua_acoes:
+  text: Sim
+  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+eua_outros:
+  text: Não
+  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+intl_acoes:
+  text: Não
+  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+intl_outros:
+  text: Não
+  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+crypto:
+  text: Sim
+  alt: Negociação de Criptoativos é feita através do Banco Inter, o braço brasileiro. Não é possível negociar criptoativos diretamente pela conta internacional. É cobrado spread variável conforme o ativo de maneira não transparente.
+  source: https://inter.co/pra-voce/investimentos/criptomoedas/
+fracoes:
+  text: Não
+  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+ach_pull: Não
+cartao_debito_fisico:
+  text: Sim (Mastercard)
+  subtext: gratuito com $50 em conta
+  source: https://www.inter.co/pra-voce/global-account/
+cartao_debito_virtual:
+  text: Sim
+  subtext: gratuito
+  source: https://www.inter.co/pra-voce/global-account/
+cartao_credito_fisico: Não
+residentes_fiscais:
+  text: Só Brasileiros
+  source: https://www.inter.co/pra-voce/global-account/
+relatorio_irpf_brasil:
+  text: Sim
+  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+joint:
+  text: Não
+margin:
+  text: Não
+offshore:
+  text: Não
+conta_bancaria:
+  text: Sim
+  subtext: Community Federal Savings Bank
+  source: https://www.inter.co/pra-voce/global-account/
+conta_remunerada:
+  text: Não
+ano_fundacao:
+  text: 1983 (Brasil), 2022 (operação nos EUA)
+sede:
+  text: Belo Horizonte, MG, Brasil
+funcionarios:
+  text: "3.000"
+  source: https://www.linkedin.com/company/inter/people/
+aum:
+  text: "?"
+clientes:
+  text: 30 milhões
+  subtext: 2023; total do banco Inter, não só da corretora internacional
+  source: https://blog.inter.co/muitos-motivos-para-comemorar-inter-alcanca-30-milhoes-de-clientes/
+observacoes:
+- text: Usa a plataforma da Apex.
+
+# Finish these files with a --- (due to Frontmatter)
+---

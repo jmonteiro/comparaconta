@@ -1,0 +1,117 @@
+---
+nome: BTG Pactual
+posicao: 11
+link:
+  text: BTGPactual.com
+  url: https://banking.btgpactual.com/conta-internacional
+deposito_min_abertura:
+  text: $0
+  source: https://banking.btgpactual.com/conta-internacional
+  alt: Exige o uso prévio do BTG Pactual Banking e Investments no Brasil para abertura da conta internacional.
+abertura:
+  text: $0
+  source: https://banking.btgpactual.com/conta-internacional
+# mensalidade:
+#   text: $0*
+#   alt: Isento com R$50k no Brasil ou US$10k nos EUA no BTG, ou US$1k em operações de câmbio nos últimos 12 meses. Caso nenhum critério seja alcançado, é cobrado $10/mês de mensalidade.
+#   source: https://www.btgpactual.us/pt/faq
+corretagem_eua:
+  text: $1 a $7,50
+  subtext: "para ordem até $100: $1; até $1.000: $2,50; até $2.000: $5; acima: $7,50"
+  source: https://www.btgpactual.us/pt/fee-schedule
+corretagem_lse: n/d
+deposito_eua:
+  text: $0
+  source: https://www.btgpactual.us/pt/fee-schedule
+saque_eua:
+  text: $10 (ACH ou Wire doméstico)
+  alt: Isento para transferência entre contas do BTG Pactual
+  source: https://www.btgpactual.us/pt/fee-schedule
+spread_brasil:
+  text: 2%
+  alt: Só permite depósito da conta brasileira para conta banking ou investimentos em horário comercial, de segunda a sexta das 09:15 até 17:00 de Brasília (exceto feriados). Não é permitido depositar na conta fora deste horário.
+acats:
+  text: $65
+  source: https://www.btgpactual.us/pt/fee-schedule
+inatividade:
+  text: $0
+  source: https://www.btgpactual.us/pt/fee-schedule
+sipc:
+  text: Sim
+  source: https://www.sipc.org/list-of-members/
+seguro: Não
+telefone:
+  text: Sim
+  source: https://www.btgpactual.us
+email:
+  text: Sim
+  source: https://www.btgpactual.us
+chat_humano:
+  text: Não
+  source: https://www.btgpactual.us
+horarios:
+  text: "?"
+  source: https://www.btgpactual.us
+idiomas:
+  text: Português
+  source: https://www.btgpactual.us
+# Açõres, REITs, ETFs, ADRs
+eua_acoes:
+  text: Sim
+  source: https://banking.btgpactual.com/conta-internacional
+eua_outros:
+  text: Não
+intl_acoes:
+  text: Não
+intl_outros:
+  text: Não
+crypto:
+  text: Sim
+  alt: Negociação de Criptoativos é feita através do BTG Pactual Investments, o braço brasileiro. Não é possível negociar criptoativos diretamente pela conta internacional. É cobrado 0,5% de corretagem.
+  source: https://investimentos.btgpactual.com/custos
+fracoes:
+  text: Sim
+  source: https://www.btgpactual.us/pt/fee-schedule
+ach_pull: Não
+cartao_debito_fisico:
+  text: Sim
+  source: https://banking.btgpactual.com/conta-internacional
+cartao_debito_virtual:
+  text: Sim
+  source: https://banking.btgpactual.com/conta-internacional
+cartao_credito_fisico: Não
+residentes_fiscais:
+  text: Só Brasileiros
+  source: https://www.btgpactual.us/pt/faq
+relatorio_irpf_brasil:
+  text: Não
+joint:
+  text: Não
+margin:
+  text: Não
+offshore:
+  text: Sim
+  source: https://static.offshore.btgbank.com/public-prd/documents/pershing/Fee_Schedule.pdf
+conta_bancaria:
+  text: Sim
+  subtext: Regent Bank
+  source: https://banking.btgpactual.com/conta-internacional
+conta_remunerada:
+  text: Não
+ano_fundacao: 1983 (Brasil), 2023 (operação nos EUA)
+sede: São Paulo, SP, Brasil
+funcionarios:
+  text: "6.000"
+  source: https://www.prnewswire.com/news-releases/btg-pactual-launches-international-accounts-in-the-usa-301971744.html
+aum:
+  text: $27,8 bilhões
+  source: https://investor.com/rias/btg-pactual-asset-management-us-152538
+clientes:
+  text: 1,642 milhão
+  subtext: 2023
+  source: https://trademap.com.br/agencia/mercados/btg-pactual-bpac11-ultrapassa-xp-xpbr31-em-numero-de-investidores-ativos-na-largada-de-2023
+observacoes:
+- text: Usa a plataforma da DriveWealth, e transferência ACATS entre plataformas DriveWealth são gratuitas.
+
+# Finish these files with a --- (due to Frontmatter)
+---

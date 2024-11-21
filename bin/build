@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-# npm install -g yarn
-# yarn install
+rm -rf ./build ./assets/stylesheets/build.css
+
+npx tailwindcss -i ./assets/stylesheets/application.css.scss -o ./assets/stylesheets/build.css
 
 export BUNDLE_AUTO_INSTALL=1
-export BRIDGETOWN_ENV=production
-export BUNDLE_WITHOUT="test:development"
-export LC_ALL=en_US.UTF-8
+bundle exec sitepress compile --fail-on-error
 
-exec bundle exec bridgetown build
+# Used on CloudFlare and not copied by Sitepress
+cp pages/_redirects build/_redirects

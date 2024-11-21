@@ -1,0 +1,118 @@
+---
+nome: C6 BANK
+posicao: 99
+link:
+  text: C6Bank.com.br
+  url: https://www.c6bank.com.br
+deposito_min_abertura:
+  text: $0
+  source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
+abertura:
+  text: $10
+  alt: taxa é reembolsada se realizar câmbio de $100 ou €100 até o final do mês seguinte à abertura. Taxa é também isenta se cliente tiver investido mais de R$20 mil em CDBs.
+  source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
+corretagem_eua:
+  text: $0
+  source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
+corretagem_lse: n/d
+deposito_eua:
+  text: $/€ 10 (Wire)
+  source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
+saque_eua:
+  text: $/€ 20 (Wire)
+  source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
+spread_brasil:
+  text: 0,9%
+  subtext: 0,9% até $/€ 1 mil, 0,85% até $/€ 5 mil, 0,75% a partir de $/€ 5 mil
+  source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
+acats:
+  text: Não permite transferência de custódia
+  source: https://www.reclameaqui.com.br/c6-bank/dificuldade-de-informacao-precisa-e-clara-assim-como-documentos_qQ2PkxXYRDfLFtqz/
+inatividade:
+  text: $0
+  source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
+sipc:
+  text: Não
+  source: https://www.sipc.org/list-of-members/
+seguro: Não
+telefone:
+  text: Sim
+  alt: Solicitações são protocoladas e encaminhadas para eventual resolução de especialistas em até 10 dias úteis, já que o atendimento telefônico não tem poder resolutivo.
+  source: https://ajuda.c6bank.com.br/s/article/Como-falar-com-um-especialista-no-C6-Bank
+email:
+  text: Não
+  source: https://ajuda.c6bank.com.br/s/article/Como-falar-com-um-especialista-no-C6-Bank
+chat_humano:
+  text: Não
+  source: https://ajuda.c6bank.com.br/s/article/Como-falar-com-um-especialista-no-C6-Bank
+horarios:
+  text: 24x7
+idiomas:
+  text: Português
+# Ações, ADRs, ETFs e REITs
+# Renda fixa em dólar (TD, Bonds & Treasury), ações americanas (NASDAQ e NYSE) e fundos do exterior (Mutual Funds e Hedge Funds).
+eua_acoes:
+  text: Sim
+  source: https://www.c6bank.com.br/c6-global-invest/
+eua_outros:
+  text: Não
+  source: https://www.c6bank.com.br/c6-global-invest/
+intl_acoes:
+  text: Não
+  source: https://www.c6bank.com.br/c6-global-invest/
+intl_outros:
+  text: Não
+  source: https://www.c6bank.com.br/c6-global-invest/
+crypto:
+  text: Não
+  source: https://www.c6bank.com.br/c6-global-invest/
+fracoes:
+  text: Não
+  source: https://www.c6bank.com.br/c6-global-invest/
+ach_pull:
+  text: Não
+cartao_debito_fisico:
+  text: Sim (Mastercard)
+  subtext: gratuito
+  source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
+cartao_debito_virtual:
+  text: Sim
+  subtext: gratuito
+  source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
+cartao_credito_fisico:
+  text: Não
+residentes_fiscais:
+  text: Só Brasileiros
+  source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
+relatorio_irpf_brasil:
+  text: Não
+  source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
+joint:
+  text: Não
+margin:
+  text: Não
+offshore:
+  text: Não
+conta_bancaria:
+  text: Sim
+  subtext: Banco C6 S.A. – Cayman Islands Branch
+  source: https://cdn.c6bank.com.br/c6-site-docs/condicoes-gerais-conta-global.pdf
+conta_remunerada:
+  text: Não
+ano_fundacao: 2018 (Brasil), 2020 (operação nos EUA)
+sede: São Paulo, SP, Brasil
+funcionarios:
+  text: "3.000"
+aum:
+  text: "?"
+clientes:
+  text: 30 milhões
+  subtext: 2024; total do banco C6, não só da corretora internacional
+  source: https://www.c6bank.com.br/quem-somos/
+observacoes:
+- text: Conta bancária em dólar e euro sediada nas ilhas Cayman.
+- text: Pior banco digital e corretora (desta lista) segundo Reclame Aqui.
+  source: https://www.reclameaqui.com.br/empresa/c6-bank/
+
+# Finish these files with a --- (due to Frontmatter)
+---

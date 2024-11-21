@@ -1,0 +1,118 @@
+---
+nome: Avenue
+posicao: 10
+link:
+  text: Avenue.us
+  url: https://avenue.us
+deposito_min_abertura:
+  text: R$200
+  alt: Não exige depósito mínimo para abertura da conta, mas exige no mínimo câmbio de R$200 para investir na Bolsa americana.
+  source: https://avenue.us/bolsa/
+abertura:
+  text: $0
+  source: https://avenue.us/conta-internacional/
+corretagem_eua:
+  text: $0 primeiras 3 ordens mensais
+  subtext: depois de $2,50 a $7,50/ordem
+  alt: "para ordem até $1.000: $2,50; até $2.500: $5,00; acima: $7,50"
+  source: https://avenue.us/bolsa/
+corretagem_lse: n/d
+deposito_eua:
+  text: $8 (ACH), $14 (Wire internacional)
+  alt: realizar depósito nos EUA desabilita o relatório de IR do ano
+  source: https://avenue.us/duvidas/custos/
+saque_eua:
+  text: $25 (doméstico EUA), $45 (internacional)
+  alt: realizar saque nos EUA desabilita o relatório de IR do ano
+  source: https://avenue.us/duvidas/custos/
+spread_brasil:
+  text: até 2%
+  alt: Taxas de spread que variam de 0,5% a 1,5% nas operações de câmbio BRL > USD  para o dia seguinte (D+1) e 1,0% a 2,0% nas operações de câmbio instantâneo ou câmbio de volta (USD > BRL)
+  source: https://avenue.us/duvidas/custos/
+acats:
+  text: $75
+  source: https://avenue.us/?s=custódia&post_type=faq
+inatividade:
+  text: $0,50/mês
+  subtext: após 3 meses sem movimentação para contas até $500 de custódia
+  alt: não é cobrada se a conta estiver zerada (sem saldo), mesmo se inativa
+  source: https://avenue.us/?s=inatividade&post_type=faq
+sipc:
+  text: Sim
+  source: https://www.sipc.org/list-of-members/
+seguro: Não
+telefone:
+  text: Sim
+  alt: Brasil e EUA
+  source: https://avenue.us/duvidas/suporte-e-seguranca/
+email:
+  text: Sim
+  source: https://avenue.us/duvidas/suporte-e-seguranca/
+chat_humano: Não
+horarios:
+  text: horário comercial de Brasília
+  alt: 09:00 as 18:00 de Segunda a Sexta-feira, horário de Brasília
+  source: https://avenue.us/duvidas/suporte-e-seguranca/
+idiomas:
+  text: Português
+eua_acoes:
+  text: Sim
+  # Ações, ETFs, REITs, ADRs, Opções
+  source: https://avenue.us/bolsa/
+eua_outros:
+  text: Não
+  source: https://avenue.us/bolsa/
+intl_acoes: Não
+intl_outros: Não
+crypto:
+  text: Não
+  source: https://avenue.us/atendimento/
+fracoes:
+  text: Sim
+  source: https://avenue.us/?s=frações&post_type=faq
+ach_pull: Não
+cartao_debito_fisico:
+  text: Sim (Mastercard)
+  subtext: gratuito 2 dias úteis após câmbio de R$200, senão $10
+  source: https://avenue.us/cartao-internacional/
+cartao_debito_virtual:
+  text: Sim
+  subtext: gratuito
+  source: https://avenue.us/cartao-internacional/
+cartao_credito_fisico: Não
+residentes_fiscais:
+  text: Só Brasileiros e Americanos
+  source: https://avenue.us/duvidas/cadastro-e-acesso/
+relatorio_irpf_brasil:
+  text: Sim
+joint:
+  text: Sim
+  source: https://avenue.us/duvidas/cadastro-e-acesso/
+margin:
+  text: Não
+offshore:
+  text: Sim
+  subtext: Somente utilizando empresa parceira Astride
+  source: https://avenue.us/blog/offshore/
+conta_bancaria:
+  text: Sim
+  subtext: Evolve Bank & Trust
+  source: https://avenue.us/conta-internacional/
+conta_remunerada:
+  text: Não
+ano_fundacao: 2017
+sede: Miami, FL, EUA
+funcionarios:
+  text: "500"
+  source: https://www.linkedin.com/company/avenueus/people/
+aum: "?"
+clientes:
+  text: "600.000"
+  subtext: 2022
+  source: https://sterlingtradingtech.com/news-insights/sterling-trading-tech-selected-by-avenue-securities-to-bring-brazilian-investors-unprecedented-access-to-us-markets
+observacoes:
+- text: Usa a plataforma da Apex.
+- text: Adquirida pelo Itaú.
+
+# Finish these files with a --- (due to Frontmatter)
+---

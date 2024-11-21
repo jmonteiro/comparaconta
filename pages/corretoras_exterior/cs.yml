@@ -1,0 +1,117 @@
+---
+nome: Charles Schwab
+posicao: 1
+link:
+  text: Schwab.com
+  url: https://www.schwab.com
+deposito_min_abertura:
+  text: $25.000
+  alt: |
+    É necessário que dentro dos primeiros 90 dias após a abertura da conta, o saldo total da conta seja de $25.000 ou mais.
+    Após este período é permitido que o saldo caia abaixo de $25.000, desde que sempre mantenha no mínimo $2.000 na conta.
+  source: https://international.schwab.com/brokerage-account
+abertura:
+  text: $0
+  source: https://international.schwab.com/brokerage-account
+corretagem_eua:
+  text: $0
+  source: https://international.schwab.com/brokerage-account
+corretagem_lse:
+  text: 0,75% da ordem
+  subtext: mín $100, só por telefone
+  alt: Oferece ETFs selecionados de fora dos EUA para não-residentes americanos, com compra somente via ligação telefônica diretamente na mesa de operações da corretora. Não é possível comprar nem vender estes ativos online (no site ou app).
+  source: https://www.schwab.com/legal/schwab-pricing-guide-for-individual-investors
+deposito_eua:
+  text: $0
+  source: https://international.schwab.com/brokerage-account
+saque_eua:
+  text: $25
+  source: https://www.schwab.com/legal/schwab-pricing-guide-for-individual-investors
+spread_brasil: n/d
+acats:
+  text: $50
+  source: https://www.schwab.com/legal/schwab-pricing-guide-for-individual-investors
+inatividade: $0
+sipc:
+  text: Sim
+  source: https://international.schwab.com/account-protection
+seguro:
+  text: $600M
+  alt: Lloyd's of London cobre até $600M por cliente (incluindo $1,15M em dinheiro) adicional a proteção SIPC
+  source: https://international.schwab.com/account-protection
+telefone:
+  text: Sim
+  alt: Com toll-free em diversos países, incluindo 0800 no Brasil.
+  source: https://international.schwab.com/contact-us/international-toll-free-numbers
+email:
+  text: Sim
+  source: https://international.schwab.com/contact-us
+chat_humano:
+  text: Não
+  source: https://international.schwab.com/contact-us
+horarios:
+  text: 24x5
+  alt: 01:00 de segunda até 01:00 de sábado, horário de Nova Iorque
+  source: https://international.schwab.com/contact-us
+idiomas:
+  text: Inglês, Espanhol, Português (somente telefone)
+  source: https://international.schwab.com/contact-us
+eua_acoes:
+  text: Sim
+  source: https://www.schwab.com/legal/schwab-pricing-guide-for-individual-investors
+eua_outros:
+  text: Sim
+  source: https://www.schwab.com/legal/schwab-pricing-guide-for-individual-investors
+intl_acoes:
+  text: Sim
+  subtext: Somente via ligação telefônica, com custos elevados
+  source: https://www.schwab.com/legal/schwab-pricing-guide-for-individual-investors
+intl_outros: Não
+crypto: Não
+fracoes:
+  text: Sim
+  source: https://www.schwab.com/fractional-shares-stock-slices
+ach_pull: Sim
+cartao_debito_fisico:
+  text: Sim (VISA)
+  alt: Gratuito com entrega no Brasil, sem taxa de uso (taxas de ATMs são reembolsadas pelo banco), e sem spread.
+  source: https://international.schwab.com/brokerage-account
+cartao_debito_virtual: Não
+cartao_credito_fisico: Não
+residentes_fiscais:
+  text: 170+ países, incluindo Brasil
+  alt: Aceita residentes fiscais do Brasil e de outros países, mas não listam publicamente todos os países, analisando cada solicitação de abertura de conta individualmente.
+  source: https://international.schwab.com
+relatorio_irpf_brasil: Não
+joint:
+  text: Sim
+  source: https://international.schwab.com/open-account-intro/open-account?country=BR&branchCode=HC#panel--text-4521
+margin:
+  text: 12,825%
+  alt: Progressiva de 12,825% (até $25.000) a 11,075% (acima de $500.000), valores para 11/2024.
+  source: https://international.schwab.com/investment-products/margin-loans
+offshore:
+  text: Sim
+  source: https://international.schwab.com/open-account-intro/open-account?country=BR&branchCode=HC#panel--text-4521
+conta_bancaria:
+  text: Não
+conta_remunerada: Não
+ano_fundacao: 1971
+sede:
+  text: Westlake, Texas, EUA
+  source: https://international.schwab.com
+funcionarios:
+  text: "33.000"
+  source: https://en.wikipedia.org/wiki/Charles_Schwab_Corporation
+aum:
+  text: $9,12 trilhões
+  source: https://international.schwab.com/account-protection
+clientes:
+  text: 35,3 milhões
+  subtext: 2024
+  source: https://international.schwab.com/account-protection
+observacoes:
+- text: Fundida com a TD Ameritrade em 2020.
+
+# Finish these files with a --- (due to Frontmatter)
+---

@@ -30,9 +30,8 @@ jobs:
 
       - name: Build
         env:
-          BRIDGETOWN_ENV: production
           BUNDLE_WITHOUT: "test:development"
-        run: bin/bridgetown deploy
+        run: bin/build
 
       - name: Deploy
         id: deploy
@@ -40,7 +39,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy ./output --project-name=comparaconta
+          command: pages deploy ./build --project-name=comparaconta
 
       - name: print deployment-url
         env:

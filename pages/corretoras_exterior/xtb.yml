@@ -1,0 +1,121 @@
+---
+nome: XTB e FINVEST DTVM
+posicao: 3
+link:
+  text: XTB.com
+  url: https://xtb.com
+deposito_min_abertura:
+  text: $0
+  source: https://www.xtb.com/br/finvest
+abertura:
+  text: $0
+  source: https://www.xtb.com/br/finvest
+corretagem_eua:
+  text: $0
+  subtext: até €100 mil por mês
+  alt: a partir de €100 mil por mês, 0,2% sobre o valor da ordem (mínimo €10)
+  source: https://www.xtb.com/br/finvest/conta-e-taxas
+corretagem_lse:
+  text: $0
+  subtext: até €100 mil por mês
+  alt: a partir de €100 mil por mês, 0,2% sobre o valor da ordem (mínimo €10)
+  source: https://www.xtb.com/br/finvest/conta-e-taxas
+deposito_eua:
+  text: $0
+  subtext: 2% via Skrill e 1% via Neteller
+  source: https://www.xtb.com/br/finvest/conta-e-taxas
+saque_eua:
+  text: $0
+  subtext: 2% via Skrill e 1% via Neteller
+  source: https://www.xtb.com/br/finvest/conta-e-taxas
+spread_brasil:
+  text: 0,5%
+  subtext: Aceita PIX via PayRetailers
+  source: https://www.xtb.com/br/finvest/conta-e-taxas
+acats:
+  text: Não permite transferência de custódia
+inatividade:
+  text: €10/mês
+  subtext: após 365 dias sem movimentação
+  source: https://www.xtb.com/br/finvest
+sipc:
+  text: Não
+seguro:
+  text: Não
+telefone:
+  text: Sim
+  source: https://www.xtb.com/br/finvest/contactos
+email:
+  text: Sim
+  source: https://www.xtb.com/br/finvest/contactos
+chat_humano:
+  text: Sim
+  source: https://www.xtb.com/br/finvest/contactos
+horarios:
+  text: 24x5
+  source: https://www.xtb.com/br/finvest/contactos
+idiomas:
+  text: Português, Inglês, Espanhol
+  source: https://www.xtb.com/br/finvest/contactos
+eua_acoes:
+  text: Sim
+  subtext: Ações e ETFs Americanos
+  source: https://www.xtb.com/br/finvest/acoes
+eua_outros:
+  text: Não
+  source: https://www.xtb.com/br/finvest/acoes
+intl_acoes:
+  text: Sim
+  subtext: Ações e ETFs Europeus, incluindo na LSE
+  source: https://www.xtb.com/br/finvest/acoes
+intl_outros:
+  text: Não
+  source: https://www.xtb.com/br/finvest/acoes
+crypto:
+  text: Não
+fracoes:
+  text: Não
+ach_pull:
+  text: Não
+cartao_debito_fisico:
+  text: Não
+cartao_debito_virtual:
+  text: Não
+cartao_credito_fisico:
+  text: Não
+residentes_fiscais:
+  text: 100+ países e territórios, incluindo Brasil
+  source: https://www.xtb.com/br/finvest
+relatorio_irpf_brasil:
+  text: Não
+joint:
+  text: Não
+margin:
+  text: Não
+offshore:
+  text: Não
+conta_bancaria:
+  text: Não
+conta_remunerada:
+  text: Não
+ano_fundacao: 2002
+sede:
+  text: Varsóvia, Polônia
+  alt: Fiscalmente sediada em Belize, possui escritório em mais de 13 países, incluindo representação no Brasil
+  source: https://www.xtb.com/br/finvest/porque-a-xtb/quem-somos
+funcionarios:
+  text: "800"
+  source: https://en.wikipedia.org/wiki/XTB_S.A.
+aum:
+  text: "?"
+clientes:
+  text: 1 milhão
+  subtext: 2024
+  source: https://www.xtb.com/br/finvest
+observacoes:
+- text: Intermediada pela FINVEST DTVM no Brasil
+- text: Planeja expanção na operação Brasileira para 2025.
+  source: https://www.youtube.com/watch?v=ux7R-XL1WL8
+
+# Finish these files with a --- (due to Frontmatter)
+---

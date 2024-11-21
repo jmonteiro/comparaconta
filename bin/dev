@@ -13,8 +13,7 @@ if ! command -v tmux &>/dev/null; then
     fi
 fi
 
-# npm install
-# npm run tailwindcss
+npm install
 
 export BUNDLE_AUTO_INSTALL=1
-exec bundle exec bridgetown start
+exec bundle exec overmind start -f Procfile.dev "$@"

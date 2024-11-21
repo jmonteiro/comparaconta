@@ -1,0 +1,136 @@
+---
+nome: Interactive Brokers
+posicao: 0
+link:
+  text: InteractiveBrokers.com
+  url: https://www.interactivebrokers.com
+deposito_min_abertura:
+  text: $0
+  alt: "Não há valor mínimo para abrir uma conta 'cash' (sem margem). Para abrir uma conta com margem é necessário um depósito mínimo de $2.000."
+  source: https://www.interactivebrokers.com/en/search/index.php?query=Minimum+opening+deposit
+abertura:
+  text: $0
+  source: https://www.interactivebrokers.com/en/search/index.php?query=opening+fee
+corretagem_eua:
+  text: $0,0035/unidade
+  subtext: mín $0,35/ordem
+  alt: "Tipo 'Tiered' ('Fixed' não é interessante para não-americanos). Exemplo comprando AAPL a qualquer valor: 1 unidade = $0,35 corretagem. 100 unidades = $0,35 corretagem. 1.000 unidades = $3,50 corretagem."
+  source: https://www.interactivebrokers.co.uk/en/pricing/commissions-stocks.php
+corretagem_lse:
+  text: 0,05% ordem
+  subtext: mín $1,70/ordem, máx $39/ordem
+  alt: "Exemplo comprando IWDA a $100 a unidade: 1 unidade = $1,70 corretagem. 100 unidades = $5 corretagem. 1.000 unidades = $39 corretagem."
+  source: https://www.interactivebrokers.co.uk/en/pricing/commissions-stocks-europe.php?re=europe
+deposito_eua:
+  text: $0
+  subtext: ACH, Wire, SEPA, Wise
+  alt: "Não há custo para nenhum tipo de depósito, e aceita integração direta com contas na Wise"
+  source: https://www.interactivebrokers.com/en/support/fund-my-account.php
+saque_eua:
+  text: $0 na 1ª do mês
+  subtext: depois $1 para ACH/SEPA, e $10 para Wire
+  source: https://www.interactivebrokers.com/en/pricing/other-fees.php
+spread_brasil: n/d
+acats:
+  text: $0
+  source: https://www.interactivebrokers.com/lib/cstools/faq/#/content/32666409
+inatividade: $0
+sipc:
+  text: Sim
+  source: https://www.interactivebrokers.co.uk/en/general/security-investor-protection.php
+seguro:
+  text: $30M
+  alt: Lloyd's of London cobre até $30M por cliente (incluindo $900.000 em dinheiro) adicional a proteção SIPC
+  source: https://www.interactivebrokers.co.uk/en/general/security-investor-protection.php
+telefone:
+  text: Sim
+  source: https://www.interactivebrokers.com/en/support/individuals.php
+email:
+  text: Sim
+  source: https://www.interactivebrokers.com/en/support/individuals.php
+chat_humano:
+  text: Sim
+  source: https://www.interactivebrokers.com/en/support/individuals.php
+horarios:
+  text: 24x7
+  source: https://www.interactivebrokers.com/en/support/individuals.php
+idiomas:
+  text: Inglês, Espanhol
+  source: https://www.interactivebrokers.com/en/support/individuals.php
+eua_acoes:
+  text: Sim
+  source: https://www.interactivebrokers.com/en/trading/products-exchanges.php
+eua_outros:
+  text: Sim
+  source: https://www.interactivebrokers.com/en/trading/products-exchanges.php
+intl_acoes:
+  text: Sim
+  subtext: 150+ mercados em 34+ países em 26+ moedas
+  source: https://www.interactivebrokers.com/en/trading/products-exchanges.php
+intl_outros:
+  text: Sim
+  subtext: 150+ mercados em 34+ países em 26+ moedas
+  source: https://www.interactivebrokers.com/en/trading/products-exchanges.php
+crypto:
+  text: Não
+  alt: depende de aprovação da Paxos, responsável por criptoativos na corretora, que não aprova tem aprovado para Brasileiros. Apenas uma parte pequena do portfólio na IB pode ser alocada em criptoativos.
+  source: https://www.interactivebrokers.com/en/search/index.php?query=crypto+for+Brazilian+residents
+fracoes:
+  text: Sim
+  source: https://www.interactivebrokers.com/en/search/index.php?query=fractional+shares
+ach_pull:
+  text: Sim
+  source: https://www.ibkrguides.com/adminportal/transferandpay/enterachdeposit.htm?cid=de72ad0c-f0c2-4981-b5ed-31579e464f7c
+cartao_debito_fisico:
+  text: Não
+  alt: Originalmente sim, mas só disponível para residentes EUA e CA
+cartao_debito_virtual: Não
+cartao_credito_fisico:
+  text: Sim
+  alt: American Express americano sem limite, necessita de no mínimo $50.000 patrimônio líquido), anuidade entre $150 e $795 dependendo do cartão escolhido
+  source: https://www.americanexpress.com/en-idc/acq/landing/index.html?bank=1591
+residentes_fiscais:
+  text: 200+ países e territórios, incluindo Brasil
+  alt: Oferece liberdade de se mudar entre diferentes países sem precisar liquidar ativos e fechar contas.
+  source: https://www.interactivebrokers.com/en/support/fund-my-account.php
+relatorio_irpf_brasil: Não
+joint:
+  text: Sim
+  source: https://www.interactivebrokers.com/en/accounts/account-guide.php
+margin:
+  text: 6,330%
+  alt: Progressiva de 6,330% (até $100.000) a 5,330% (acima de $200 milhões), valores para 11/2024.
+  source: https://www.interactivebrokers.co.uk/en/trading/margin-benchmarks.php
+offshore:
+  text: Sim
+  source: https://www.interactivebrokers.com/en/accounts/account-guide.php
+conta_bancaria:
+  text: Não
+conta_remunerada:
+  text: 4,33%
+  subtext: Rende 4,33% ao ano no dólar em dinheiro acima de $10.000, para contas com mais de $100.000 de valor de mercado
+  source: https://www.interactivebrokers.co.uk/en/accounts/fees/pricing-interest-rates.php
+ano_fundacao: 1978
+sede:
+  text: Greenwich, Connecticut, EUA
+  alt: Escritórios nos EUA, Canada, Reino Unido, Irlanda, Suíça, Hungria, Índia, China (Hong Kong e Shanghai), Japão, Singapura, e Austrália.
+  source: https://www.interactivebrokers.com/en/general/about/info-and-history.php
+funcionarios:
+  text: "3.000"
+  source: https://www.interactivebrokers.com/en/general/about/info-and-history.php
+aum:
+  text: $426 bilhões (2023)
+  source: https://investingintheweb.com/brokers/interactive-brokers-statistics/
+clientes:
+  text: 3,12 milhões
+  subtext: 2024
+  source: https://www.interactivebrokers.co.uk/en/home.php
+observacoes:
+- text: Maior corretora em volume de transações diárias no mundo.
+referral:
+  text: Ganhe $1 em ações da corretora IBKR a cada $100 depositado na conta
+  subtext: limitado a $1.000 dos primeiros $100.000 depositados em conta
+  url: https://ibkr.com/referral/julio682
+
+# Finish these files with a --- (due to Frontmatter)
+---

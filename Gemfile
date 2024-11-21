@@ -1,37 +1,16 @@
 source "https://rubygems.org"
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-####
-# Welcome to your project's Gemfile, used by Rubygems & Bundler.
-#
-# To install a plugin, run:
-#
-#   bundle add new-plugin-name -g bridgetown_plugins
-#
-# This will ensure the plugin is added to the correct Bundler group.
-#
-# When you run Bridgetown commands, we recommend using a binstub like so:
-#
-#   bin/bridgetown start (or console, etc.)
-#
-# This will help ensure the proper Bridgetown version is running.
-####
+# Stand-alone Sitepress server and compiler.
+gem "sitepress", "~> 4.0"
 
-# If you need to upgrade/switch Bridgetown versions, change the line below
-# and then run `bundle update bridgetown`
-gem "bridgetown", "~> 1.3.4"
-
-# Uncomment to add file-based dynamic routing to your project:
-# gem "bridgetown-routes", "~> 1.3.4"
-
-# Uncomment to use the Inspectors API to manipulate the output
-# of your HTML or XML resources:
-# gem "nokogiri", "~> 1.13"
-
-# Or for faster parsing of HTML-only resources via Inspectors, use Nokolexbor:
-# gem "nokolexbor", "~> 0.4"
+# Templating engines. Under the hood Sitepress uses a slimmed
+# down Rails, so rails templating engines should mostly work.
+gem "sass-rails"
 
 group :development do
+  gem "overmind", require: false
   gem "ruby-lsp", require: false
-  gem "standard", "1.41.1", require: false
+  gem "standard", require: false
+  # Server used for the Sitepress preview server.
+  gem "webrick"
 end

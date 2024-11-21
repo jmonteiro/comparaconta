@@ -1,0 +1,104 @@
+---
+nome: Nomad
+posicao: 14
+link:
+  text: NomadGlobal.com
+  url: https://www.nomadglobal.com
+deposito_min_abertura:
+  text: $0
+  source: https://www.nomadglobal.com/conta-internacional
+abertura:
+  text: $0
+  source: https://www.nomadglobal.com/conta-internacional
+corretagem_eua:
+  text: $0
+  source: https://www.nomadglobal.com/conta-internacional
+corretagem_lse: n/d
+deposito_eua:
+  text: $0
+  source: https://benomad.zendesk.com/hc/pt-br/articles/360052871234-Tabela-Completa-Tarifas-e-limites
+saque_eua:
+  text: $0 (ACH Pull), $10 (Wire doméstico)
+  source: https://benomad.zendesk.com/hc/pt-br/articles/360052871234-Tabela-Completa-Tarifas-e-limites
+spread_brasil:
+  text: 2%
+  subtext: queda progressiva p/ 1% após $20.000 em conversões
+  source: https://benomad.zendesk.com/hc/pt-br/articles/360052871234-Tabela-Completa-Tarifas-e-limites
+acats:
+  text: varia conforme destino
+  source: https://benomad.zendesk.com/hc/pt-br/articles/10016542466967-Existe-algum-custo-para-realizar-a-transferência-de-custódia
+inatividade:
+  text: $0
+  source: https://benomad.zendesk.com/hc/pt-br/articles/360059182014-Quais-são-os-benefícios-da-conta-internacional-Nomad
+sipc:
+  text: Não
+  source: https://www.nomadglobal.com/investimentos#disclosure
+seguro: Não
+telefone:
+  text: Sim
+  alt: Brasil e EUA
+  source: https://benomad.zendesk.com/hc/pt-br/articles/360042474554-Quais-horários-e-canais-de-atendimento-da-Nomad
+email:
+  text: Não
+  source: https://benomad.zendesk.com/hc/pt-br/articles/360042474554-Quais-horários-e-canais-de-atendimento-da-Nomad
+chat_humano:
+  text: Sim
+  source: https://benomad.zendesk.com/hc/pt-br/articles/360042474554-Quais-horários-e-canais-de-atendimento-da-Nomad
+horarios:
+  text: 24x7
+  source: https://benomad.zendesk.com/hc/pt-br/articles/360042474554-Quais-horários-e-canais-de-atendimento-da-Nomad
+idiomas: Português
+eua_acoes:
+  text: Sim
+  source: https://www.nomadglobal.com/investimentos#disclosure
+# bonds, CDs, ETFs, REITs, ações
+eua_outros: Não
+intl_acoes: Não
+intl_outros: Não
+crypto: Não
+fracoes:
+  text: Sim
+  source: https://benomad.zendesk.com/hc/pt-br/articles/5967909974167-Preciso-comprar-um-ativo-inteiro-Ou-pode-ser-uma-fração-de-ativo
+ach_pull: Não
+cartao_debito_fisico:
+  text: Sim (VISA)
+  subtext: "entrega nos EUA: gratuita; entrega no Brasil: $20 ou grátis após converter $1.000"
+  source: https://benomad.zendesk.com/hc/pt-br/articles/360052871234-Tabela-Completa-Tarifas-e-limites
+cartao_debito_virtual:
+  text: Sim (gratuito)
+  source: https://www.nomadglobal.com/cartao-internacional
+cartao_credito_fisico: Não
+residentes_fiscais:
+  text: Só Brasileiros
+  source: https://www.nomadglobal.com/conta-internacional
+relatorio_irpf_brasil:
+  text: Sim
+  source: https://benomad.zendesk.com/hc/pt-br/articles/27655334161559-A-Nomad-fornece-algum-relatório-dos-pagamentos-do-exterior-para-declaração-de-imposto-de-renda
+joint: Não
+margin: Não
+offshore: Não
+conta_bancaria:
+  text: Sim
+  subtext: Community Federal Savings Bank
+  source: https://www.nomadglobal.com/conta-internacional
+conta_remunerada: Não
+ano_fundacao: 2018
+sede: São Paulo, SP, Brasil
+funcionarios:
+  text: "500"
+  source: https://www.linkedin.com/company/nomadglobal/people/
+aum:
+  text: $400 milhões
+  source: https://www.nomadglobal.com/en/about-us
+clientes:
+  text: 1 milhão
+  subtext: 2024
+  source: https://www.nomadglobal.com/en/about-us
+observacoes:
+- text: Usa a plataforma da DriveWealth, e transferência ACATS entre plataformas DriveWealth são gratuitas.
+referral:
+  text: "Código de convidado: S8N39HQ3LR"
+  subtext: 2% de cashback no câmbio nos primeiros 15 dias, limitado a $20 de cashback em $1.000 depositado
+
+# Finish these files with a --- (due to Frontmatter)
+---

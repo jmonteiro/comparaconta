@@ -1,0 +1,89 @@
+---
+nome: XP Investimentos
+posicao: 12
+link:
+  text: XPI.com.br
+  url: https://www.xpi.com.br
+deposito_min_abertura:
+  text: $0
+  subtext: precisa ter R$50.000 investidos na XP Investimentos
+  source: https://atendimento.xpi.com.br/artigo/3314-quem-pode-ter-a-conta-global-xp
+abertura:
+  text: $0
+  source: https://atendimento.xpi.com.br/artigo/3314-quem-pode-ter-a-conta-global-xp
+corretagem_eua:
+  text: $1 a $8,60
+  subtext: "para ordem até $100: $1; até $1.000: $1,50; até $2.000: $4; acima: $8,60"
+  source: https://atendimento.xpi.com.br/artigo/3308-quais-sao-os-custos-da-plataforma-de-investimento-global
+corretagem_lse: n/d
+deposito_eua:
+  text: Não permitido
+  source: https://atendimento.xpi.com.br/artigo/3323-posso-receber-dinheiro-na-minha-conta-global-xp-via-wire-transfer
+saque_eua:
+  text: Não permitido
+  source: https://atendimento.xpi.com.br/artigo/3335-posso-realizar-transferencias-via-ach-ou-wire-de-minha-conta-global-xp-para-outros-bancos
+spread_brasil: "?"
+acats:
+  text: $75
+  source: https://atendimento.xpi.com.br/artigo/3308-quais-sao-os-custos-da-plataforma-de-investimento-global
+inatividade: $0
+sipc:
+  text: Sim
+  source: https://www.sipc.org/list-of-members/
+seguro: Não
+telefone:
+  text: Sim
+  source: https://atendimento.xpi.com.br
+email:
+  text: Sim
+  source: https://atendimento.xpi.com.br
+chat_humano:
+  text: Não
+  source: https://atendimento.xpi.com.br
+horarios:
+  text: horário comercial de Brasília
+  alt: 09:00 as 18:00 de Segunda a Sexta-feira, horário de Brasília
+idiomas: Português
+eua_acoes:
+  text: Sim
+  # ações, bonds, tesouros, mutual funds
+  source: https://atendimento.xpi.com.br/artigo/3308-quais-sao-os-custos-da-plataforma-de-investimento-global
+eua_outros: Não
+intl_acoes: Não
+intl_outros: Não
+crypto: Não
+fracoes: Não
+ach_pull: Não
+cartao_debito_fisico:
+  text: Sim (Mastercard)
+  subtext: $8
+  source: https://atendimento.xpi.com.br/artigo/3319-qual-o-custo-e-prazo-de-envio-do-cartao-virtual-e-fisico
+cartao_debito_virtual:
+  text: Sim
+  source: https://atendimento.xpi.com.br/artigo/3319-qual-o-custo-e-prazo-de-envio-do-cartao-virtual-e-fisico
+cartao_credito_fisico: Não
+residentes_fiscais:
+  text: Só Brasileiros
+  source: https://www.remessaonline.com.br/blog/o-que-e-a-conta-internacional-xp-saiba-se-vale-a-pena
+relatorio_irpf_brasil:
+  text: Sim
+joint: Não
+margin: Não
+offshore: Não
+conta_bancaria:
+  text: Sim
+  subtext: Community Federal Savings Bank
+  source: https://atendimento.xpi.com.br/artigo/3337-por-que-estou-recebendo-notificacoes-de-e-mail-do-community-federal-savings-bank-cfsb
+conta_remunerada: Não
+ano_fundacao: 2001 (Brasil), 2021 (operação nos EUA)
+sede: São Paulo, SP, Brasil
+funcionarios:
+  text: "3.000"
+aum: "?"
+clientes:
+  text: 1,458 milhão
+  subtext: 2023
+  source: https://trademap.com.br/agencia/mercados/btg-pactual-bpac11-ultrapassa-xp-xpbr31-em-numero-de-investidores-ativos-na-largada-de-2023
+
+# Finish these files with a --- (due to Frontmatter)
+---

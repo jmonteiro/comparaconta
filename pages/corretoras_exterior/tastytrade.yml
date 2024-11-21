@@ -1,0 +1,106 @@
+---
+nome: tastytrade
+posicao: 4
+link:
+  text: tastytrade.com
+  url: https://tastytrade.com
+deposito_min_abertura:
+  text: $0
+  source: https://tastytrade.com/pricing/
+abertura:
+  text: $0
+  source: https://tastytrade.com/pricing/
+corretagem_eua:
+  text: $0
+  source: https://tastytrade.com/pricing/
+corretagem_lse: n/d
+deposito_eua:
+  text: $0
+  source: https://support.tastytrade.com/support/s/solutions/articles/43000476885
+saque_eua:
+  text: $0 (ACH), $25 (Wire EUA), $45 (Wire internacional)
+  source: https://support.tastytrade.com/support/s/solutions/articles/43000435291
+spread_brasil: n/d
+acats:
+  text: $75
+  source: https://support.tastytrade.com/support/s/solutions/articles/43000559413
+inatividade: $0
+sipc:
+  text: Sim
+  source: https://support.tastytrade.com/support/s/solutions/articles/43000435324
+seguro:
+  text: $37,5M
+  alt: Apex cobre até $37,5M por cliente (incluindo $900.000 em dinheiro) adicional a proteção SIPC
+  source: https://support.tastytrade.com/support/s/solutions/articles/43000435324
+telefone:
+  text: Sim
+  source: https://support.tastytrade.com/support/s/solutions/articles/43000476860
+email:
+  text: Sim
+  source: https://support.tastytrade.com/support/s/solutions/articles/43000476860
+chat_humano:
+  text: Sim
+  source: https://support.tastytrade.com/support/s/solutions/articles/43000476860
+horarios:
+  text: horário comercial de Chicago
+  alt: 07:00 as 17:00 de Segunda a Quinta-feira, 07:00 as 16:00 Sexta-feira, horário de Chicago
+  source: https://support.tastytrade.com/support/s/solutions/articles/43000476860
+idiomas: Inglês
+eua_acoes:
+  text: Sim
+  source: https://tastytrade.com/stocks/
+eua_outros:
+  text: Sim
+  source: https://tastytrade.com/options/
+intl_acoes: Não
+intl_outros: Não
+crypto:
+  text: Sim
+  alt: Somente para contas individual, não aceita para Joint e outros tipos de conta.
+  source: https://tastytrade.com/crypto/
+fracoes:
+  text: Sim
+  source: https://support.tastytrade.com/support/s/solutions/articles/43000657855
+ach_pull:
+  text: Sim
+  source: https://support.tastytrade.com/support/s/solutions/articles/43000435197
+cartao_debito_fisico: Não
+cartao_debito_virtual: Não
+cartao_credito_fisico: Não
+residentes_fiscais:
+  text: 50+ países, incluindo Brasil
+  source: https://support.tastytrade.com/support/s/solutions/articles/43000435355
+relatorio_irpf_brasil: Não
+joint:
+  text: Sim
+  source: https://tastytrade.com/accounts/
+margin:
+  text: 11%
+  alt: Progressiva de 11% (até $25.000) a 8% (acima de $1 milhão), valores para 11/2024.
+  source: https://tastytrade.com/commissions-and-fees/
+offshore:
+  text: Sim
+  subtext: para entidades americanas
+  source: https://support.tastytrade.com/support/s/solutions/articles/43000435278
+conta_bancaria:
+  text: Não
+conta_remunerada: Não
+ano_fundacao: 2017
+sede: Chicago, Illinois, EUA
+funcionarios:
+  text: "200"
+  source: https://www.linkedin.com/company/tastytrade/
+aum:
+  text: $4,26 bilhões
+  alt: Da IG Group, holding da tastytrade, em 2023.
+  source: https://pres.iggroup.com/ig060/files/fy23-results-statement.pdf
+clientes:
+  text: "358.000"
+  subtext: 2023
+  alt: Da IG Group, holding da tastytrade.
+  source: https://pres.iggroup.com/ig060/files/fy23-results-statement.pdf
+observacoes:
+- text: Adquirida pela corretora britânica IG Group em 2021 por $1 bilhão.
+
+# Finish these files with a --- (due to Frontmatter)
+---

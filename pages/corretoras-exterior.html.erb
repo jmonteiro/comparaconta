@@ -4,6 +4,96 @@ description: |
   Tabela comparativa colaborativa de corretoras no exterior para residentes fiscais brasileiros.
   Compare custos, benefícios, e características de corretoras internacionais.
 layout: application
+structure:
+  null:
+    link:
+      text: Endereço
+  Custos:
+    deposito_min_abertura:
+      text: Depósito mínimo para abertura
+    abertura:
+      text: Taxas de abertura (W-8 e outros)
+    corretagem_eua:
+      text: Taxa de Corretagem mercado Americano
+    corretagem_lse:
+      text: Taxa de Corretagem mercado Britânico (LSE) em dólar
+    deposito_eua:
+      text: Taxa de Depósito EUA
+    saque_eua:
+      text: Taxa de Retirada EUA
+    spread_brasil:
+      text: Taxa Spread de Depósito/Retirada Brasil
+    acats:
+      text: Custo para transferência para outra corretora (ACATS)
+    inatividade:
+      text: Manutenção por inatividade
+  Proteção:
+    sipc:
+      text: SIPC
+    seguro:
+      text: Seguro Adicional por Conta
+  Atendimento:
+    telefone:
+      text: Via Telefone
+    email:
+      text: Via Email
+    chat_humano:
+      text: Humano via Chat web em tempo real
+    horarios:
+      text: Horários de Atendimento
+    idiomas:
+      text: Idiomas de Atendimento
+  Produtos Financeiros:
+    eua_acoes:
+      text: 'EUA: Ações, ETFs, REITs, ADRs'
+    eua_outros:
+      text: 'EUA: Opções, Futuros, Renda Fixa'
+    intl_acoes:
+      text: 'Fora dos EUA (Internacional): Ações, ETFs, REITs, ADRs'
+    intl_outros:
+      text: 'Fora dos EUA (Internacional): Opções, Futuros, Renda Fixa'
+    crypto:
+      text: Criptomoedas
+    fracoes:
+      text: Fração de Ações
+    ach_pull:
+      text: Link com conta bancária americana (com ACH Pull)
+    cartao_debito_fisico:
+      text: Cartão de débito americano (dólar) físico entregue no Brasil
+    cartao_debito_virtual:
+      text: Cartão de débito americano (dólar) virtual
+    cartao_credito_fisico:
+      text: Cartão de crédito americano (dólar) físico entregue no Brasil
+    residentes_fiscais:
+      text: Exclusiva para residentes do Brasil
+    relatorio_irpf_brasil:
+      text: Relatório IR brasileiro
+    joint:
+      text: Conta conjunta (Joint account)
+    margin:
+      text: Conta margem (alavancagem)
+    offshore:
+      text: Abertura para offshore
+    conta_bancaria:
+      text: Conta Bancária
+    conta_remunerada:
+      text: Juros sobre saldo em conta corrente
+  Sobre a instituição:
+    ano_fundacao:
+      text: Ano de fundação
+    sede:
+      text: Sede
+    funcionarios:
+      text: Número de funcionários (aproximado)
+    aum:
+      text: AUM (Patrimônio de clientes sob gerência)
+    clientes:
+      text: Número de clientes
+    observacoes:
+      text: Observações adicionais
+  Indicação:
+    referral:
+      text: Código ou link de indicação
 ---
 
 <section class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-900 p-4 mt-6 mx-4 rounded-md shadow-md">
@@ -34,453 +124,27 @@ layout: application
         </tr>
       </thead>
       <tbody class="text-gray-700 text-sm">
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Endereço
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.link %>
-            </td>
+        <% current_page.data.structure.each do |section, fields| %>
+          <% if section %>
+            <tr class="bg-gray-200 text-gray-600 text-sm leading-normal">
+              <td class="py-3 px-6 text-left font-medium" colspan="<%= CorretoraExterior.all.count + 1 %>">
+                <%= section %>
+              </td>
+            </tr>
           <% end %>
-        </tr>
-        <tr class="bg-gray-200 text-gray-600 text-sm leading-normal">
-          <td class="py-3 px-6 text-left font-medium" colspan="<%= CorretoraExterior.all.count + 1 %>">
-            Custos
-          </td>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Depósito mínimo para abertura
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.deposito_min_abertura %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Taxas de abertura (W-8 e outros)
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.abertura %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Taxa de Corretagem mercado Americano
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.corretagem_eua %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Taxa de Corretagem mercado Britânico (LSE) em dólar
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.corretagem_lse %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Taxa de Depósito EUA
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.deposito_eua %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Taxa de Retirada EUA
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.saque_eua %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Taxa Spread de Depósito/Retirada Brasil
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.spread_brasil %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Custo para transferência para outra corretora (ACATS)
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.acats %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Manutenção por inatividade
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.inatividade %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="bg-gray-200 text-gray-600 text-sm leading-normal">
-          <td class="py-3 px-6 text-left font-medium" colspan="<%= CorretoraExterior.all.count + 1 %>">
-            Proteção
-          </td>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            SIPC
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.sipc %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Seguro Adicional por Conta
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.seguro %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="bg-gray-200 text-gray-600 text-sm leading-normal">
-          <td class="py-3 px-6 text-left font-medium" colspan="<%= CorretoraExterior.all.count + 1 %>">
-            Atendimento
-          </td>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Via Telefone
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.telefone %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Via Email
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.email %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Humano via Chat web em tempo real
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.chat_humano %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Horários de Atendimento
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.horarios %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Idiomas de Atendimento
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.idiomas %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="bg-gray-200 text-gray-600 text-sm leading-normal">
-          <td class="py-3 px-6 text-left font-medium" colspan="<%= CorretoraExterior.all.count + 1 %>">
-            Produtos Financeiros
-          </td>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            EUA: Ações, ETFs, REITs, ADRs
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.eua_acoes %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            EUA: Opções, Futuros, Renda Fixa
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.eua_outros %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Fora dos EUA (Internacional): Ações, ETFs, REITs, ADRs
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.intl_acoes %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Fora dos EUA (Internacional): Opções, Futuros, Renda Fixa
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.intl_outros %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Criptomoedas
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.crypto %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Fração de Ações
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.fracoes %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Link com conta bancária americana (com ACH Pull)
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.ach_pull %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Cartão de débito americano (dólar) físico entregue no Brasil
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.cartao_debito_fisico %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Cartão de débito americano (dólar) virtual
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.cartao_debito_virtual %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Cartão de crédito americano (dólar) físico entregue no Brasil
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.cartao_credito_fisico %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Exclusiva para residentes do Brasil
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.residentes_fiscais %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Relatório IR brasileiro
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.relatorio_irpf_brasil %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Conta "conjunta" (<em>Joint account</em>)
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.joint %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-          Conta margem (alavancagem)
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.margin %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Abertura para offshore
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.offshore %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Conta Bancária
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.conta_bancaria %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Juros sobre saldo em conta corrente
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.conta_remunerada %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="bg-gray-200 text-gray-600 text-sm leading-normal">
-          <td class="py-3 px-6 text-left font-medium" colspan="<%= CorretoraExterior.all.count + 1 %>">
-            Sobre a Instituição
-          </td>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Ano de fundação
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.ano_fundacao %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Sede
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.sede %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Número de funcionários (aproximado)
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.funcionarios %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            AUM (Patrimônio de clientes sob gerência)
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.aum %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Número de clientes
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.clientes %>
-            </td>
-          <% end %>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Observações adicionais
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <% corretora.observacoes do |observacao| %>
-                <p class="text-xs mb-2">
-                  <%= observacao["text"] %>
-                  <% if observacao["source"] %>
-                    <a href="<%= observacao["source"] %>" rel="noopener noreferrer" target="_blank">Fonte</a>
-                  <% end %>
-                </p>
+          <% fields.each do |key, contents| %>
+            <tr class="border-b border-gray-200 hover:bg-gray-100">
+              <td class="py-3 px-6 text-left font-medium">
+                <%= contents["text"] %>
+              </td>
+              <% CorretoraExterior.all.each do |corretora| %>
+                <td class="py-3 px-6 text-center">
+                  <%= render "partials/cell", cell: corretora.send(key) %>
+                </td>
               <% end %>
-            </td>
+            </tr>
           <% end %>
-        </tr>
-        <tr class="bg-gray-200 text-gray-600 text-sm leading-normal">
-          <td class="py-3 px-6 text-left font-medium" colspan="<%= CorretoraExterior.all.count + 1 %>">
-            Indicação
-          </td>
-        </tr>
-        <tr class="border-b border-gray-200 hover:bg-gray-100">
-          <td class="py-3 px-6 text-left font-medium">
-            Código ou link de indicação
-          </td>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <td class="py-3 px-6 text-center">
-              <%= render "partials/cell", cell: corretora.referral %>
-            </td>
-          <% end %>
-        </tr>
+        <% end %>
       </tbody>
     </table>
   </div>

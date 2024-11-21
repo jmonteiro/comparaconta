@@ -46,7 +46,7 @@ class CorretoraExterior < Sitepress::Model
   def self.all
     site
       .glob("corretoras_exterior/*.yml")
-    .sort_by { |record| record.data.dig("posicao") || Float::INFINITY }
-    .map { |record| new record }
+      .sort_by { |record| record.data.dig("posicao") || Float::INFINITY }
+      .map { |record| new record }
   end
 end

@@ -1,2 +1,2 @@
 web: bundle exec sitepress server --port=4000
-tailwind: npx tailwindcss -i ./assets/stylesheets/application.css.scss -o ./assets/stylesheets/build.css --watch
+tailwind: npx tailwindcss -i ./pages/stylesheets/application.css.scss -o ./pages/stylesheets/build.css --watch

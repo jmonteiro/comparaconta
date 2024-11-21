@@ -2,7 +2,8 @@
 
 rm -rf ./build ./assets/stylesheets/build.css
 
-npx tailwindcss -i ./assets/stylesheets/application.css.scss -o ./assets/stylesheets/build.css
+npm install
+npx tailwindcss -i ./pages/stylesheets/application.css.scss -o ./pages/stylesheets/build.css
 
 export BUNDLE_AUTO_INSTALL=1
 bundle exec sitepress compile --fail-on-error

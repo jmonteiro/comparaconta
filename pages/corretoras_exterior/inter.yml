@@ -69,7 +69,7 @@ crypto:
   alt: Negociação de Criptoativos é feita através do Banco Inter, o braço brasileiro. Não é possível negociar criptoativos diretamente pela conta internacional. É cobrado spread variável conforme o ativo de maneira não transparente.
   source: https://inter.co/pra-voce/investimentos/criptomoedas/
 fracoes:
-  text: Não
+  text: Sim
   source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
 ach_pull: Não
 cartao_debito_fisico:

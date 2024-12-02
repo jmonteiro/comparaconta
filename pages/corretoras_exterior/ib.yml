@@ -55,7 +55,7 @@ horarios:
   text: 24x7
   source: https://www.interactivebrokers.com/en/support/individuals.php
 idiomas:
-  text: Inglês, Espanhol
+  text: Português, Inglês, Espanhol
   source: https://www.interactivebrokers.com/en/support/individuals.php
 eua_acoes:
   text: Sim

@@ -22,7 +22,9 @@ deposito_eua:
 saque_eua:
   text: Não permitido
   source: https://atendimento.xpi.com.br/artigo/3335-posso-realizar-transferencias-via-ach-ou-wire-de-minha-conta-global-xp-para-outros-bancos
-spread_brasil: "?"
+spread_brasil:
+  text: 1,87% a 2,25%
+  source: https://www.reddit.com/r/BogleheadsBrasil/comments/1h6f9uh/vale_a_pena_usar_a_xp_para_etf_americano/
 acats:
   text: $75
   source: https://atendimento.xpi.com.br/artigo/3308-quais-sao-os-custos-da-plataforma-de-investimento-global

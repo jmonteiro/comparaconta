@@ -12,8 +12,8 @@ abertura:
   text: $0
   source: https://avenue.us/conta-internacional/
 corretagem_eua:
-  text: $2,50 a $10,00
-  subtext: para ordem até $1.000: $2,50; até $2.000: $5; até $3.000: $7,50; acima: $10
+  text: "$2,50 a $10,00"
+  subtext: "para ordem até $1.000: $2,50; até $2.000: $5; até $3.000: $7,50; acima: $10"
   alt: "acima de $20k na carteira tem isenção de uma ordem ao mês"
   source: https://avenue.us/bolsa/
 corretagem_lse: n/d

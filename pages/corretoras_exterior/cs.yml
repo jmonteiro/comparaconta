@@ -5,11 +5,10 @@ link:
   text: Schwab.com
   url: https://www.schwab.com
 deposito_min_abertura:
-  text: $25.000
+  text: $0
   alt: |
-    É necessário que dentro dos primeiros 90 dias após a abertura da conta, o saldo total da conta seja de $25.000 ou mais.
-    Após este período é permitido que o saldo caia abaixo de $25.000, desde que sempre mantenha no mínimo $2.000 na conta.
-  source: https://international.schwab.com/brokerage-account
+    A corretora antes requeria $25 mil depositados nos primeiros 90 dias, porém recentemente zerou este requerimento.
+  source: https://international.schwab.com/open-account-intro/open-account?country=BR&branchCode=HC
 abertura:
   text: $0
   source: https://international.schwab.com/brokerage-account

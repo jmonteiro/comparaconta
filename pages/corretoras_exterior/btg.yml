@@ -17,6 +17,7 @@ abertura:
 #   source: https://www.btgpactual.us/pt/faq
 corretagem_eua:
   text: $1 a $7,50
+  alt: "Conforme o escritório parceiro os custos de corretagem mudam. Exemplo com a AUVP: de US$20,01 até US$100 = US$1,00; até US$1.000 = US$1,25; até US$2.000 = US$2,50; acima de US$2.000 = US$3,75"
   subtext: "para ordem até $100: $1; até $1.000: $2,50; até $2.000: $5; acima: $7,50"
   source: https://www.btgpactual.us/pt/fee-schedule
 corretagem_lse: n/d

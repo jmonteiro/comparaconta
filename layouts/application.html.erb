@@ -45,9 +45,12 @@
   <meta name="theme-color" content="#2563eb" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)" />
 
-  <%# `media: "all"` is required: the Rails helper defaults to media="screen",
-      which leaves the page completely unstyled when printed. %>
-  <%= stylesheet_link_tag "build", media: "all" %>
+  <%# build.css is written straight into pages/stylesheets/ by the Tailwind CLI
+      and copied verbatim by Sitepress, so it is not an asset-pipeline asset and
+      stylesheet_link_tag only resolved it through a deprecated fallback.
+      media="all" matters: the Rails helper defaulted to media="screen", which
+      left the page completely unstyled when printed. %>
+  <link rel="stylesheet" href="/stylesheets/build.css" media="all" />
   <link rel="manifest" href="/site.webmanifest">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

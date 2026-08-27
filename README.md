@@ -64,6 +64,15 @@ vermelho, e `n/d` é exibido em cinza — não é preciso fazer nada para isso.
 
 Cada arquivo YAML precisa terminar com `---`, por causa do front matter.
 
+## Licença
+
+O **código** deste repositório está sob a licença MIT (veja `LICENSE`).
+
+O **conteúdo** da tabela comparativa, incluindo os arquivos em
+`pages/corretoras_exterior/`, está em domínio público sob
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.pt-br).
+Use, copie e adapte à vontade, sem precisar pedir permissão ou dar crédito.
+
 ## Deploy
 
 Push na `main` dispara `.github/workflows/deploy.yml`, que roda `bin/build` e

@@ -90,17 +90,23 @@
     <%= yield %>
   </main>
 
+  <%#
+    Deliberately one short line. The disclaimers that used to live here are in
+    the "Aviso" at the top of the page, where they are actually read.
+    "gerado" rather than "atualizado": this is the build timestamp, and saying
+    otherwise implied the data had been reviewed today.
+  %>
   <footer class="shrink-0 w-full px-4 py-2 text-xs text-center text-white bg-blue-600 dark:bg-blue-900">
     <p>
-      &copy; <%= Time.now.strftime("%Y") %> ComparaConta.com
-      | Site publicado em <%= Time.now.strftime("%d/%m/%Y") %><span class="hidden sm:inline"> às <%= Time.now.strftime("%H:%M") %> UTC</span><span class="hidden sm:inline">
-      &mdash; a data acima é a da publicação do site, não a da última revisão dos dados.</span>
-      (<a href="https://github.com/jmonteiro/comparaconta" rel="noopener noreferrer" target="_blank" class="text-white">Código fonte</a>)
-    </p>
-    <p class="hidden sm:block">
-      Todos os direitos reservados.
-      Este site tem apenas propósito educacional e comparativo e não possui qualquer vínculo com empresas supracitadas.
-      Informações podem estar incorretas ou desatualizadas.
+      ComparaConta.com
+      &middot;
+      Conteúdo em
+      <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.pt-br" rel="license noopener noreferrer" target="_blank" class="text-white">CC0 1.0</a>
+      (domínio público)
+      &middot;
+      Site gerado em <%= Time.now.strftime("%d/%m/%Y") %><span class="hidden sm:inline"> às <%= Time.now.strftime("%H:%M") %> UTC</span>
+      &middot;
+      <a href="https://github.com/jmonteiro/comparaconta" rel="noopener noreferrer" target="_blank" class="text-white">Código fonte</a>
     </p>
   </footer>
 

@@ -242,6 +242,46 @@
     window.addEventListener("resize", close);
   }
 
+  // --------------------------------------------------------- section links
+
+  function setupSectionLinks() {
+    var nav = document.querySelector('nav[aria-label="Se\u00e7\u00f5es da tabela"]');
+    if (!nav) return;
+
+    function jumpTo(id) {
+      var target = document.getElementById(id);
+      if (!target) return false;
+      // The page itself cannot scroll (the shell is overflow:hidden), so plain
+      // fragment navigation moves nothing. Scrolling the row into view moves
+      // the pane instead, and honours its scroll-margin-top, which is what
+      // keeps the section clear of the sticky column header.
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      target.scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" });
+      return true;
+    }
+
+    nav.addEventListener("click", function (event) {
+      var link = event.target.closest('a[href^="#secao-"]');
+      if (!link) return;
+      var id = link.getAttribute("href").slice(1);
+      if (!jumpTo(id)) return;
+      event.preventDefault();
+      // Keep the fragment in the URL so a section stays shareable, without
+      // letting the browser attempt its own (no-op) scroll.
+      window.history.replaceState(null, "", "#" + id);
+
+      // The generic outside-click handler leaves a menu open when the click
+      // lands inside it, which is wrong for a link that has done its job.
+      var menu = link.closest("details");
+      if (menu) menu.open = false;
+    });
+
+    // Someone arriving on a shared link needs the same treatment.
+    if (/^#secao-/.test(window.location.hash)) {
+      jumpTo(window.location.hash.slice(1));
+    }
+  }
+
   // ------------------------------------------------------------- dropdowns
 
   function setupDropdowns() {
@@ -280,6 +320,7 @@
     setupColumns();
     setupFilter();
     setupNotes();
+    setupSectionLinks();
     setupDropdowns();
     setupSwipeHint();
   }

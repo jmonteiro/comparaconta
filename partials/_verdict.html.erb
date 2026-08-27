@@ -1,0 +1,11 @@
+<%#
+  Turns a leading "Sim" / "Não" into a scannable icon. The word itself is kept
+  in the visible label (see _verdict_label) for anyone reading the text, and the
+  icon is decorative, so nothing is lost to screen readers or Ctrl-F.
+%>
+<% case CellValue.verdict(text) %>
+<% when :yes %>
+  <%= render "partials/icon", name: "check", classes: "w-4 h-4 shrink-0 fill-green-600 dark:fill-green-500" %>
+<% when :no %>
+  <%= render "partials/icon", name: "cross", classes: "w-4 h-4 shrink-0 fill-red-500 dark:fill-red-400" %>
+<% end %>

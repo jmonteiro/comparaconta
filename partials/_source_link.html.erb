@@ -1,0 +1,7 @@
+<% if source.present? %>
+  <a class="inline-flex flex-none align-middle fill-blue-500 hover:fill-blue-600 dark:fill-blue-400 dark:hover:fill-blue-300"
+     href="<%= source %>" rel="noopener noreferrer" target="_blank"
+     aria-label="Fonte: <%= CellValue.host(source) %>">
+    <%= render "partials/icon", name: "link", classes: "w-4 h-4" %>
+  </a>
+<% end %>

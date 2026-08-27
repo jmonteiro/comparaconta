@@ -9,11 +9,12 @@ deposito_min_abertura:
   source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
 abertura:
   text: $10
-  alt: taxa é reembolsada se realizar câmbio de $100 ou €100 até o final do mês seguinte à abertura. Taxa é também isenta se cliente tiver investido mais de R$20 mil em CDBs.
+  alt: "Abertura zero para quem tem cartão C6 Black, Carbon ou Graphene; para quem investe a partir de R$20 mil em CDBs pelo app; ou para quem fizer câmbio de no mínimo $100 ou €100 até o último dia do mês seguinte à abertura, com estorno em até 15 dias. PJ/MEI: $15."
   source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
 corretagem_eua:
-  text: $0
-  source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
+  text: 3 ordens grátis/mês, depois $0,25/ação
+  subtext: máximo de $5 por ordem; Mutual Funds $18 por operação
+  source: https://www.c6globalinvest.com/home/
 corretagem_lse: n/d
 deposito_eua:
   text: $/€ 10 (Wire)
@@ -26,14 +27,15 @@ spread_brasil:
   subtext: 0,9% até $/€ 1 mil, 0,85% até $/€ 5 mil, 0,75% a partir de $/€ 5 mil
   source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
 acats:
-  text: Não permite transferência de custódia
-  source: https://www.reclameaqui.com.br/c6-bank/dificuldade-de-informacao-precisa-e-clara-assim-como-documentos_qQ2PkxXYRDfLFtqz/
+  text: Permite, custo não divulgado
+  subtext: Mutual Funds, Stocks/ETFs/REITs da NYSE/NASDAQ e Bonds/Treasuries
+  source: https://www.c6globalinvest.com/home/
 inatividade:
   text: $0
   source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
 sipc:
   text: Não
-  source: https://www.sipc.org/list-of-members/
+  source: https://cms-assets-p.c6bank.com.br/uploads/outras-informacoes-e-riscos.pdf
 seguro: Não
 telefone:
   text: Sim
@@ -53,22 +55,24 @@ idiomas:
 # Renda fixa em dólar (TD, Bonds & Treasury), ações americanas (NASDAQ e NYSE) e fundos do exterior (Mutual Funds e Hedge Funds).
 eua_acoes:
   text: Sim
-  source: https://www.c6bank.com.br/c6-global-invest/
+  source: https://www.c6globalinvest.com/home/
 eua_outros:
-  text: Não
-  source: https://www.c6bank.com.br/c6-global-invest/
+  text: Sim
+  subtext: renda fixa em dólar (Time Deposit, treasuries e bonds); sem opções nem futuros
+  source: https://www.c6globalinvest.com/home/
 intl_acoes:
   text: Não
-  source: https://www.c6bank.com.br/c6-global-invest/
+  source: https://www.c6globalinvest.com/home/
 intl_outros:
   text: Não
-  source: https://www.c6bank.com.br/c6-global-invest/
+  source: https://www.c6globalinvest.com/home/
 crypto:
   text: Não
-  source: https://www.c6bank.com.br/c6-global-invest/
+  source: https://www.c6globalinvest.com/home/
 fracoes:
-  text: Não
-  source: https://www.c6bank.com.br/c6-global-invest/
+  text: Sim
+  subtext: mínimo de $10 por ordem fracionária
+  source: https://www.c6globalinvest.com/home/
 ach_pull:
   text: Não
 cartao_debito_fisico:
@@ -99,19 +103,21 @@ conta_bancaria:
   source: https://cdn.c6bank.com.br/c6-site-docs/condicoes-gerais-conta-global.pdf
 conta_remunerada:
   text: Não
-ano_fundacao: 2018 (Brasil), 2020 (operação nos EUA)
+ano_fundacao: 2019 (Brasil)
 sede: São Paulo, SP, Brasil
 funcionarios:
   text: "3.000"
 aum:
-  text: "?"
+  text: n/d
+  alt: O C6 Bank é de capital fechado e não divulga patrimônio de clientes sob custódia. A página "Quem somos" publica apenas número de clientes e quantidade de produtos.
+  source: https://www.c6bank.com.br/quem-somos/
 clientes:
-  text: 30 milhões
-  subtext: 2024; total do banco C6, não só da corretora internacional
+  text: 40 milhões
+  subtext: 2025; total do banco C6, não só da corretora internacional
   source: https://www.c6bank.com.br/quem-somos/
 observacoes:
 - text: Conta bancária em dólar e euro sediada nas ilhas Cayman.
-- text: Pior banco digital e corretora (desta lista) segundo Reclame Aqui.
+- text: "Menor nota do Reclame Aqui entre os bancos digitais desta lista (7,2/10 em 2026), ainda assim classificado com reputação Boa, 99% de respostas e 77,4% de resoluções."
   source: https://www.reclameaqui.com.br/empresa/c6-bank/
 
 # Finish these files with a --- (due to Frontmatter)

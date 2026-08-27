@@ -15,24 +15,27 @@ corretagem_eua:
   source: https://www.nomadglobal.com/conta-internacional
 corretagem_lse: n/d
 deposito_eua:
-  text: $0
+  text: $0 (ACH Push), $6 (Wire)
+  subtext: Wire gratuito nos níveis 4 e 5 do Nomad Pass
   source: https://benomad.zendesk.com/hc/pt-br/articles/360052871234-Tabela-Completa-Tarifas-e-limites
 saque_eua:
-  text: $0 (ACH Pull), $10 (Wire doméstico)
+  text: $0 (ACH Pull), $10 (Wire ou ACH Push), $12 (ACH Rápido)
   source: https://benomad.zendesk.com/hc/pt-br/articles/360052871234-Tabela-Completa-Tarifas-e-limites
 spread_brasil:
   text: 2%
-  subtext: queda progressiva p/ 1% após $20.000 em conversões
+  subtext: "cai por nível do Nomad Pass: 2,0%, 1,9%, 1,7%, 1,4% e 1,0% acima de 20 mil pontos"
   source: https://benomad.zendesk.com/hc/pt-br/articles/360052871234-Tabela-Completa-Tarifas-e-limites
 acats:
-  text: varia conforme destino
-  source: https://benomad.zendesk.com/hc/pt-br/articles/10016542466967-Existe-algum-custo-para-realizar-a-transferência-de-custódia
+  text: entrada $0, saída $75
+  subtext: DRS $115/ativo, DTC $25/ativo e DWAC $100 na saída
+  source: https://nis.nomadglobal.com/en/fees
 inatividade:
   text: $0
   source: https://benomad.zendesk.com/hc/pt-br/articles/360059182014-Quais-são-os-benefícios-da-conta-internacional-Nomad
 sipc:
-  text: Não
-  source: https://www.nomadglobal.com/investimentos#disclosure
+  text: Sim
+  subtext: $500 mil, incluindo $250 mil em dinheiro, via Nomad Investment Services
+  source: https://nis.nomadglobal.com/en/documents
 seguro: Não
 telefone:
   text: Sim
@@ -52,17 +55,29 @@ eua_acoes:
   text: Sim
   source: https://www.nomadglobal.com/investimentos#disclosure
 # bonds, CDs, ETFs, REITs, ações
-eua_outros: Não
+eua_outros:
+  text: Sim
+  subtext: renda fixa (Treasuries e bonds); sem opções nem futuros
+  source: https://nis.nomadglobal.com/en/fees
 intl_acoes: Não
-intl_outros: Não
-crypto: Não
+intl_outros:
+  text: Sim
+  subtext: renda fixa, títulos de governos e empresas brasileiras e latino-americanas
+  source: https://nis.nomadglobal.com/en/fees
+crypto:
+  text: Sim
+  subtext: oferecido pela Global DTVM, integrado ao app da Nomad
+  source: https://benomad.zendesk.com/hc/pt-br/articles/40739720999831-O-que-é-o-produto-de-cripto-da-Nomad
 fracoes:
   text: Sim
   source: https://benomad.zendesk.com/hc/pt-br/articles/5967909974167-Preciso-comprar-um-ativo-inteiro-Ou-pode-ser-uma-fração-de-ativo
-ach_pull: Não
+ach_pull:
+  text: Sim
+  subtext: apenas para contas americanas de mesma titularidade
+  source: https://benomad.zendesk.com/hc/pt-br/articles/4403930292631-Como-transferir-dinheiro-da-minha-Conta-Internacional-Nomad-para-outras-contas-americanas
 cartao_debito_fisico:
   text: Sim (VISA)
-  subtext: "entrega nos EUA: gratuita; entrega no Brasil: $20 ou grátis após converter $1.000"
+  subtext: "entrega $20 no Brasil e nos EUA; 1ª via grátis a partir do nível 2 do Nomad Pass"
   source: https://benomad.zendesk.com/hc/pt-br/articles/360052871234-Tabela-Completa-Tarifas-e-limites
 cartao_debito_virtual:
   text: Sim (gratuito)
@@ -88,11 +103,12 @@ funcionarios:
   text: "500"
   source: https://www.linkedin.com/company/nomadglobal/people/
 aum:
-  text: $400 milhões
+  text: R$ 7 bilhões
+  subtext: 2026
   source: https://www.nomadglobal.com/en/about-us
 clientes:
-  text: 1 milhão
-  subtext: 2024
+  text: 3,8 milhões
+  subtext: 2026
   source: https://www.nomadglobal.com/en/about-us
 observacoes:
 - text: Usa a plataforma da DriveWealth, e transferência ACATS entre plataformas DriveWealth são gratuitas.

@@ -17,8 +17,8 @@ abertura:
 #   source: https://www.btgpactual.us/pt/faq
 corretagem_eua:
   text: $1 a $7,50
-  alt: "Conforme o escritório parceiro os custos de corretagem mudam. Exemplo com a AUVP: de US$20,01 até US$100 = US$1,00; até US$1.000 = US$1,25; até US$2.000 = US$2,50; acima de US$2.000 = US$3,75"
-  subtext: "para ordem até $100: $1; até $1.000: $2,50; até $2.000: $5; acima: $7,50"
+  alt: "O BTG se reserva o direito de cobrar valores menores que os da tabela. Relatos de clientes indicam que a corretagem varia conforme o escritório parceiro, com valores abaixo dos publicados, mas isso não é confirmado em fonte oficial."
+  subtext: "para ordem até $100: $1; até $1.000: $2,50; até $2.000: $5; acima: $7,50. Ordem mínima de $20"
   source: https://www.btgpactual.us/pt/fee-schedule
 corretagem_lse: n/d
 deposito_eua:
@@ -39,7 +39,7 @@ inatividade:
   source: https://www.btgpactual.us/pt/fee-schedule
 sipc:
   text: Sim
-  source: https://www.sipc.org/list-of-members/
+  source: https://www.sipc.org/list-of-members
 seguro: Não
 telefone:
   text: Sim
@@ -61,14 +61,18 @@ eua_acoes:
   text: Sim
   source: https://banking.btgpactual.com/conta-internacional
 eua_outros:
-  text: Não
+  text: Sim
+  subtext: renda fixa (bonds, treasuries); sem opções nem futuros
+  source: https://www.btgpactual.us/pt/fee-schedule
 intl_acoes:
-  text: Não
+  text: Sim
+  subtext: UCITS ETFs, 0,25% do volume com mínimo de $2,50
+  source: https://www.btgpactual.us/pt/fee-schedule
 intl_outros:
   text: Não
 crypto:
   text: Sim
-  alt: Negociação de Criptoativos é feita através do BTG Pactual Investments, o braço brasileiro. Não é possível negociar criptoativos diretamente pela conta internacional. É cobrado 0,5% de corretagem.
+  alt: Negociação de Criptoativos é feita através do BTG Pactual Investments, o braço brasileiro. Não é possível negociar criptoativos diretamente pela conta internacional. É cobrado 1% de corretagem.
   source: https://investimentos.btgpactual.com/custos
 fracoes:
   text: Sim
@@ -76,7 +80,8 @@ fracoes:
 ach_pull: Não
 cartao_debito_fisico:
   text: Sim
-  source: https://banking.btgpactual.com/conta-internacional
+  subtext: $10 de envio
+  source: https://www.btgpactual.us/pt/fee-schedule
 cartao_debito_virtual:
   text: Sim
   source: https://banking.btgpactual.com/conta-internacional
@@ -86,6 +91,8 @@ residentes_fiscais:
   source: https://www.btgpactual.us/pt/faq
 relatorio_irpf_brasil:
   text: Não
+  alt: O BTG não emite relatório próprio, mas oferece cálculo de imposto sobre investimentos no exterior integrado ao app, através de parceria com a Velotax, contratada de forma independente.
+  source: https://banking.btgpactual.com/conta-corrente/conta-internacional
 joint:
   text: Não
 margin:
@@ -105,12 +112,11 @@ funcionarios:
   text: "6.000"
   source: https://www.prnewswire.com/news-releases/btg-pactual-launches-international-accounts-in-the-usa-301971744.html
 aum:
-  text: $27,8 bilhões
-  source: https://investor.com/rias/btg-pactual-asset-management-us-152538
+  text: $30,1 bilhões
+  source: https://advisorsearch.org/rias/btg-pactual-asset-management-us-152538
 clientes:
-  text: 1,642 milhão
-  subtext: 2023
-  source: https://trademap.com.br/agencia/mercados/btg-pactual-bpac11-ultrapassa-xp-xpbr31-em-numero-de-investidores-ativos-na-largada-de-2023
+  text: n/d
+  alt: O BTG Pactual não divulga número total de clientes; o release trimestral publica apenas WuM, AuM e AuC. A última referência encontrada era de 1,642 milhão de investidores ativos em 2023, mas a matéria que sustentava esse número saiu do ar.
 observacoes:
 - text: Usa a plataforma da DriveWealth, e transferência ACATS entre plataformas DriveWealth são gratuitas.
 

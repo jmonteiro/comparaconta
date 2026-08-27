@@ -51,8 +51,7 @@ html:not(.js) .js-only {
   .cc-table:has(tbody td:nth-child(8):not([colspan]):hover) :is(thead th, tbody td):nth-child(8):not([colspan]),
   .cc-table:has(tbody td:nth-child(9):not([colspan]):hover) :is(thead th, tbody td):nth-child(9):not([colspan]),
   .cc-table:has(tbody td:nth-child(10):not([colspan]):hover) :is(thead th, tbody td):nth-child(10):not([colspan]),
-  .cc-table:has(tbody td:nth-child(11):not([colspan]):hover) :is(thead th, tbody td):nth-child(11):not([colspan]),
-  .cc-table:has(tbody td:nth-child(12):not([colspan]):hover) :is(thead th, tbody td):nth-child(12):not([colspan]) {
+  .cc-table:has(tbody td:nth-child(11):not([colspan]):hover) :is(thead th, tbody td):nth-child(11):not([colspan]) {
     background-color: var(--cc-column);
   }
 

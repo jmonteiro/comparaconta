@@ -16,12 +16,11 @@ corretagem_eua:
   source: https://www.inter.co/pra-voce/global-account/
 corretagem_lse: n/d
 deposito_eua:
-  text: $0 (ACH), $200 (Wire)
-  alt: ACH limitado a $6.000 por dia
-  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+  text: $0 (ACH), $15 (Wire)
+  source: https://ajuda.inter.co/global-account/qual-a-diferenca-entre-a-transferencia-wire-e-a-transferencia-ach/
 saque_eua:
-  text: $0 (ACH), $200 (Wire)
-  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+  text: $0 (ACH), $15 (Wire)
+  source: https://ajuda.inter.co/global-account/como-faco-uma-transferencia-wire-para-outros-bancos-no-exterior/
 spread_brasil:
   text: 0,99% a 1,5%
   alt: 1,5% para clientes Digital e One, 1,25% para clientes Black (R$250.000 em patrimônio no banco) e 0,99% para clientes WIN (R$1 milhão em patrimônio no banco)
@@ -34,14 +33,15 @@ inatividade:
   source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
 sipc:
   text: Sim
-  source: https://www.sipc.org/list-of-members/
+  source: https://www.sipc.org/list-of-members
 seguro: Não
 telefone:
   text: Sim
   source: https://inter.co/canais-de-atendimento/
 email:
-  text: Não
-  source: https://inter.co/canais-de-atendimento/
+  text: Sim
+  subtext: CS.Securities@inter.co, específico da corretora nos EUA
+  source: https://inter.co/en/us/securities/
 chat_humano:
   text: Sim
   source: https://inter.co/canais-de-atendimento/
@@ -56,17 +56,19 @@ eua_acoes:
   text: Sim
   source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
 eua_outros:
-  text: Não
-  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+  text: Sim
+  subtext: renda fixa (Treasuries, Bonds, CDs, Time Deposit); sem opções nem futuros
+  source: https://static.bancointer.com.br/site/inter-co-securities/1fc1cfd3beea49c1b21df0ff92e3f055_resumo-do-relacionamento-com-o-cliente-crs.pdf
 intl_acoes:
-  text: Não
-  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+  text: Sim
+  subtext: UCITS ETFs listados fora dos EUA, sujeito a critérios de elegibilidade
+  source: https://static.bancointer.com.br/site/inter-co-securities/e5c0be23f2c64c3b83776a4e423ea257_customer-agreement-arg.pdf
 intl_outros:
   text: Não
   source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
 crypto:
   text: Sim
-  alt: Negociação de Criptoativos é feita através do Banco Inter, o braço brasileiro. Não é possível negociar criptoativos diretamente pela conta internacional. É cobrado spread variável conforme o ativo de maneira não transparente.
+  alt: "Negociação de Criptoativos é feita através do Banco Inter, o braço brasileiro. Não é possível negociar criptoativos diretamente pela conta internacional. Corretagem progressiva por volume em 30 dias: até R$99 = 1,0%; até R$1.000 = 0,9%; até R$5.000 = 0,8%; acima = 0,6%; clientes Win = 0,4%. Mais spread de até 1% por operação."
   source: https://inter.co/pra-voce/investimentos/criptomoedas/
 fracoes:
   text: Sim
@@ -74,13 +76,17 @@ fracoes:
 ach_pull: Não
 cartao_debito_fisico:
   text: Sim (Mastercard)
-  subtext: gratuito com $50 em conta
+  subtext: gratuito; exige $10 de saldo para solicitar
   source: https://www.inter.co/pra-voce/global-account/
 cartao_debito_virtual:
   text: Sim
   subtext: gratuito
   source: https://www.inter.co/pra-voce/global-account/
-cartao_credito_fisico: Não
+cartao_credito_fisico:
+  text: Sim (Mastercard)
+  subtext: fatura em dólar, paga com o saldo da Global Account
+  alt: Emitido pela filial do Banco Inter nas Ilhas Cayman. Disponibilidade sujeita a segmento e análise de crédito.
+  source: https://inter.co/pra-voce/global-account/cartao-de-credito-em-dolar/
 residentes_fiscais:
   text: Só Brasileiros
   source: https://www.inter.co/pra-voce/global-account/
@@ -90,7 +96,8 @@ relatorio_irpf_brasil:
 joint:
   text: Não
 margin:
-  text: Não
+  text: Sim
+  source: https://static.bancointer.com.br/site/inter-co-securities/1fc1cfd3beea49c1b21df0ff92e3f055_resumo-do-relacionamento-com-o-cliente-crs.pdf
 offshore:
   text: Não
 conta_bancaria:
@@ -104,14 +111,17 @@ ano_fundacao:
 sede:
   text: Belo Horizonte, MG, Brasil
 funcionarios:
-  text: "3.000"
+  text: "4.000"
+  subtext: 2T26
   source: https://www.linkedin.com/company/inter/people/
 aum:
-  text: "?"
+  text: R$ 180 bilhões
+  subtext: dez/2025; AuC do grupo Inter, não só da corretora internacional
+  source: https://www.sec.gov/Archives/edgar/data/1864163/000207097926000185/intr-20251231.htm
 clientes:
-  text: 30 milhões
-  subtext: 2023; total do banco Inter, não só da corretora internacional
-  source: https://blog.inter.co/muitos-motivos-para-comemorar-inter-alcanca-30-milhoes-de-clientes/
+  text: 45,3 milhões
+  subtext: 2T26; total do banco Inter, não só da corretora internacional
+  source: https://investors.inter.co/en/
 observacoes:
 - text: Usa a plataforma da Apex.
 

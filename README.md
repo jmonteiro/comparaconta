@@ -23,8 +23,8 @@ Crie `pages/corretoras_exterior/<slug>.yml` com `nome`, `posicao` e os campos
 desejados. O nome do arquivo vira o identificador da coluna (usado para
 mostrar/esconder a coluna no navegador), então prefira algo curto e estável.
 
-Ao adicionar uma corretora, acrescente também **uma linha** ao bloco de destaque
-de coluna em `pages/stylesheets/application.css.scss` — o seletor precisa de uma
+Ao adicionar ou remover uma corretora, ajuste também o bloco de destaque de
+coluna em `pages/stylesheets/application.css.scss`: o seletor precisa de uma
 regra por coluna, e o arquivo explica o porquê.
 
 ### Adicionar um critério

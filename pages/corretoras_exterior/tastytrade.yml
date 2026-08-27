@@ -60,6 +60,7 @@ crypto:
   source: https://tastytrade.com/crypto/
 fracoes:
   text: Sim
+  subtext: $0,10 de clearing por transação
   source: https://support.tastytrade.com/support/s/solutions/articles/43000657855
 ach_pull:
   text: Sim
@@ -76,7 +77,7 @@ joint:
   source: https://tastytrade.com/accounts/
 margin:
   text: 11%
-  alt: Progressiva de 11% (até $25.000) a 8% (acima de $1 milhão), valores para 11/2024.
+  alt: Progressiva de 11% (até $25.000) a 8% (acima de $1 milhão). Base rate de 10% desde 01/01/2025.
   source: https://tastytrade.com/commissions-and-fees/
 offshore:
   text: Sim
@@ -91,14 +92,15 @@ funcionarios:
   text: "200"
   source: https://www.linkedin.com/company/tastytrade/
 aum:
-  text: $4,26 bilhões
-  alt: Da IG Group, holding da tastytrade, em 2023.
-  source: https://pres.iggroup.com/ig060/files/fy23-results-statement.pdf
+  text: $7,1 bilhões
+  subtext: dez/2025, patrimônio de clientes só da tastytrade
+  alt: Divulgado pela IG Group, holding da tastytrade. Exclui a tastyFX.
+  source: https://www.iggroup.com/~/media/Files/I/IG-Group/documents/investors/financial-results/results-reports-and-presentations/2026/igg-cy25-results-presentation.pdf
 clientes:
-  text: "358.000"
-  subtext: 2023
-  alt: Da IG Group, holding da tastytrade.
-  source: https://pres.iggroup.com/ig060/files/fy23-results-statement.pdf
+  text: 266,7 mil
+  subtext: jun/2026, contas com saldo da divisão americana da IG, inclui a tastyFX
+  alt: A IG Group não divulga o total de clientes só da tastytrade. A medida mais próxima e exclusiva da tastytrade é a de clientes ativos médios mensais, 93,9 mil no segundo semestre de 2025.
+  source: https://www.iggroup.com/~/media/Files/I/IG-Group/documents/investors/financial-results/results-reports-and-presentations/2026/h1-2026-results-presentation.pdf
 observacoes:
 - text: Adquirida pela corretora britânica IG Group em 2021 por $1 bilhão.
 

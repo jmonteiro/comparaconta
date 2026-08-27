@@ -23,15 +23,14 @@ saque_eua:
   source: https://intercom.help/helpvest/en/articles/6139642-does-vest-charge-fees
 spread_brasil:
   text: 1,85%
-  subtext: taxa em PIX para depósito e saque
-  alt: através da FacilitaPay Pagamentos S/A
+  subtext: taxa em PIX para depósito e saque; via stablecoin 1,4% e sem IOF
+  alt: PIX através da FacilitaPay Pagamentos S/A; stablecoin através da Avenia (BRLA Digital), podendo cair a 0,7% conforme o valor
   source: https://storage.googleapis.com/northbound-legal-documents/FeeSchedule_V.02_17_03_2024.pdf
 acats:
   text: $65
   source: https://storage.googleapis.com/northbound-legal-documents/FeeSchedule_V.02_17_03_2024.pdf
 inatividade:
-  text: $5/trimestre
-  subtext: se não houver depósito em conta no trimestre
+  text: $0
   source: https://storage.googleapis.com/northbound-legal-documents/FeeSchedule_V.02_17_03_2024.pdf
 sipc:
   text: Sim
@@ -45,10 +44,13 @@ email:
   text: Sim
   source: https://intercom.help/helpvest/pt-BR
 chat_humano:
-  text: Não
-  source: https://intercom.help/helpvest/pt-BR
+  text: Sim
+  subtext: atendimento humano em cerca de 5 minutos
+  source: https://www.vest.investments/pt/
 horarios:
-  text: "?"
+  text: horário comercial de Nova York
+  alt: 09:00 as 17:00 de segunda a sexta-feira, horário do Leste dos EUA (ET)
+  source: https://intercom.help/helpvest/pt-BR/articles/8665444-fale-conosco
 idiomas:
   text: Português, Espanhol, Inglês
   source: https://intercom.help/helpvest/pt-BR
@@ -71,14 +73,18 @@ ach_pull:
 cartao_debito_fisico:
   text: Não
 cartao_debito_virtual:
-  text: Não
+  text: Sim
+  subtext: sem taxa de emissão nem anuidade
+  source: https://www.vest.investments/pt/
 cartao_credito_fisico:
   text: Não
 residentes_fiscais:
   text: 130+ países, incluindo o Brasil
-  source: https://vest.investments/en/about-us
+  source: https://www.vest.investments/pt/
 relatorio_irpf_brasil:
-  text: Não
+  text: Sim
+  subtext: relatório anual disponível no app a partir de fevereiro
+  source: https://intercom.help/helpvest/pt-BR/articles/9389202-faqs-sobre-documentacao-e-impostos
 joint:
   text: Não
 margin:
@@ -90,14 +96,20 @@ conta_bancaria:
 conta_remunerada:
   text: Não
 ano_fundacao: 2021
-sede: Austin, Texas, EUA
+sede:
+  text: Miami, FL, EUA
+  alt: A Northbound Securities informa à SEC que opera a partir de um único escritório em Miami. O endereço registrado na FINRA é em Delray Beach, também na Flórida.
+  source: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001859187
 funcionarios:
   text: "50"
   source: https://www.linkedin.com/company/vestapp/
 aum:
-  text: "?"
+  text: n/d
+  alt: A Vest não divulga patrimônio de clientes. Como é introducing broker, a custódia fica na clearing e o valor não aparece nem no balanço da Northbound Securities na SEC.
 clientes:
-  text: "?"
+  text: n/d
+  alt: A Vest não divulga número de clientes. O site cita apenas investidores de mais de 130 países.
+  source: https://www.vest.investments/pt/
 observacoes:
 - text: Subsidiária da Northbound Securities LLC.
 - text: Antiga Sproutify e STAKE.

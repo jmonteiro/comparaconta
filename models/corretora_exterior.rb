@@ -1,6 +1,7 @@
 class CorretoraExterior < Sitepress::Model
   collection glob: "corretoras_exterior/*.yml"
   data :nome,
+    :posicao,
     :link,
     :deposito_min_abertura,
     :abertura,
@@ -48,5 +49,12 @@ class CorretoraExterior < Sitepress::Model
       .glob("corretoras_exterior/*.yml")
       .sort_by { |record| record.data.dig("posicao") || Float::INFINITY }
       .map { |record| new record }
+  end
+
+  # Stable identifier derived from the YAML filename (ib.yml => "ib"). Used to
+  # key the per-broker column in the comparison table so JavaScript can show,
+  # hide and highlight a whole column.
+  def slug
+    File.basename(request_path, ".*")
   end
 end

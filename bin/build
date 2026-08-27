@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-rm -rf ./build ./assets/stylesheets/build.css
+rm -rf ./build ./pages/stylesheets/build.css
 
 npm install
 npx tailwindcss -i ./pages/stylesheets/application.css.scss -o ./pages/stylesheets/build.css

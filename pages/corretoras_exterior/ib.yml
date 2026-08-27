@@ -87,9 +87,10 @@ cartao_debito_fisico:
   alt: Originalmente sim, mas só disponível para residentes EUA e CA
 cartao_debito_virtual: Não
 cartao_credito_fisico:
-  text: Sim
-  alt: American Express americano sem limite, necessita de no mínimo $50.000 patrimônio líquido), anuidade entre $150 e $795 dependendo do cartão escolhido
-  source: https://www.americanexpress.com/en-idc/acq/landing/index.html?bank=1591
+  text: Sim (Karta Visa Infinite)
+  subtext: anuidade de $300
+  alt: Exige no mínimo $50.000 em ativos e $25.000 sacáveis na conta da IBKR. A fatura mensal é debitada automaticamente do saldo em dinheiro da conta.
+  source: https://www.interactivebrokers.com/en/accounts/karta-visa-infinite.php
 residentes_fiscais:
   text: 200+ países e territórios, incluindo Brasil
   alt: Oferece liberdade de se mudar entre diferentes países sem precisar liquidar ativos e fechar contas.

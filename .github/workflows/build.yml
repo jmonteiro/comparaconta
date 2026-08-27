@@ -1,0 +1,37 @@
+name: Build
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+# A new push to a pull request makes the run in progress irrelevant.
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        env:
+          BUNDLE_WITHOUT: "test:development"
+        with:
+          bundler-cache: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+
+      - run: npm install
+
+      # `sitepress compile --fail-on-error` is the only gate this project has;
+      # without this workflow it never ran before a merge.
+      - name: Build
+        env:
+          BUNDLE_WITHOUT: "test:development"
+        run: bin/build

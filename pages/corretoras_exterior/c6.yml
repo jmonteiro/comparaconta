@@ -9,7 +9,7 @@ deposito_min_abertura:
   source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
 abertura:
   text: $10
-  alt: taxa é reembolsada se realizar câmbio de $100 ou €100 até o final do mês seguinte à abertura. Taxa é também isenta se cliente tiver investido mais de R$20 mil em CDBs.
+  alt: "Abertura zero para quem tem cartão C6 Black, Carbon ou Graphene; para quem investe a partir de R$20 mil em CDBs pelo app; ou para quem fizer câmbio de no mínimo $100 ou €100 até o último dia do mês seguinte à abertura, com estorno em até 15 dias. PJ/MEI: $15."
   source: https://www.c6bank.com.br/conta-internacional-c6-conta-global/
 corretagem_eua:
   text: 3 ordens grátis/mês, depois $0,25/ação

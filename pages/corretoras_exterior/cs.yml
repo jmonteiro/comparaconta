@@ -18,7 +18,7 @@ corretagem_eua:
 corretagem_lse:
   text: 0,75% da ordem
   subtext: mín $100, só por telefone
-  alt: Oferece ETFs selecionados de fora dos EUA para não-residentes americanos, com compra somente via ligação telefônica diretamente na mesa de operações da corretora. Não é possível comprar nem vender estes ativos online (no site ou app).
+  alt: O percentual acima vale para ações estrangeiras. ETFs de fora dos EUA passaram a ser cobrados a $50 por ordem assistida, sujeitos a elegibilidade por país de residência. Compra somente via ligação telefônica para a mesa de operações; não é possível operar estes ativos online.
   source: https://www.schwab.com/legal/schwab-pricing-guide-for-individual-investors
 deposito_eua:
   text: $0
@@ -87,8 +87,8 @@ joint:
   text: Sim
   source: https://international.schwab.com/open-account-intro/open-account?country=BR&branchCode=HC#panel--text-4521
 margin:
-  text: 12,825%
-  alt: Progressiva de 12,825% (até $25.000) a 11,075% (acima de $500.000), valores para 11/2024.
+  text: 11,825%
+  alt: Progressiva de 11,825% (até $25.000) a 10,075% (de $250.000 a $499.999). Acima de $500.000, sob consulta. Base rate de 10,00% desde 12/12/2025.
   source: https://international.schwab.com/investment-products/margin-loans
 offshore:
   text: Sim
@@ -105,12 +105,13 @@ funcionarios:
   subtext: 2T26
   source: https://content.schwab.com/web/retail/public/about-schwab/schwab_q2_2026_earnings_release.pdf
 aum:
-  text: $9,12 trilhões
-  source: https://international.schwab.com/account-protection
+  text: $13,08 trilhões
+  subtext: 2T26
+  source: https://content.schwab.com/web/retail/public/about-schwab/schwab_q2_2026_earnings_release.pdf
 clientes:
-  text: 35,3 milhões
-  subtext: 2024
-  source: https://international.schwab.com/account-protection
+  text: 39,8 milhões
+  subtext: 2T26, contas de corretagem ativas
+  source: https://content.schwab.com/web/retail/public/about-schwab/schwab_q2_2026_earnings_release.pdf
 observacoes:
 - text: Fundida com a TD Ameritrade em 2020.
 

@@ -14,16 +14,17 @@ abertura:
 corretagem_eua:
   text: "$2,50 a $10,00"
   subtext: "para ordem até $1.000: $2,50; até $2.000: $5; até $3.000: $7,50; acima: $10"
-  alt: "acima de $20k na carteira tem isenção de uma ordem ao mês"
-  source: https://avenue.us/bolsa/
+  alt: "isenção de até 10 corretagens no mês para Ações e ETFs, liberadas no primeiro dia útil do mês com base na movimentação e custódia do mês anterior. UCITS ETFs não entram no benefício."
+  source: https://avenue.us/custos/
 corretagem_lse:
   text: 0,25%
   subtext: mínimo $5 por ordem, via UCITS ETFs negociados na bolsa de Londres
   source: https://avenue.us/custos/
 deposito_eua:
-  text: $8 (ACH), $14 (Wire internacional)
+  text: $8 (Wire doméstico EUA), $14 (Wire internacional)
+  subtext: recebimento de wire doméstico na conta corrente internacional é gratuito
   alt: realizar depósito nos EUA desabilita o relatório de IR do ano
-  source: https://avenue.us/duvidas/custos/
+  source: https://avenue.us/custos/
 saque_eua:
   text: $25 (doméstico EUA), $45 (internacional)
   alt: realizar saque nos EUA desabilita o relatório de IR do ano
@@ -43,7 +44,7 @@ inatividade:
   source: https://avenue.us/custos/
 sipc:
   text: Sim
-  source: https://www.sipc.org/list-of-members/
+  source: https://www.sipc.org/list-of-members
 seguro: Não
 telefone:
   text: Sim

@@ -20,7 +20,9 @@ deposito_eua:
   text: Não permitido
   source: https://atendimento.xpi.com.br/artigo/3323-posso-receber-dinheiro-na-minha-conta-global-xp-via-wire-transfer
 saque_eua:
-  text: Não permitido
+  text: Permitido (ACH/Wire)
+  subtext: taxa não divulgada, consultar no app
+  alt: A XP mantém dois artigos vivos que se contradizem, um afirmando que a transferência para outros bancos é possível e outro que Wire ainda não está disponível. A leitura mais consistente é que a saída via ACH funciona e o recebimento via Wire não.
   source: https://atendimento.xpi.com.br/artigo/3335-posso-realizar-transferencias-via-ach-ou-wire-de-minha-conta-global-xp-para-outros-bancos
 spread_brasil:
   text: 1,87% a 2,25%
@@ -83,7 +85,7 @@ conta_bancaria:
   subtext: Community Federal Savings Bank
   source: https://atendimento.xpi.com.br/artigo/3337-por-que-estou-recebendo-notificacoes-de-e-mail-do-community-federal-savings-bank-cfsb
 conta_remunerada: Não
-ano_fundacao: 2001 (Brasil), 2021 (operação nos EUA)
+ano_fundacao: 2001 (Brasil), 2010 (XP Investments US), 2022 (plataforma internacional de varejo)
 sede: São Paulo, SP, Brasil
 funcionarios:
   text: "8.069"
@@ -93,9 +95,9 @@ aum:
   subtext: 2T26; total do grupo XP, não só da corretora internacional
   source: https://www.sec.gov/Archives/edgar/data/1787425/000095010326012481/dp251884_6k-ex9901.htm
 clientes:
-  text: 1,458 milhão
-  subtext: 2023
-  source: https://trademap.com.br/agencia/mercados/btg-pactual-bpac11-ultrapassa-xp-xpbr31-em-numero-de-investidores-ativos-na-largada-de-2023
+  text: 4,772 milhões
+  subtext: 2T26, clientes ativos do grupo XP, não só da corretora internacional
+  source: https://www.sec.gov/Archives/edgar/data/1787425/000095010326012481/dp251884_6k-ex9901.htm
 
 # Finish these files with a --- (due to Frontmatter)
 ---

@@ -18,7 +18,7 @@ abertura:
 corretagem_eua:
   text: $1 a $7,50
   alt: "O BTG se reserva o direito de cobrar valores menores que os da tabela. Relatos de clientes indicam que a corretagem varia conforme o escritório parceiro, com valores abaixo dos publicados, mas isso não é confirmado em fonte oficial."
-  subtext: "para ordem até $100: $1; até $1.000: $2,50; até $2.000: $5; acima: $7,50"
+  subtext: "para ordem até $100: $1; até $1.000: $2,50; até $2.000: $5; acima: $7,50. Ordem mínima de $20"
   source: https://www.btgpactual.us/pt/fee-schedule
 corretagem_lse: n/d
 deposito_eua:
@@ -72,7 +72,7 @@ intl_outros:
   text: Não
 crypto:
   text: Sim
-  alt: Negociação de Criptoativos é feita através do BTG Pactual Investments, o braço brasileiro. Não é possível negociar criptoativos diretamente pela conta internacional. É cobrado 0,5% de corretagem.
+  alt: Negociação de Criptoativos é feita através do BTG Pactual Investments, o braço brasileiro. Não é possível negociar criptoativos diretamente pela conta internacional. É cobrado 1% de corretagem.
   source: https://investimentos.btgpactual.com/custos
 fracoes:
   text: Sim
@@ -80,7 +80,8 @@ fracoes:
 ach_pull: Não
 cartao_debito_fisico:
   text: Sim
-  source: https://banking.btgpactual.com/conta-internacional
+  subtext: $10 de envio
+  source: https://www.btgpactual.us/pt/fee-schedule
 cartao_debito_virtual:
   text: Sim
   source: https://banking.btgpactual.com/conta-internacional
@@ -90,6 +91,8 @@ residentes_fiscais:
   source: https://www.btgpactual.us/pt/faq
 relatorio_irpf_brasil:
   text: Não
+  alt: O BTG não emite relatório próprio, mas oferece cálculo de imposto sobre investimentos no exterior integrado ao app, através de parceria com a Velotax, contratada de forma independente.
+  source: https://banking.btgpactual.com/conta-corrente/conta-internacional
 joint:
   text: Não
 margin:
@@ -112,9 +115,8 @@ aum:
   text: $30,1 bilhões
   source: https://advisorsearch.org/rias/btg-pactual-asset-management-us-152538
 clientes:
-  text: 1,642 milhão
-  subtext: 2023
-  source: https://trademap.com.br/agencia/mercados/btg-pactual-bpac11-ultrapassa-xp-xpbr31-em-numero-de-investidores-ativos-na-largada-de-2023
+  text: n/d
+  alt: A última referência encontrada era de 1,642 milhão de investidores ativos em 2023, mas a matéria que sustentava esse número saiu do ar e o BTG não publica um total atualizado.
 observacoes:
 - text: Usa a plataforma da DriveWealth, e transferência ACATS entre plataformas DriveWealth são gratuitas.
 

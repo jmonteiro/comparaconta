@@ -66,12 +66,12 @@ eua_outros:
   source: https://www.interactivebrokers.com/en/trading/products-exchanges.php
 intl_acoes:
   text: Sim
-  subtext: 150+ mercados em 34+ países em 26+ moedas
-  source: https://www.interactivebrokers.com/en/trading/products-exchanges.php
+  subtext: 170+ mercados em 29 moedas
+  source: https://www.interactivebrokers.com/en/general/about/ibkr-fact-sheet.php
 intl_outros:
   text: Sim
-  subtext: 150+ mercados em 34+ países em 26+ moedas
-  source: https://www.interactivebrokers.com/en/trading/products-exchanges.php
+  subtext: 170+ mercados em 29 moedas
+  source: https://www.interactivebrokers.com/en/general/about/ibkr-fact-sheet.php
 crypto:
   text: Não
   alt: depende de aprovação da Paxos, responsável por criptoativos na corretora, que não aprova tem aprovado para Brasileiros. Apenas uma parte pequena do portfólio na IB pode ser alocada em criptoativos.

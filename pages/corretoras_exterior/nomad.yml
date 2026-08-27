@@ -23,7 +23,7 @@ saque_eua:
   source: https://benomad.zendesk.com/hc/pt-br/articles/360052871234-Tabela-Completa-Tarifas-e-limites
 spread_brasil:
   text: 2%
-  subtext: queda progressiva p/ 1% após $20.000 em conversões
+  subtext: "cai por nível do Nomad Pass: 2,0%, 1,9%, 1,7%, 1,4% e 1,0% acima de 20 mil pontos"
   source: https://benomad.zendesk.com/hc/pt-br/articles/360052871234-Tabela-Completa-Tarifas-e-limites
 acats:
   text: entrada $0, saída $75
@@ -60,8 +60,14 @@ eua_outros:
   subtext: renda fixa (Treasuries e bonds); sem opções nem futuros
   source: https://nis.nomadglobal.com/en/fees
 intl_acoes: Não
-intl_outros: Não
-crypto: Não
+intl_outros:
+  text: Sim
+  subtext: renda fixa, títulos de governos e empresas brasileiras e latino-americanas
+  source: https://nis.nomadglobal.com/en/fees
+crypto:
+  text: Sim
+  subtext: oferecido pela Global DTVM, integrado ao app da Nomad
+  source: https://benomad.zendesk.com/hc/pt-br/articles/40739720999831-O-que-é-o-produto-de-cripto-da-Nomad
 fracoes:
   text: Sim
   source: https://benomad.zendesk.com/hc/pt-br/articles/5967909974167-Preciso-comprar-um-ativo-inteiro-Ou-pode-ser-uma-fração-de-ativo

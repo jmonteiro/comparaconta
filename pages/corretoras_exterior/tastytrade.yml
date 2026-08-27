@@ -77,7 +77,7 @@ joint:
   source: https://tastytrade.com/accounts/
 margin:
   text: 11%
-  alt: Progressiva de 11% (até $25.000) a 8% (acima de $1 milhão), valores para 11/2024.
+  alt: Progressiva de 11% (até $25.000) a 8% (acima de $1 milhão). Base rate de 10% desde 01/01/2025.
   source: https://tastytrade.com/commissions-and-fees/
 offshore:
   text: Sim
@@ -92,14 +92,11 @@ funcionarios:
   text: "200"
   source: https://www.linkedin.com/company/tastytrade/
 aum:
-  text: $4,26 bilhões
-  alt: Da IG Group, holding da tastytrade, em 2023.
-  source: https://pres.iggroup.com/ig060/files/fy23-results-statement.pdf
+  text: n/d
+  alt: A IG Group, holding da tastytrade, publica apenas o total do grupo, que inclui IG, Freetrade e Independent Reserve. Não há número divulgado só da tastytrade.
 clientes:
-  text: "358.000"
-  subtext: 2023
-  alt: Da IG Group, holding da tastytrade.
-  source: https://pres.iggroup.com/ig060/files/fy23-results-statement.pdf
+  text: n/d
+  alt: A IG Group divulga apenas clientes ativos por segmento no semestre, não o total de clientes da tastytrade.
 observacoes:
 - text: Adquirida pela corretora britânica IG Group em 2021 por $1 bilhão.
 

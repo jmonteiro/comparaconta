@@ -39,8 +39,9 @@ telefone:
   text: Sim
   source: https://inter.co/canais-de-atendimento/
 email:
-  text: Não
-  source: https://inter.co/canais-de-atendimento/
+  text: Sim
+  subtext: CS.Securities@inter.co, específico da corretora nos EUA
+  source: https://inter.co/en/us/securities/
 chat_humano:
   text: Sim
   source: https://inter.co/canais-de-atendimento/
@@ -59,14 +60,15 @@ eua_outros:
   subtext: renda fixa (Treasuries, Bonds, CDs, Time Deposit); sem opções nem futuros
   source: https://static.bancointer.com.br/site/inter-co-securities/1fc1cfd3beea49c1b21df0ff92e3f055_resumo-do-relacionamento-com-o-cliente-crs.pdf
 intl_acoes:
-  text: Não
-  source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
+  text: Sim
+  subtext: UCITS ETFs listados fora dos EUA, sujeito a critérios de elegibilidade
+  source: https://static.bancointer.com.br/site/inter-co-securities/e5c0be23f2c64c3b83776a4e423ea257_customer-agreement-arg.pdf
 intl_outros:
   text: Não
   source: https://inter.co/pra-voce/investimentos/plataforma-global-investimentos/
 crypto:
   text: Sim
-  alt: Negociação de Criptoativos é feita através do Banco Inter, o braço brasileiro. Não é possível negociar criptoativos diretamente pela conta internacional. É cobrado spread variável conforme o ativo de maneira não transparente.
+  alt: "Negociação de Criptoativos é feita através do Banco Inter, o braço brasileiro. Não é possível negociar criptoativos diretamente pela conta internacional. Corretagem progressiva por volume em 30 dias: até R$99 = 1,0%; até R$1.000 = 0,9%; até R$5.000 = 0,8%; acima = 0,6%; clientes Win = 0,4%. Mais spread de até 1% por operação."
   source: https://inter.co/pra-voce/investimentos/criptomoedas/
 fracoes:
   text: Sim
@@ -74,13 +76,17 @@ fracoes:
 ach_pull: Não
 cartao_debito_fisico:
   text: Sim (Mastercard)
-  subtext: gratuito com $50 em conta
+  subtext: gratuito; exige $10 de saldo para solicitar
   source: https://www.inter.co/pra-voce/global-account/
 cartao_debito_virtual:
   text: Sim
   subtext: gratuito
   source: https://www.inter.co/pra-voce/global-account/
-cartao_credito_fisico: Não
+cartao_credito_fisico:
+  text: Sim (Mastercard)
+  subtext: fatura em dólar, paga com o saldo da Global Account
+  alt: Emitido pela filial do Banco Inter nas Ilhas Cayman. Disponibilidade sujeita a segmento e análise de crédito.
+  source: https://inter.co/pra-voce/global-account/cartao-de-credito-em-dolar/
 residentes_fiscais:
   text: Só Brasileiros
   source: https://www.inter.co/pra-voce/global-account/

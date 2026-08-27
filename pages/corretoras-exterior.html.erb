@@ -137,24 +137,39 @@ structure:
     <summary class="px-4 py-2 font-semibold cursor-pointer marker:text-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600">
       Aviso: esta tabela é informativa e colaborativa
     </summary>
-    <p class="px-4 pb-3 text-sm">
-      Esta tabela é apenas informativa. Não nos responsabilizamos por eventuais mudanças nas taxas e condições das corretoras.
-      Recomendamos que você verifique diretamente no site da corretora. Se qualquer informação estiver incompleta ou incorreta,
-      por favor, abra uma "<a href="https://github.com/jmonteiro/comparaconta/issues" rel="noopener noreferrer" target="_blank">Issue</a>" em
-      <a href="https://github.com/jmonteiro/comparaconta" rel="noopener noreferrer" target="_blank">jmonteiro/comparaconta</a>.
-    </p>
+    <div class="px-4 pb-3 space-y-2 text-sm">
+      <p>
+        Este site tem propósito educacional e comparativo, e não possui vínculo com nenhuma
+        das empresas citadas.
+      </p>
+      <p>
+        Os dados são mantidos de forma colaborativa e podem estar incompletos, incorretos ou
+        desatualizados. Taxas e condições mudam sem aviso prévio, então confirme sempre no site
+        da corretora antes de tomar qualquer decisão.
+      </p>
+      <p>
+        A linha "Código ou link de indicação" contém links de indicação, que podem gerar
+        benefício a quem mantém este site. Nenhuma outra linha da tabela é patrocinada, e a
+        ordem das corretoras não é paga.
+      </p>
+      <p>
+        Encontrou algo errado ou faltando? Abra uma
+        <a href="https://github.com/jmonteiro/comparaconta/issues" rel="noopener noreferrer" target="_blank">Issue</a>
+        em <a href="https://github.com/jmonteiro/comparaconta" rel="noopener noreferrer" target="_blank">jmonteiro/comparaconta</a>.
+      </p>
+    </div>
   </details>
 </div>
 
 <%# ------------------------------------------------------------------ toolbar %>
-<div class="flex flex-wrap items-center gap-2 px-4 py-2 shrink-0 print:hidden" data-tabela-toolbar>
-  <label class="js-only relative flex-1 min-w-[10rem] max-w-xs">
+<div class="js-only flex flex-wrap items-center gap-2 px-4 py-2 shrink-0 print:hidden" data-tabela-toolbar>
+  <label class="relative flex-1 min-w-[10rem] max-w-xs">
     <span class="sr-only">Filtrar critérios</span>
     <input type="search" id="filtro-criterios" placeholder="Filtrar critérios…" autocomplete="off"
            class="w-full py-1 pl-3 pr-8 text-sm bg-white border-gray-300 rounded-md shadow-sm dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100 focus:border-blue-500 focus:ring-blue-500" />
   </label>
 
-  <details class="js-only relative" data-corretoras-menu>
+  <details class="relative" data-corretoras-menu>
     <summary class="inline-flex items-center gap-1 px-3 py-1 text-sm bg-white border border-gray-300 rounded-md shadow-sm cursor-pointer select-none dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 marker:content-none [&::-webkit-details-marker]:hidden">
       Corretoras
       <span class="text-xs text-gray-500 dark:text-gray-400" data-contador-corretoras><%= corretoras.count %>/<%= corretoras.count %></span>
@@ -181,8 +196,10 @@ structure:
       <%= render "partials/icon", name: "chevron-down", classes: "w-3 h-3 fill-current" %>
     </summary>
     <nav class="absolute left-0 z-50 p-2 mt-1 bg-white border border-gray-200 rounded-md shadow-lg dark:bg-gray-900 dark:border-gray-700 w-60" aria-label="Seções da tabela">
-      <% structure.each_key do |section| %>
-        <% next unless section %>
+      <%# Sitepress::Data::Record delegates `keys` but has no `each_key`, and its
+          method_missing turns an unknown method into a data lookup that quietly
+          returns nil, so `each_key` silently rendered nothing at all. %>
+      <% structure.keys.compact.each do |section| %>
         <a href="#secao-<%= section.parameterize %>" class="block px-1 py-1 text-sm no-underline rounded text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"><%= section %></a>
       <% end %>
     </nav>

@@ -1,0 +1,178 @@
+---
+nome: Revolut
+posicao: 15
+link:
+  text: Revolut.com
+  url: https://www.revolut.com/pt-BR/
+deposito_min_abertura:
+  text: $0
+  subtext: ordem mínima de $1
+  source: https://www.revolut.com/pt-BR/legal/trading/
+abertura:
+  text: $0
+  subtext: plano Standard gratuito; planos pagos de R$9,99 a R$249,99 por mês
+  source: https://www.revolut.com/pt-BR/our-pricing-plans/
+corretagem_eua:
+  text: 1 a 10 ordens grátis/mês, depois 0,25% ou $1
+  subtext: "cota mensal por plano: Standard 1, Plus 3, Premium 5, Metal e Ultra 10; acima disso, o maior valor entre 0,25% da ordem e $1"
+  alt: A tabela cita o percentual de 0,25% apenas para Standard, Plus, Premium e Metal, sem informar qual se aplica ao Ultra. Aportes recorrentes em ETFs selecionados não pagam comissão. Não há taxa de custódia, mas taxas regulatórias dos EUA e de repasse de ADR são cobradas à parte.
+  source: https://www.revolut.com/pt-BR/legal/trading-fees-disclosure/
+corretagem_lse:
+  text: n/d
+  alt: A tabela de taxas não cita nenhuma bolsa fora dos EUA nem tarifa para o mercado de Londres.
+  source: https://www.revolut.com/pt-BR/legal/trading-fees-disclosure/
+deposito_eua:
+  text: n/d
+  alt: Não existe conta nem dados bancários nos EUA. Clientes registrados no Brasil recebem conta em reais, conta em euros com IBAN da Lituânia e dados SWIFT, sem ACH nem wire doméstico americano.
+  source: https://www.revolut.com/pt-BR/legal/localaccountdetails/
+saque_eua:
+  text: n/d
+  alt: Sem conta nos EUA não há saque doméstico americano. As saídas em moeda estrangeira saem por transferência internacional, com tarifa que varia conforme moeda e destino e é exibida no app antes de cada operação.
+  source: https://www.revolut.com/pt-BR/legal/standard-fees/
+spread_brasil:
+  text: 0% até a cota do plano, depois 1,4%
+  subtext: 1,4% de real para moeda estrangeira e 1,0% no sentido inverso
+  alt: "Cota mensal isenta por plano: R$1.000 no Standard, R$2.000 no Plus, R$4.000 no Premium, R$10.000 no Metal e R$20.000 no Ultra, somando as conversões nos dois sentidos. A cotação de real para dólar segue o Ebury Banco de Câmbio."
+  source: https://www.revolut.com/pt-BR/legal/fees/
+acats:
+  text: n/d
+  alt: A tabela de taxas não lista tarifa de transferência de custódia. Os termos mencionam a possibilidade de transferir para uma plataforma de terceiros, mas não descrevem procedimento nem preço. Frações de ações não podem ser transferidas. No encerramento, é preciso vender todas as posições em até 21 dias.
+  source: https://www.revolut.com/pt-BR/legal/trading/
+inatividade:
+  text: $0
+  alt: A Revolut pode encerrar a conta de investimentos com aviso imediato se por seis meses ou mais não houver atividade, instrumentos ou saldo.
+  source: https://www.revolut.com/pt-BR/legal/trading-fees-disclosure/
+sipc:
+  text: Não
+  subtext: nem SIPC, nem FGC, nem qualquer outro mecanismo de reembolso
+  alt: A corretora é a Revolut Securities Singapore, licenciada pela MAS de Singapura, e não é membro da SIPC. Os termos brasileiros afirmam que os investimentos não são cobertos por nenhum mecanismo de reembolso ou pelo Fundo Garantidor de Créditos.
+  source: https://www.revolut.com/pt-BR/legal/trading/
+seguro:
+  text: Não
+  alt: Não há apólice privada complementar. A declaração de risco da Revolut adverte que existe o risco de seus produtos de investimento não estarem protegidos caso o custodiante enfrente problemas de crédito ou venha a falir.
+  source: https://www.revolut.com/pt-BR/legal/trading-risk-disclosure/
+telefone:
+  text: Não
+  subtext: há SAC e Ouvidoria, mas a própria Revolut avisa que não conectam a um atendente
+  alt: A página de contato informa que não é possível falar com um atendente nem transferir a chamada por esses números. A linha serve para bloqueio de cartão, e o atendimento resolutivo acontece pelo chat do app.
+  source: https://www.revolut.com/pt-BR/contact-us/
+email:
+  text: Sim
+  subtext: support@revolut.com
+  source: https://www.revolut.com/pt-BR/legal/trading-fees-disclosure/
+chat_humano:
+  text: Sim
+  subtext: chat no app, canal principal de atendimento
+  source: https://www.revolut.com/pt-BR/contact-us/
+horarios:
+  text: 24x7
+  source: https://www.revolut.com/pt-BR/contact-us/
+idiomas:
+  text: Português
+  alt: O site, o app e os documentos legais estão em português, mas a plataforma de investimentos é fornecida por padrão em inglês. Os termos dizem que trocar o idioma é por conta e risco do cliente.
+  source: https://www.revolut.com/pt-BR/legal/trading/
+eua_acoes:
+  text: Sim
+  subtext: ações e ETFs listados nos EUA, incluindo ADRs; sem venda a descoberto
+  source: https://www.revolut.com/pt-BR/legal/trading/
+eua_outros:
+  text: Não
+  subtext: só ações e ETFs; sem opções, futuros ou renda fixa
+  source: https://www.revolut.com/pt-BR/legal/trading/
+intl_acoes:
+  text: Não
+  subtext: apenas ativos listados nas bolsas americanas
+  source: https://www.revolut.com/pt-BR/legal/trading-fees-disclosure/
+intl_outros:
+  text: Não
+  source: https://www.revolut.com/pt-BR/legal/trading/
+crypto:
+  text: Sim
+  subtext: fora da conta de investimentos, pela Revolut Brasil SPSAV
+  source: https://www.revolut.com/pt-BR/our-pricing-plans/
+fracoes:
+  text: Sim
+  subtext: ordem mínima de $1
+  alt: As frações não podem ser transferidas para outra plataforma e precisam ser vendidas ao encerrar a conta. A Revolut adverte que ações fracionadas não são negociadas em mercados regulamentados e não têm valor comercial fora da plataforma.
+  source: https://www.revolut.com/pt-BR/legal/trading/
+ach_pull:
+  text: Não
+  alt: Clientes registrados no Brasil não recebem dados de conta nos EUA, portanto não há ACH.
+  source: https://www.revolut.com/pt-BR/legal/localaccountdetails/
+cartao_debito_fisico:
+  text: Não
+  subtext: há cartão global multimoeda, mas não é de conta americana em dólar
+  alt: O cartão de débito global, da bandeira Visa, gasta a partir dos saldos em moeda estrangeira da conta Revolut e recusa transações em reais. É entregue no Brasil, mas não está ligado a uma conta bancária em dólar nos EUA nem à conta de investimentos.
+  source: https://help.revolut.com/pt-BR/help/cards/local-and-global-cards/question-brazil-which-card-to-use/
+cartao_debito_virtual:
+  text: Não
+  subtext: existe cartão virtual, mas em conta multimoeda, não em conta americana
+  source: https://www.revolut.com/pt-BR/legal/standard-fees/
+cartao_credito_fisico:
+  text: Não
+  alt: O cartão múltiplo junta crédito e débito, mas é crédito em reais concedido pela Revolut Sociedade de Crédito Direto, com fatura em reais. Não é cartão com fatura em dólar.
+  source: https://help.revolut.com/pt-BR/help/cards/local-and-global-cards/question-brazil-is-credit-card/
+residentes_fiscais:
+  text: Só Brasileiros
+  subtext: proibido para US Persons
+  source: https://www.revolut.com/pt-BR/legal/trading/
+relatorio_irpf_brasil:
+  text: Sim
+  subtext: informe de rendimentos anual
+  alt: Parte dos valores aparece na moeda original e precisa ser convertida pela cotação do último dia útil do ano. Não há documento público detalhando como a conta de investimentos aparece no informe.
+  source: https://help.revolut.com/pt-BR/help/profile-and-plan/managing-my-account/income-statement/
+joint:
+  text: Não
+  alt: A conta de investimentos nasce da conta pessoal e os termos exigem uso para benefício próprio. As contas de grupo servem para dividir despesas, não para titularidade compartilhada de ativos.
+  source: https://www.revolut.com/pt-BR/legal/trading/
+margin:
+  text: Não
+  alt: O serviço é apenas de execução e exige fundos disponíveis antes de cada ordem. Venda a descoberto também não é aceita.
+  source: https://www.revolut.com/pt-BR/legal/trading/
+offshore:
+  text: Não
+  source: https://www.revolut.com/pt-BR/legal/trading/
+conta_bancaria:
+  text: Não
+  subtext: conta de moeda eletrônica, não bancária
+  alt: A central de ajuda afirma que a Revolut não possui licença bancária. No Brasil, conta, Pix e crédito são da Revolut Sociedade de Crédito Direto, autorizada pelo Banco Central. Não há conta bancária americana em seu nome.
+  source: https://help.revolut.com/pt-BR/help/accounts/what-does-uk-banking-licence-with-restrictions-mean-to-my-account/is-revolut-considered-a-bank/
+conta_remunerada:
+  text: Não
+  subtext: há rendimento, mas só sobre saldo em reais
+  alt: A conta remunerada paga até 100% do CDI, ou até 120% nos planos Metal e Ultra, apenas sobre saldo em reais. Não há remuneração divulgada para o caixa em dólar da conta de investimentos.
+  source: https://www.revolut.com/pt-BR/our-pricing-plans/
+ano_fundacao:
+  text: 2015 (Reino Unido), 2021 (Brasil)
+  subtext: investimento em ações e ETFs dos EUA lançado em março de 2026
+  source: https://www.revolut.com/pt-BR/about/
+sede:
+  text: Londres, Reino Unido
+  alt: As entidades brasileiras ficam em São Paulo. A corretora que executa e custodia os investimentos, a Revolut Securities Singapore, fica em Singapura.
+  source: https://www.revolut.com/pt-BR/legal/trading-fees-disclosure/
+funcionarios:
+  text: "10.000+"
+  subtext: 2026; global
+  source: https://www.revolut.com/pt-BR/about/
+aum:
+  text: n/d
+  alt: A Revolut não divulga patrimônio sob custódia da plataforma de investimentos nem números do Brasil. O relatório anual de 2025 informa apenas saldos de clientes do grupo, que são depósitos e não custódia de valores mobiliários.
+  source: https://www.revolut.com/pt-BR/annual-report-2025/
+clientes:
+  text: 80 milhões
+  subtext: 2026; total global do grupo, não só do Brasil nem da corretora
+  source: https://www.revolut.com/pt-BR/about/
+observacoes:
+- text: Os ativos ficam em conta consolidada (omnibus), não em conta individual. Os termos dizem que os instrumentos serão registrados legalmente em nome da Revolut Securities e que seu interesse nos ativos pode não ser identificado por registros separados.
+  source: https://www.revolut.com/pt-BR/legal/trading/
+- text: Não há SIPC, FGC nem qualquer outro fundo de reembolso. Se a corretora terceirizada que guarda os ativos ficar insolvente e faltar ativo na conta consolidada, os termos dizem que você pode não receber integralmente sua participação e poderá compartilhar o déficit com outros credores.
+  source: https://www.revolut.com/pt-BR/legal/trading/
+- text: Quem custodia e executa é a Revolut Securities Singapore, regulada pela MAS de Singapura, que a própria Revolut declara não ter autorização da CVM. Quem responde no Brasil é a Ativa Investimentos, contratada sob o Parecer de Orientação CVM nº 33. Os documentos são regidos pela lei de Singapura.
+  source: https://www.revolut.com/pt-BR/legal/trading-fees-disclosure/
+- text: Serviço apenas de execução, sem alavancagem e sem venda a descoberto. Para encerrar a conta é preciso vender todas as posições em até 21 dias, e frações de ações não podem ser transferidas.
+  source: https://www.revolut.com/pt-BR/legal/trading/
+- text: "Reputação Ruim no Reclame Aqui: nota 5,3/10 entre fevereiro e julho de 2026, com 826 reclamações, 45,4% resolvidas e 40,3% de clientes que voltariam a fazer negócio."
+  source: https://www.reclameaqui.com.br/empresa/revolut/
+
+# Finish these files with a --- (due to Frontmatter)
+---

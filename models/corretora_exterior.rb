@@ -1,5 +1,4 @@
 class CorretoraExterior < Sitepress::Model
-  collection glob: "corretoras_exterior/*.yml"
   data :nome,
     :posicao,
     :link,

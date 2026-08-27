@@ -25,6 +25,7 @@ deposito_eua:
   source: https://international.schwab.com/brokerage-account
 saque_eua:
   text: $25
+  subtext: $15 se solicitado online
   source: https://www.schwab.com/legal/schwab-pricing-guide-for-individual-investors
 spread_brasil: n/d
 acats:
@@ -35,8 +36,8 @@ sipc:
   text: Sim
   source: https://international.schwab.com/account-protection
 seguro:
-  text: $600M
-  alt: Lloyd's of London cobre até $600M por cliente (incluindo $1,15M em dinheiro) adicional a proteção SIPC
+  text: $150M
+  alt: Cobertura combinada de SIPC e "excess SIPC" (Lloyd's of London e outras seguradoras de Londres) limitada a $150M por cliente, dos quais até $1,15M em dinheiro, dentro de um agregado de $600M para todos os clientes.
   source: https://international.schwab.com/account-protection
 telefone:
   text: Sim
@@ -100,8 +101,9 @@ sede:
   text: Westlake, Texas, EUA
   source: https://international.schwab.com
 funcionarios:
-  text: "33.000"
-  source: https://en.wikipedia.org/wiki/Charles_Schwab_Corporation
+  text: "33.700"
+  subtext: 2T26
+  source: https://content.schwab.com/web/retail/public/about-schwab/schwab_q2_2026_earnings_release.pdf
 aum:
   text: $9,12 trilhões
   source: https://international.schwab.com/account-protection

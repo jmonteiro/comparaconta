@@ -27,7 +27,7 @@ deposito_eua:
   alt: "Não há custo para nenhum tipo de depósito, e aceita integração direta com contas na Wise"
   source: https://www.interactivebrokers.com/en/support/fund-my-account.php
 saque_eua:
-  text: $0 na 1ª do mês
+  text: $0 nas 2 primeiras do mês
   subtext: depois $1 para ACH/SEPA, e $10 para Wire
   source: https://www.interactivebrokers.com/en/pricing/other-fees.php
 spread_brasil: n/d
@@ -52,8 +52,9 @@ chat_humano:
   text: Sim
   source: https://www.interactivebrokers.com/en/support/individuals.php
 horarios:
-  text: 24x7
-  source: https://www.interactivebrokers.com/en/support/individuals.php
+  text: 24x5
+  alt: Domingo 13:00 ET até sexta-feira 19:30 ET. Sem atendimento aos sábados.
+  source: https://www.interactivebrokers.com/en/support/customer-service.php
 idiomas:
   text: Português, Inglês, Espanhol
   source: https://www.interactivebrokers.com/en/support/individuals.php
@@ -98,17 +99,17 @@ joint:
   text: Sim
   source: https://www.interactivebrokers.com/en/accounts/account-guide.php
 margin:
-  text: 6,330%
-  alt: Progressiva de 6,330% (até $100.000) a 5,330% (acima de $200 milhões), valores para 11/2024.
-  source: https://www.interactivebrokers.co.uk/en/trading/margin-benchmarks.php
+  text: 5,130%
+  alt: Progressiva de 5,130% (até $100.000) a 4,130% (acima de $50 milhões), taxas IBKR Pro, valores para 08/2026.
+  source: https://www.interactivebrokers.com/en/trading/margin-rates.php
 offshore:
   text: Sim
   source: https://www.interactivebrokers.com/en/accounts/account-guide.php
 conta_bancaria:
   text: Não
 conta_remunerada:
-  text: 4,33%
-  subtext: Rende 4,33% ao ano no dólar em dinheiro acima de $10.000, para contas com mais de $100.000 de valor de mercado
+  text: 3,13%
+  subtext: Rende 3,13% ao ano no dólar em dinheiro acima de $10.000, para contas com mais de $100.000 de valor de mercado
   source: https://www.interactivebrokers.co.uk/en/accounts/fees/pricing-interest-rates.php
 ano_fundacao: 1978
 sede:
@@ -116,15 +117,16 @@ sede:
   alt: Escritórios nos EUA, Canada, Reino Unido, Irlanda, Suíça, Hungria, Índia, China (Hong Kong e Shanghai), Japão, Singapura, e Austrália.
   source: https://www.interactivebrokers.com/en/general/about/info-and-history.php
 funcionarios:
-  text: "3.000"
+  text: "3.260+"
   source: https://www.interactivebrokers.com/en/general/about/info-and-history.php
 aum:
-  text: $426 bilhões (2023)
-  source: https://investingintheweb.com/brokers/interactive-brokers-statistics/
+  text: $906,7 bilhões
+  subtext: julho/2026
+  source: https://www.interactivebrokers.com/mkt/getFileNew.php?file=latestMetricPR
 clientes:
-  text: 3,12 milhões
-  subtext: 2024
-  source: https://www.interactivebrokers.co.uk/en/home.php
+  text: 5,317 milhões
+  subtext: julho/2026
+  source: https://www.interactivebrokers.com/mkt/getFileNew.php?file=latestMetricPR
 observacoes:
 - text: Maior corretora em volume de transações diárias no mundo.
 referral:

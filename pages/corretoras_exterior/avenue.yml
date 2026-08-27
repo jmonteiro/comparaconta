@@ -16,7 +16,10 @@ corretagem_eua:
   subtext: "para ordem até $1.000: $2,50; até $2.000: $5; até $3.000: $7,50; acima: $10"
   alt: "acima de $20k na carteira tem isenção de uma ordem ao mês"
   source: https://avenue.us/bolsa/
-corretagem_lse: n/d
+corretagem_lse:
+  text: 0,25%
+  subtext: mínimo $2,50 por ordem, via UCITS ETFs negociados na bolsa de Londres
+  source: https://avenue.us/custos/
 deposito_eua:
   text: $8 (ACH), $14 (Wire internacional)
   alt: realizar depósito nos EUA desabilita o relatório de IR do ano
@@ -26,17 +29,18 @@ saque_eua:
   alt: realizar saque nos EUA desabilita o relatório de IR do ano
   source: https://avenue.us/duvidas/custos/
 spread_brasil:
-  text: até 2%
-  alt: Taxas de spread que variam de 0,5% a 1,5% nas operações de câmbio BRL > USD  para o dia seguinte (D+1) e 1,0% a 2,0% nas operações de câmbio instantâneo ou câmbio de volta (USD > BRL)
-  source: https://avenue.us/duvidas/custos/
+  text: até 2,5%
+  subtext: spread regressivo, quanto maior o valor menor a taxa
+  alt: BRL para USD de 1,95% a 0,50% na liquidação em D+1 e de 1,00% a 2,50% no câmbio instantâneo (D0). Câmbio fora do horário comercial tem spread maior.
+  source: https://avenue.us/custos/
 acats:
   text: $75
   source: https://avenue.us/?s=custódia&post_type=faq
 inatividade:
-  text: $0,50/mês
-  subtext: após 3 meses sem movimentação para contas até $500 de custódia
-  alt: não é cobrada se a conta estiver zerada (sem saldo), mesmo se inativa
-  source: https://avenue.us/?s=inatividade&post_type=faq
+  text: $2/mês
+  subtext: para patrimônio total abaixo de $2.000 e sem aportes há 3 meses ou mais
+  alt: não é cobrada se o patrimônio total em dólar for igual ou superior a $2.000, ou se houver aportes a cada três meses ou menos
+  source: https://avenue.us/custos/
 sipc:
   text: Sim
   source: https://www.sipc.org/list-of-members/
@@ -60,13 +64,18 @@ eua_acoes:
   # Ações, ETFs, REITs, ADRs, Opções
   source: https://avenue.us/bolsa/
 eua_outros:
-  text: Não
-  source: https://avenue.us/bolsa/
-intl_acoes: Não
+  text: Sim
+  subtext: Opções e renda fixa (Bonds e CDs); sem futuros
+  source: https://avenue.us/custos/
+intl_acoes:
+  text: Sim
+  subtext: UCITS ETFs ("ETFs irlandeses") na bolsa de Londres
+  source: https://avenue.us/ucits-etfs/
 intl_outros: Não
 crypto:
-  text: Não
-  source: https://avenue.us/atendimento/
+  text: Sim
+  subtext: somente USDC (stablecoin), comprado e vendido no app
+  source: https://avenue.us/usdc/
 fracoes:
   text: Sim
   source: https://avenue.us/?s=frações&post_type=faq
@@ -96,7 +105,7 @@ offshore:
   source: https://avenue.us/blog/offshore/
 conta_bancaria:
   text: Sim
-  subtext: Evolve Bank & Trust
+  subtext: Avenue Cash LLC, com Coastal Community Bank (FDIC)
   source: https://avenue.us/conta-internacional/
 conta_remunerada:
   text: Não

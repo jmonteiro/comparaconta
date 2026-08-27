@@ -6,14 +6,14 @@ link:
   url: https://www.xpi.com.br
 deposito_min_abertura:
   text: $0
-  subtext: precisa ter R$50.000 investidos na XP Investimentos
+  subtext: precisa ter R$10 mil de patrimônio na XP Investimentos
   source: https://atendimento.xpi.com.br/artigo/3314-quem-pode-ter-a-conta-global-xp
 abertura:
   text: $0
   source: https://atendimento.xpi.com.br/artigo/3314-quem-pode-ter-a-conta-global-xp
 corretagem_eua:
   text: $1 a $8,60
-  subtext: "para ordem até $100: $1; até $1.000: $1,50; até $2.000: $4; acima: $8,60"
+  subtext: "para ordem até $100: $1; até $1.000: $1,50; até $2.000: $4,30; acima: $8,60"
   source: https://atendimento.xpi.com.br/artigo/3308-quais-sao-os-custos-da-plataforma-de-investimento-global
 corretagem_lse: n/d
 deposito_eua:
@@ -31,7 +31,7 @@ acats:
 inatividade: $0
 sipc:
   text: Sim
-  source: https://www.sipc.org/list-of-members/
+  source: https://www.sipc.org/list-of-members
 seguro: Não
 telefone:
   text: Sim
@@ -50,15 +50,21 @@ eua_acoes:
   text: Sim
   # ações, bonds, tesouros, mutual funds
   source: https://atendimento.xpi.com.br/artigo/3308-quais-sao-os-custos-da-plataforma-de-investimento-global
-eua_outros: Não
-intl_acoes: Não
+eua_outros:
+  text: Sim
+  subtext: Bonds, Treasuries, CDs, notas estruturadas e fundos; sem opções nem futuros
+  source: https://atendimento.xpi.com.br/artigo/3308-quais-sao-os-custos-da-plataforma-de-investimento-global
+intl_acoes:
+  text: Sim
+  subtext: UCITS ETFs europeus, spread de 0,25% com mínimo de $5
+  source: https://atendimento.xpi.com.br/artigo/3308-quais-sao-os-custos-da-plataforma-de-investimento-global
 intl_outros: Não
 crypto: Não
 fracoes: Não
 ach_pull: Não
 cartao_debito_fisico:
-  text: Sim (Mastercard)
-  subtext: $8
+  text: Sim
+  subtext: gratuito por período promocional; entrega em até 10 dias
   source: https://atendimento.xpi.com.br/artigo/3319-qual-o-custo-e-prazo-de-envio-do-cartao-virtual-e-fisico
 cartao_debito_virtual:
   text: Sim
@@ -80,8 +86,12 @@ conta_remunerada: Não
 ano_fundacao: 2001 (Brasil), 2021 (operação nos EUA)
 sede: São Paulo, SP, Brasil
 funcionarios:
-  text: "3.000"
-aum: "?"
+  text: "8.069"
+  subtext: 2025; total do grupo XP, não só da corretora internacional
+aum:
+  text: R$ 1,535 trilhão
+  subtext: 2T26; total do grupo XP, não só da corretora internacional
+  source: https://www.sec.gov/Archives/edgar/data/1787425/000095010326012481/dp251884_6k-ex9901.htm
 clientes:
   text: 1,458 milhão
   subtext: 2023

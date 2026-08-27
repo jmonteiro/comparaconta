@@ -17,7 +17,7 @@ abertura:
 #   source: https://www.btgpactual.us/pt/faq
 corretagem_eua:
   text: $1 a $7,50
-  alt: "Conforme o escritório parceiro os custos de corretagem mudam. Exemplo com a AUVP: de US$20,01 até US$100 = US$1,00; até US$1.000 = US$1,25; até US$2.000 = US$2,50; acima de US$2.000 = US$3,75"
+  alt: "O BTG se reserva o direito de cobrar valores menores que os da tabela. Relatos de clientes indicam que a corretagem varia conforme o escritório parceiro, com valores abaixo dos publicados, mas isso não é confirmado em fonte oficial."
   subtext: "para ordem até $100: $1; até $1.000: $2,50; até $2.000: $5; acima: $7,50"
   source: https://www.btgpactual.us/pt/fee-schedule
 corretagem_lse: n/d
@@ -39,7 +39,7 @@ inatividade:
   source: https://www.btgpactual.us/pt/fee-schedule
 sipc:
   text: Sim
-  source: https://www.sipc.org/list-of-members/
+  source: https://www.sipc.org/list-of-members
 seguro: Não
 telefone:
   text: Sim
@@ -61,9 +61,13 @@ eua_acoes:
   text: Sim
   source: https://banking.btgpactual.com/conta-internacional
 eua_outros:
-  text: Não
+  text: Sim
+  subtext: renda fixa (bonds, treasuries); sem opções nem futuros
+  source: https://www.btgpactual.us/pt/fee-schedule
 intl_acoes:
-  text: Não
+  text: Sim
+  subtext: UCITS ETFs, 0,25% do volume com mínimo de $2,50
+  source: https://www.btgpactual.us/pt/fee-schedule
 intl_outros:
   text: Não
 crypto:
@@ -105,8 +109,8 @@ funcionarios:
   text: "6.000"
   source: https://www.prnewswire.com/news-releases/btg-pactual-launches-international-accounts-in-the-usa-301971744.html
 aum:
-  text: $27,8 bilhões
-  source: https://investor.com/rias/btg-pactual-asset-management-us-152538
+  text: $30,1 bilhões
+  source: https://advisorsearch.org/rias/btg-pactual-asset-management-us-152538
 clientes:
   text: 1,642 milhão
   subtext: 2023

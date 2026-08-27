@@ -60,6 +60,7 @@ crypto:
   source: https://tastytrade.com/crypto/
 fracoes:
   text: Sim
+  subtext: $0,10 de clearing por transação
   source: https://support.tastytrade.com/support/s/solutions/articles/43000657855
 ach_pull:
   text: Sim

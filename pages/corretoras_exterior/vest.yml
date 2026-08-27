@@ -30,8 +30,7 @@ acats:
   text: $65
   source: https://storage.googleapis.com/northbound-legal-documents/FeeSchedule_V.02_17_03_2024.pdf
 inatividade:
-  text: $5/trimestre
-  subtext: se não houver depósito em conta no trimestre
+  text: $0
   source: https://storage.googleapis.com/northbound-legal-documents/FeeSchedule_V.02_17_03_2024.pdf
 sipc:
   text: Sim
@@ -71,14 +70,18 @@ ach_pull:
 cartao_debito_fisico:
   text: Não
 cartao_debito_virtual:
-  text: Não
+  text: Sim
+  subtext: sem taxa de emissão nem anuidade
+  source: https://www.vest.investments/pt/
 cartao_credito_fisico:
   text: Não
 residentes_fiscais:
   text: 130+ países, incluindo o Brasil
   source: https://vest.investments/en/about-us
 relatorio_irpf_brasil:
-  text: Não
+  text: Sim
+  subtext: relatório anual disponível no app a partir de fevereiro
+  source: https://intercom.help/helpvest/pt-BR/articles/9389202-faqs-sobre-documentacao-e-impostos
 joint:
   text: Não
 margin:

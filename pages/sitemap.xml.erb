@@ -1,0 +1,17 @@
+---
+layout: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<%#
+  Only real content pages. "/" is excluded because it 301s to the comparison
+  page, and a sitemap should not advertise redirecting URLs.
+%>
+<% Sitepress.site.resources.select { |resource|
+     resource.mime_type.to_s == "text/html" && resource.request_path != "/"
+   }.each do |resource| %>
+  <url>
+    <loc><%= File.join(PageHelper::SITE_URL, resource.request_path) %></loc>
+  </url>
+<% end %>
+</urlset>

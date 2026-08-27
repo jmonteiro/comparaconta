@@ -1,0 +1,177 @@
+---
+nome: Webull
+posicao: 5
+link:
+  text: Webull.com.br
+  url: https://www.webull.com.br
+deposito_min_abertura:
+  text: $0
+  subtext: ordem mínima de $1 em ações e ETFs
+  alt: A Webull Financial declara no Formulário CRS que não há mínimo de conta. A conta cripto aceita depósitos a partir de $2.
+  source: https://www.webull.com.br/suporte/faq/555
+abertura:
+  text: $0
+  subtext: W-8BEN preenchido e assinado digitalmente na abertura
+  source: https://www.webull.com.br/suporte/faq/550
+corretagem_eua:
+  text: $0
+  subtext: ações, ETFs, ADRs e OTC
+  alt: Comissão de $0 em ações e ETFs listados nos EUA. Taxas regulatórias da SEC e da FINRA continuam sendo repassadas. A tabela de tarifas traz uma nota de rodapé dizendo que a isenção vale para novos clientes e que depois se aplica $0,0025 por dólar negociado, mas a nota não está ligada a nenhuma linha da tabela e a Webull não explica a qual campanha se refere.
+  source: https://www.webull.com.br/precos
+corretagem_lse:
+  text: n/d
+  subtext: não negocia bolsas fora dos EUA
+  source: https://www.webull.com.br/suporte/faq/498
+deposito_eua:
+  text: $0 (ACH), $8 (Wire EUA)
+  subtext: $12,50 no wire internacional
+  alt: Limite diário de $50 mil no ACH. Só aceita transferências de contas de mesma titularidade.
+  source: https://www.webull.com.br/precos
+saque_eua:
+  text: $0 (ACH), $25 (Wire EUA)
+  subtext: $45 no wire internacional
+  alt: A tabela de tarifas cobra $45 no saque internacional via wire, mas o FAQ sobre tarifas de ACH e Wire informa $12,50 para a mesma operação.
+  source: https://www.webull.com.br/precos
+spread_brasil:
+  text: 1,35% a 1,70%
+  subtext: cai por faixa; 0,80% acima de R$250 mil em horário comercial
+  alt: "Câmbio feito pelo Ouribank. Em horário comercial, das 9h às 18h: até R$50 mil 1,35%; até R$75 mil 1,20%; até R$250 mil 1,10%; acima disso 0,80%. Fora do horário comercial: 1,70%, 1,40%, 1,20% e 1,00% nas mesmas faixas. A conta cripto usa a FacilitaPay, com spread fixo de 1,50%. IOF de 1,1% nos depósitos e 0,38% nos resgates."
+  source: https://www.webull.com.br/precos
+acats:
+  text: entrada $0, saída $75
+  subtext: DRS $115 por posição, mais $125 se a transferência falhar
+  alt: Entrada gratuita, com valor mínimo de $500, aceitando ações, ADRs, ETFs e opções listadas nos EUA. Não aceita bonds, fundos mútuos nem penny stocks. Transferência parcial só é possível se a corretora de origem também usar a Apex, e frações de ação não são transferíveis.
+  source: https://www.webull.com.br/suporte/faq/553
+inatividade:
+  text: $0
+  source: https://www.webull.com.br/precos
+sipc:
+  text: Sim
+  subtext: $500 mil, incluindo $250 mil em dinheiro, via Webull Financial LLC
+  source: https://www.webull.com.br/suporte/faq/441
+seguro:
+  text: Sim
+  subtext: valor depende do regime de compensação, e a Webull não informa qual se aplica ao Brasil
+  alt: O documento de SIPC assinado pelo cliente brasileiro é o da modalidade Omnibus, que descreve apólice do Lloyd's of London com agregado de $100 milhões e limite de $1,9 milhão em dinheiro por cliente. Já a página institucional cita os limites do regime fully-disclosed da Apex, de $150 milhões no agregado, com máximo de $37,5 milhões em ativos e $900 mil em dinheiro por cliente.
+  source: https://www.webull.com.br/suporte/faq/441
+telefone:
+  text: Não
+  subtext: só a Ouvidoria da H.H. Picchioni, 0800 601 7100, em dias úteis
+  source: https://www.webull.com.br/suporte
+email:
+  text: Sim
+  subtext: ajuda@webull.com.br
+  source: https://www.webull.com.br/suporte
+chat_humano:
+  text: Sim
+  subtext: pela Central de Ajuda dentro do aplicativo
+  source: https://www.webull.com.br/suporte/faq/556
+horarios:
+  text: n/d
+  alt: O site se contradiz. A página institucional promete ajuda on-line 24 horas por dia, 7 dias por semana, enquanto a página da Conta Margem diz que o suporte atende em horário comercial padrão. Não há horário específico publicado para o Brasil.
+  source: https://www.webull.com.br/sobre
+idiomas:
+  text: Português
+  source: https://www.webull.com.br/suporte
+eua_acoes:
+  text: Sim
+  subtext: ações, ETFs, ADRs, OTC e IPOs; sem fundos mútuos
+  source: https://www.webull.com.br/suporte/faq/495
+eua_outros:
+  text: Sim
+  subtext: opções, futuros CME e contratos de eventos; sem renda fixa
+  alt: Opções de ações e ETFs sem corretagem, $0,50 por contrato em opções de índice e $0,10 por contrato em ordens acima de 500 contratos, fora as taxas de cada bolsa. Futuros e contratos de eventos são oferecidos pela Webull Futures LLC e não são protegidos pela SIPC.
+  source: https://www.webull.com.br/precos
+intl_acoes:
+  text: Não
+  subtext: só ADRs de empresas estrangeiras listados nos EUA
+  source: https://www.webull.com.br/suporte/faq/498
+intl_outros:
+  text: Não
+  source: https://www.webull.com.br/suporte/faq/498
+crypto:
+  text: Sim
+  subtext: sem corretagem, com spread embutido no preço
+  alt: Oferecido pela Webull SPSAV em conta separada da conta de investimentos, com execução, liquidação e custódia feitas pela Coinbase. A Webull SPSAV ainda não é autorizada em regime definitivo pelo Banco Central, estando em período de transição regulatória. O câmbio da conta cripto é feito pela FacilitaPay, com spread de 1,50%.
+  source: https://www.webull.com.br/investimento-negociacao/cripto
+fracoes:
+  text: Sim
+  subtext: a partir de $1 e 0,01 ação
+  alt: Disponível apenas em ativos marcados com o ícone F, no horário regular de mercado. Não permite venda a descoberto e as frações não entram no empréstimo de ações.
+  source: https://www.webull.com.br/suporte/faq/505
+ach_pull:
+  text: Sim
+  subtext: conta americana de mesma titularidade, vinculada via Plaid ou microdepósitos
+  source: https://www.webull.com.br/suporte/faq/444
+cartao_debito_fisico:
+  text: n/d
+  subtext: previsto em contrato, mas não anunciado
+  alt: Os contratos brasileiros trazem um Contrato de Conta Corrente do Stearns Bank que prevê cartão de débito Mastercard, com 1ª via grátis e $20 de envio internacional. Mesmo assim não há página, item de menu nem FAQ sobre esse cartão, e não foi possível confirmar que ele já é emitido e entregue no Brasil.
+  source: https://www.webull.com.br/agreement
+cartao_debito_virtual: n/d
+cartao_credito_fisico: Não
+residentes_fiscais:
+  text: Só Brasileiros
+  subtext: exige endereço no Brasil, CPF e 18 anos ou mais
+  source: https://www.webull.com.br/suporte/faq/555
+relatorio_irpf_brasil:
+  text: Sim
+  alt: A Webull anuncia relatórios de IR para facilitar a declaração de investimentos no exterior. No site, a documentação descrita é o extrato mensal, com saldos convertidos pela PTAX, e as notas de negociação.
+  source: https://www.webull.com.br/suporte
+joint:
+  text: Não
+  alt: A Webull aceita apenas contas individuais, atreladas a um CPF. Depósitos e saques de terceiros ou de pessoa jurídica são rejeitados.
+  source: https://www.webull.com.br/suporte/faq/557
+margin:
+  text: Sim
+  subtext: 4x intradiário e 2x overnight, com mínimo de $2.000 de patrimônio
+  alt: A taxa de juros é escalonada por saldo devedor e só aparece dentro do aplicativo. A Webull informa que a taxa é variável e pode mudar sem aviso.
+  source: https://www.webull.com.br/conta-margem
+offshore:
+  text: Não
+  source: https://www.webull.com.br/suporte/faq/559
+conta_bancaria:
+  text: n/d
+  subtext: contratos preveem conta corrente no Stearns Bank, mas ela não é anunciada
+  alt: A Conta Webull em reais, usada para receber PIX e fazer o câmbio, é uma conta-câmbio no Ouribank, não uma conta bancária. Os contratos brasileiros trazem separadamente um Contrato de Conta Corrente do Stearns Bank, membro do FDIC, que não aparece em nenhuma página do site.
+  source: https://www.webull.com.br/agreement
+conta_remunerada:
+  text: Sim
+  subtext: 3% ao ano sobre o caixa livre
+  alt: O caixa liquidado é varrido para bancos parceiros após 2 dias úteis, ficando elegível ao seguro FDIC de $250 mil por banco. Precisa ser ativado pelo cliente. A taxa é dinâmica, e a Webull cita 3% ao ano em um artigo e até 4% em outro.
+  source: https://www.webull.com.br/suporte/faq/531
+ano_fundacao:
+  text: 2018
+  subtext: início da corretora nos EUA
+  source: https://www.sec.gov/Archives/edgar/data/1866364/000121390026041653/ea0283691-20f_webull.htm
+sede:
+  text: St. Petersburg, FL, EUA
+  subtext: escritório brasileiro na Av. Brigadeiro Faria Lima, São Paulo
+  source: https://www.sec.gov/Archives/edgar/data/1866364/000121390026041653/ea0283691-20f_webull.htm
+funcionarios:
+  text: "1.396"
+  subtext: dez/2025, grupo Webull global
+  source: https://www.sec.gov/Archives/edgar/data/1866364/000121390026041653/ea0283691-20f_webull.htm
+aum:
+  text: $28,5 bilhões
+  subtext: 2T26, ativos de clientes do grupo global, não só do Brasil
+  source: https://www.sec.gov/Archives/edgar/data/1866364/000121390026091702/ea030257601ex99-1.htm
+clientes:
+  text: 5,13 milhões
+  subtext: 2T26, contas com saldo do grupo global
+  alt: A Webull não divulga separadamente o número de clientes brasileiros.
+  source: https://www.sec.gov/Archives/edgar/data/1866364/000121390026091702/ea030257601ex99-1.htm
+observacoes:
+- text: A oferta é intermediada pela H.H. Picchioni CCVM, corretora autorizada pelo BCB e pela CVM, nos termos do Parecer de Orientação CVM nº 33. A corretora americana é a Webull Financial LLC, que não tem autorização da CVM.
+  source: https://www.webull.com.br/suporte
+- text: A compra da H.H. Picchioni pela Webull foi assinada em dezembro de 2023, mas ainda não foi concluída. O fechamento depende de aprovação incondicional do Banco Central, e no formulário 20-F de abril de 2026 a Webull diz esperar concluir até o fim de 2026.
+  source: https://www.sec.gov/Archives/edgar/data/1866364/000121390026041653/ea0283691-20f_webull.htm
+- text: Usa a plataforma da Apex, em regime de compensação omnibus. Todos os contratos assinados pelo cliente brasileiro são da modalidade Omnibus.
+  source: https://www.webull.com.br/agreement
+- text: O câmbio é feito pelo Ouribank, com a Webull Technologies Brazil atuando como correspondente cambial. A conta-câmbio em reais é aberta em nome do cliente no Ouribank.
+  source: https://www.webull.com.br/suporte
+- text: A Webull Corporation é listada na Nasdaq sob o código BULL.
+  source: https://www.sec.gov/Archives/edgar/data/1866364/000121390026091702/ea030257601ex99-1.htm
+
+# Finish these files with a --- (due to Frontmatter)
+---

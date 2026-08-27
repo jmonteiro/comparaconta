@@ -1,0 +1,184 @@
+---
+nome: ARQ
+posicao: 16
+link:
+  text: ARQfinance.com
+  url: https://arqfinance.com/pt-BR
+deposito_min_abertura:
+  text: $0
+  subtext: a partir de $1 por ordem, com frações de ações
+  source: https://help.arqfinance.com/pt-BR/articles/13869170-o-que-e-o-arq-investir
+abertura:
+  text: $0
+  source: https://help.arqfinance.com/pt-BR/articles/13738316-custos-e-tarifas-no-arq
+corretagem_eua:
+  text: 0,2% (mín. 1 USDc)
+  subtext: nas contas brasileiras só a partir de 15 de setembro de 2026; até lá, $0
+  alt: A ARQ não cobra corretagem, mas cobra uma taxa de conversão de USDc para dólar de 0,2% do volume, com mínimo de 1 USDc, na compra e na venda, no plano Standard. As taxas regulatórias de SEC e FINRA são pagas pela ARQ.
+  source: https://help.arqfinance.com/pt-BR/articles/13869275-quais-taxas-se-aplicam-a-minha-conta-de-investimento
+corretagem_lse:
+  text: n/d
+  subtext: só negocia ações e ETFs listados nos EUA
+  source: https://help.arqfinance.com/pt-BR/articles/13869258-em-que-voce-pode-investir-com-a-sua-conta-de-investimentos
+deposito_eua:
+  text: $3 (ACH ou Wire)
+  subtext: da carteira USDc para a conta de investimentos é gratuito e instantâneo
+  alt: A ARQ fornece número de conta e routing próprios nos EUA. O dólar recebido é convertido automaticamente em USDc, descontados $3 por transferência.
+  source: https://help.arqfinance.com/pt-BR/articles/13901700-recarregar-minha-conta-com-dolares-usd
+saque_eua:
+  text: $3 (ACH)
+  subtext: 1 transferência internacional gratuita por mês no plano Premium
+  alt: O saque da conta de investimentos para a carteira ARQ é gratuito, mas o dinheiro da venda só fica disponível no dia útil seguinte.
+  source: https://help.arqfinance.com/pt-BR/articles/13738316-custos-e-tarifas-no-arq
+spread_brasil:
+  text: cerca de 0,5%
+  subtext: sem IOF, porque a operação é compra de USDc e não câmbio tradicional
+  alt: A ARQ não publica tabela de spread. O app mostra taxa de compra e de venda em tempo real. A própria ARQ afirma que a conversão tem custo total de aproximadamente 0,5%, sem IOF.
+  source: https://help.arqfinance.com/pt-BR/articles/15351883-desafio-arq
+acats:
+  text: entrada $0, saída n/d
+  subtext: entrada em 5 a 7 dias úteis, só ações inteiras
+  alt: A ARQ documenta apenas a transferência de entrada, dizendo que não cobra nada e que a corretora de origem pode cobrar. Não há artigo nem tabela pública sobre transferir a custódia para fora da ARQ.
+  source: https://help.arqfinance.com/pt-BR/articles/14324241-transfira-seu-portfolio-de-investimentos-para-o-arq
+inatividade:
+  text: n/d
+  alt: A ARQ não divulga taxa de inatividade. O artigo de taxas lista apenas a taxa de conversão, e a busca no help center por inatividade não retorna resultado. Ausência de menção não é o mesmo que isenção confirmada.
+  source: https://help.arqfinance.com/pt-BR/articles/13869275-quais-taxas-se-aplicam-a-minha-conta-de-investimento
+sipc:
+  text: Sim
+  subtext: $500 mil por conta, via Alpaca Securities
+  source: https://help.arqfinance.com/pt-BR/articles/13828601-como-seus-investimentos-estao-protegidos
+seguro:
+  text: Sim
+  subtext: até $75 milhões por conta e $250 milhões no agregado, no Lloyd's of London
+  alt: Seguro suplementar contratado pela Alpaca Securities. Como a SIPC, só vale em caso de insolvência da corretora, não contra perdas de mercado.
+  source: https://help.arqfinance.com/pt-BR/articles/13828601-como-seus-investimentos-estao-protegidos
+telefone:
+  text: Não
+  alt: A ARQ lista como canais oficiais apenas o chat no app e o e-mail, e alerta para golpes de falso suporte por telefone.
+  source: https://help.arqfinance.com/pt-BR/articles/14111591-canais-oficiais-do-arq
+email:
+  text: Sim
+  subtext: help@arqfinance.com
+  source: https://help.arqfinance.com/pt-BR/articles/14111591-canais-oficiais-do-arq
+chat_humano:
+  text: Sim
+  subtext: chat dentro do app
+  source: https://help.arqfinance.com/pt-BR/articles/14111591-canais-oficiais-do-arq
+horarios:
+  text: 24x7
+  source: https://help.arqfinance.com/pt-BR/articles/13610915-quem-pode-criar-uma-conta-arq
+idiomas:
+  text: Português, Espanhol, Inglês
+  source: https://help.arqfinance.com/pt-BR
+eua_acoes:
+  text: Sim
+  subtext: mais de 11 mil ações e ETFs listados nos EUA
+  source: https://help.arqfinance.com/pt-BR/articles/13869258-em-que-voce-pode-investir-com-a-sua-conta-de-investimentos
+eua_outros:
+  text: Não
+  alt: Só ações e ETFs. Não há opções, futuros nem renda fixa americana. As ordens são exclusivamente a mercado, no horário regular de Nova York, sem after-hours.
+  source: https://help.arqfinance.com/pt-BR/articles/13869310-como-comprar-e-vender-ativos
+intl_acoes:
+  text: Não
+  source: https://help.arqfinance.com/pt-BR/articles/13869258-em-que-voce-pode-investir-com-a-sua-conta-de-investimentos
+intl_outros:
+  text: Não
+  alt: A conta no exterior só dá acesso a ações e ETFs americanos. A ARQ também oferece renda fixa brasileira, mas é produto doméstico em reais, distribuído pela Genial, fora da conta na Alpaca.
+  source: https://help.arqfinance.com/pt-BR/articles/16093889-quais-ativos-de-renda-fixa-brasileiros-estao-disponiveis
+crypto:
+  text: Sim
+  subtext: 12 moedas, taxa de 0,30% no plano Standard
+  alt: Não confundir com USDc e EURc, que são apenas o trilho de dinheiro da conta. A cripto não pode ser enviada para carteiras externas e não é coberta por SIPC nem FGC.
+  source: https://help.arqfinance.com/pt-BR/articles/16648558-primeiros-passos-com-o-arq-crypto
+fracoes:
+  text: Sim
+  subtext: a partir de $1; nem todo ativo é fracionável
+  source: https://help.arqfinance.com/pt-BR/articles/13869258-em-que-voce-pode-investir-com-a-sua-conta-de-investimentos
+ach_pull:
+  text: Não
+  alt: A ARQ dá número de conta e routing nos EUA para você enviar ACH ou Wire de fora para dentro, e envia ACH para bancos americanos na saída, mas não há vínculo de conta bancária americana para a ARQ debitar.
+  source: https://help.arqfinance.com/pt-BR/articles/13901700-recarregar-minha-conta-com-dolares-usd
+cartao_debito_fisico:
+  text: Sim (Mastercard)
+  subtext: envio $4,99, grátis com saldo acima de $100 ou no plano Premium
+  alt: Entregue no Brasil. Gasta o saldo em USDc, debitado direto do saldo disponível, sem juros nem dívida acumulada.
+  source: https://help.arqfinance.com/pt-BR/articles/13549820-entendendo-a-diferenca-entre-o-cartao-global-e-local-brasil
+cartao_debito_virtual:
+  text: Sim
+  subtext: gratuito, usável na hora no Apple Pay e Google Pay
+  source: https://help.arqfinance.com/pt-BR/articles/13547335-meu-cartao-arq-tem-custos
+cartao_credito_fisico:
+  text: Sim
+  subtext: Mastercard World Elite de metal no plano Prestige, $19,99/mês
+  alt: Linha de crédito garantida pelos ativos das contas, até 90% do valor e teto de $100 mil. Sujeito a lista de espera.
+  source: https://help.arqfinance.com/pt-BR/articles/13430222-o-que-e-o-arq-prestige
+residentes_fiscais:
+  text: Brasil, México, Argentina e Colômbia
+  subtext: maiores de 18 anos
+  source: https://help.arqfinance.com/pt-BR/articles/13610915-quem-pode-criar-uma-conta-arq
+relatorio_irpf_brasil:
+  text: Sim
+  subtext: Relatório Auxiliar do Imposto de Renda, enviado por e-mail até 1º de abril
+  alt: Não é Informe de Rendimentos, que a ARQ diz não ser obrigada a emitir por não haver retenção na fonte. Cobre stablecoins, saldo em reais e os investimentos mantidos na Alpaca. A conversão pela PTAX fica por conta do investidor.
+  source: https://help.arqfinance.com/pt-BR/articles/14368060-brasil-relatorio-auxiliar-do-imposto-de-renda-dirpf-2026
+joint:
+  text: Não
+  alt: A abertura documentada é individual, com selfie, documento, questionário de adequação e W-8BEN em nome de uma única pessoa.
+  source: https://help.arqfinance.com/pt-BR/articles/13869204-como-criar-sua-conta-de-investimentos
+margin:
+  text: Não
+  alt: A conta é à vista, financiada só pelo saldo em USDc. A linha de crédito garantida dos planos pagos serve para gastar no cartão, não para comprar ativos alavancado.
+  source: https://help.arqfinance.com/pt-BR/articles/13869288-como-adicionar-fundos-na-sua-conta-de-investimentos
+offshore:
+  text: Não
+  alt: O ARQ business atende empresas sediadas no Brasil, México e Colômbia, e é conta de pagamentos, não veículo offshore.
+  source: https://arqfinance.com/pt-BR/business
+conta_bancaria:
+  text: Sim
+  subtext: conta e routing nos EUA via Lead Bank, mais IBAN em euros
+  alt: O saldo fica em USDc e EURc, que são ativos virtuais e não depósito bancário. No Brasil a conta em reais é da Atlas Brasil ARQ Instituição de Pagamento.
+  source: https://help.arqfinance.com/pt-BR/articles/13901865-como-funcionam-os-microdepositos
+conta_remunerada:
+  text: Sim
+  subtext: 2% ao ano em USDc no plano Standard, até 4,5% no Prestige
+  alt: Saldo mínimo de 150 USDc. É benefício discricionário, sem direito exigível, e não é coberto por SIPC nem FGC.
+  source: https://help.arqfinance.com/pt-BR/articles/13828751-como-funciona-sua-conta-remunerada-em-usdc
+ano_fundacao:
+  text: "2021"
+  subtext: app DolarApp lançado em 2023, marca ARQ desde março de 2026
+  source: https://www.ycombinator.com/companies/arq
+sede:
+  text: Londres, Reino Unido
+  alt: A DA Inv LLC, entidade registrada na SEC que opera o ARQ Investir, é uma LLC de Delaware com escritório principal em Londres. O grupo mantém escritórios em Nova York, São Paulo, Cidade do México, Bogotá e Buenos Aires.
+  source: https://reports.adviserinfo.sec.gov/reports/ADV/334514/PDF/334514.pdf
+funcionarios:
+  text: "100"
+  alt: Número do grupo ARQ. A DA Inv LLC, entidade do produto de investimentos, declarou 6 empregados no Formulário ADV de março de 2026.
+  source: https://www.ycombinator.com/companies/arq
+aum:
+  text: $28 milhões
+  subtext: só o ARQ Investir, em março de 2026
+  alt: Patrimônio sob gestão regulatória declarado pela DA Inv LLC no Formulário ADV. Não inclui saldos em USDc, cripto nem renda fixa brasileira.
+  source: https://reports.adviserinfo.sec.gov/reports/ADV/334514/PDF/334514.pdf
+clientes:
+  text: 2 milhões
+  subtext: no grupo ARQ, em 2026, somando todos os produtos e países
+  alt: Só na conta de investimentos, a DA Inv LLC declarou 110.459 contas no Formulário ADV de março de 2026.
+  source: https://arqfinance.com/pt-BR/blog/product-releases/announcement
+observacoes:
+- text: A distribuição de valores mobiliários a investidores brasileiros é feita pela Oslo Capital DTVM, sob o Parecer de Orientação nº 33 da CVM. Os termos deixam explícito que a empresa do app não é autorizada pela CVM a oferecer diretamente esses serviços no Brasil.
+  source: https://cdn.dolarapp.com/wealth/onboarding/oslo_terms_and_conditions_pt.pdf
+- text: A conta é aberta em nome do próprio cliente na Alpaca, não em estrutura omnibus. O cliente assina o contrato da Alpaca e o W-8BEN, e os termos preveem que a DA Inv LLC abre contas em nome do cliente e não é coproprietária delas.
+  source: https://cdn.dolarapp.com/wealth/onboarding/oslo_terms_and_conditions_pt.pdf
+- text: O dinheiro entra por Pix, é convertido em USDc e só então vai para a conta na Alpaca, que só aceita USDc. É esse desenho que dispensa o IOF de câmbio.
+  source: https://help.arqfinance.com/pt-BR/articles/13869288-como-adicionar-fundos-na-sua-conta-de-investimentos
+- text: A isenção de IOF vem de a operação ser compra de ativo virtual, e não câmbio. Vale acompanhar, porque a Resolução BCB 521 de 2025 enquadra a compra e venda de stablecoins como operação do mercado de câmbio, e os próprios termos da ARQ reconhecem que essas atividades estão sujeitas às regras cambiais, com adequação regulatória ainda em curso.
+  source: https://cdn.dolarapp.com/legal/terms-and-conditions-brazil-virtual-assets.pdf
+- text: Os termos da conta de investimentos preveem uma taxa anual sobre o patrimônio, a ser especificada num guia de serviços. Nenhuma taxa desse tipo aparece hoje na tabela pública de taxas.
+  source: https://cdn.dolarapp.com/wealth/onboarding/oslo_terms_and_conditions_pt.pdf
+- text: A migração de DolarApp para ARQ começou em março de 2026 e é gradual. Muita coisa ainda diz DolarApp, incluindo o rodapé do site, os documentos jurídicos e o site declarado à SEC.
+  source: https://help.arqfinance.com/pt-BR/articles/13897054-conheca-nossa-nova-marca-dolarapp-agora-e-arq
+
+# Finish these files with a --- (due to Frontmatter)
+---

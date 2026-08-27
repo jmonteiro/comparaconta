@@ -66,12 +66,13 @@ Cada arquivo YAML precisa terminar com `---`, por causa do front matter.
 
 ## Licença
 
-O **código** deste repositório está sob a licença MIT (veja `LICENSE`).
+Todo este repositório, código e conteúdo, está em domínio público sob
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.pt-br)
+(veja `LICENSE`).
 
-O **conteúdo** da tabela comparativa, incluindo os arquivos em
-`pages/corretoras_exterior/`, está em domínio público sob
-[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.pt-br).
 Use, copie e adapte à vontade, sem precisar pedir permissão ou dar crédito.
+Os dados da tabela, em `pages/corretoras_exterior/`, são feitos justamente
+para serem reaproveitados.
 
 ## Deploy
 

@@ -1,5 +1,6 @@
 ---
 title: Corretoras no Exterior
+shell: true
 description: |
   Tabela comparativa colaborativa de corretoras no exterior para residentes fiscais brasileiros.
   Compare custos, benefícios, e características de corretoras internacionais.
@@ -96,56 +97,178 @@ structure:
       text: Código ou link de indicação
 ---
 
-<section class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-900 p-4 mt-6 mx-4 rounded-md shadow-md">
-  <p class="text-md font-semibold">Aviso:</p>
-  <p class="text-sm mt-1">
-    Esta tabela é apenas informativa. Não nos responsabilizamos por eventuais mudanças nas taxas e condições das corretoras.
-    Recomendamos que você verifique diretamente no site da corretora. Se qualquer informação estiver incompleta ou incorreta,
-    por favor, abra uma "<a href="https://github.com/jmonteiro/comparaconta/issues" target="_blank">Issue</a>" em
-    <a href="https://github.com/jmonteiro/comparaconta" target="_blank">
-      jmonteiro/comparaconta
-    </a>.
-  </p>
-</section>
+<%
+  # Hoisted once: `CorretoraExterior.all` re-globs and re-sorts the filesystem on
+  # every call, and the table needs it on every row.
+  corretoras = CorretoraExterior.all
+  structure = current_page.data.structure
+  # Alternating row shading runs continuously across sections rather than
+  # restarting in each <tbody>, so the stripe never doubles up at a boundary.
+  linha = 0
+  total_criterios = structure.sum { |_section, fields| fields.count }
+%>
 
-<main class="py-6 px-4 w-full h-auto overflow-x-auto">
-    <div class="w-full">
-      <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
-        <thead class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-        <tr>
-          <th>
-            &nbsp;
+<% content_for :head do %>
+  <script type="application/ld+json">
+    <%= raw({
+      "@context" => "https://schema.org",
+      "@type" => "ItemList",
+      "name" => current_page.data["title"],
+      "description" => page_description,
+      "url" => canonical_url,
+      "numberOfItems" => corretoras.count,
+      "itemListElement" => corretoras.each_with_index.map { |corretora, index|
+        {
+          "@type" => "ListItem",
+          "position" => index + 1,
+          "item" => {
+            "@type" => "FinancialService",
+            "name" => corretora.nome,
+            "url" => corretora.link.is_a?(Sitepress::Data::Record) ? corretora.link["url"] : nil
+          }.compact
+        }
+      }
+    }.to_json) %>
+  </script>
+<% end %>
+
+<div class="px-4 pt-3 shrink-0">
+  <details class="text-sm border-l-4 rounded-md shadow-sm bg-yellow-100 border-yellow-500 text-yellow-900 dark:bg-yellow-950 dark:border-yellow-600 dark:text-yellow-100">
+    <summary class="px-4 py-2 font-semibold cursor-pointer marker:text-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600">
+      Aviso: esta tabela é informativa e colaborativa
+    </summary>
+    <p class="px-4 pb-3 text-sm">
+      Esta tabela é apenas informativa. Não nos responsabilizamos por eventuais mudanças nas taxas e condições das corretoras.
+      Recomendamos que você verifique diretamente no site da corretora. Se qualquer informação estiver incompleta ou incorreta,
+      por favor, abra uma "<a href="https://github.com/jmonteiro/comparaconta/issues" rel="noopener noreferrer" target="_blank">Issue</a>" em
+      <a href="https://github.com/jmonteiro/comparaconta" rel="noopener noreferrer" target="_blank">jmonteiro/comparaconta</a>.
+    </p>
+  </details>
+</div>
+
+<%# ------------------------------------------------------------------ toolbar %>
+<div class="flex flex-wrap items-center gap-2 px-4 py-2 shrink-0 print:hidden" data-tabela-toolbar>
+  <label class="js-only relative flex-1 min-w-[10rem] max-w-xs">
+    <span class="sr-only">Filtrar critérios</span>
+    <input type="search" id="filtro-criterios" placeholder="Filtrar critérios…" autocomplete="off"
+           class="w-full py-1 pl-3 pr-8 text-sm bg-white border-gray-300 rounded-md shadow-sm dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100 focus:border-blue-500 focus:ring-blue-500" />
+  </label>
+
+  <details class="js-only relative" data-corretoras-menu>
+    <summary class="inline-flex items-center gap-1 px-3 py-1 text-sm bg-white border border-gray-300 rounded-md shadow-sm cursor-pointer select-none dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 marker:content-none [&::-webkit-details-marker]:hidden">
+      Corretoras
+      <span class="text-xs text-gray-500 dark:text-gray-400" data-contador-corretoras><%= corretoras.count %>/<%= corretoras.count %></span>
+      <%= render "partials/icon", name: "chevron-down", classes: "w-3 h-3 fill-current" %>
+    </summary>
+    <div class="absolute left-0 z-50 p-2 mt-1 bg-white border border-gray-200 rounded-md shadow-lg dark:bg-gray-900 dark:border-gray-700 w-60">
+      <div class="flex gap-2 pb-2 mb-1 border-b border-gray-200 dark:border-gray-700">
+        <button type="button" class="text-xs text-blue-600 underline dark:text-blue-400" data-corretoras-todas>Marcar todas</button>
+        <button type="button" class="text-xs text-blue-600 underline dark:text-blue-400" data-corretoras-nenhuma>Desmarcar todas</button>
+      </div>
+      <% corretoras.each do |corretora| %>
+        <label class="flex items-center gap-2 px-1 py-1 text-sm rounded cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800">
+          <input type="checkbox" checked value="<%= corretora.slug %>" data-corretora-toggle
+                 class="text-blue-600 border-gray-300 rounded dark:bg-gray-800 dark:border-gray-600 focus:ring-blue-500" />
+          <%= corretora.nome %>
+        </label>
+      <% end %>
+    </div>
+  </details>
+
+  <details class="relative">
+    <summary class="inline-flex items-center gap-1 px-3 py-1 text-sm bg-white border border-gray-300 rounded-md shadow-sm cursor-pointer select-none dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 marker:content-none [&::-webkit-details-marker]:hidden">
+      Seções
+      <%= render "partials/icon", name: "chevron-down", classes: "w-3 h-3 fill-current" %>
+    </summary>
+    <nav class="absolute left-0 z-50 p-2 mt-1 bg-white border border-gray-200 rounded-md shadow-lg dark:bg-gray-900 dark:border-gray-700 w-60" aria-label="Seções da tabela">
+      <% structure.each_key do |section| %>
+        <% next unless section %>
+        <a href="#secao-<%= section.parameterize %>" class="block px-1 py-1 text-sm no-underline rounded text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"><%= section %></a>
+      <% end %>
+    </nav>
+  </details>
+
+  <p class="ml-auto text-xs text-gray-500 dark:text-gray-400" data-contador-criterios>
+    <%= total_criterios %> critérios
+  </p>
+</div>
+
+<p data-dica-arraste class="px-4 pb-1 text-xs text-center text-gray-500 shrink-0 sm:hidden dark:text-gray-400 print:hidden" aria-hidden="true">
+  ← arraste a tabela para comparar →
+</p>
+
+<%# ------------------------------------------------------- the scrolling table %>
+<div id="tabela-scroll" tabindex="0" role="region"
+     aria-label="Tabela comparativa de corretoras no exterior"
+     class="flex-1 min-h-0 mx-4 mb-4 overflow-auto bg-white rounded-lg shadow-md overscroll-contain ring-1 ring-black/5 dark:bg-gray-900 dark:ring-white/10 scroll-pl-[var(--label-w)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 print:overflow-visible print:h-auto print:shadow-none">
+  <table class="cc-table min-w-full border-separate border-spacing-0 text-xs sm:text-sm [--label-w:11rem] sm:[--label-w:18rem] [--col-w:7.5rem] sm:[--col-w:10rem] [--th-h:3.5rem]">
+    <caption class="sr-only">
+      Comparativo de <%= corretoras.count %> corretoras no exterior em <%= total_criterios %> critérios,
+      agrupados por custos, proteção, atendimento, produtos financeiros e dados institucionais.
+    </caption>
+
+    <thead>
+      <tr>
+        <th scope="col" class="sticky top-0 left-0 z-50 p-0 text-left align-bottom bg-gray-200 border-b border-r border-gray-300 shadow-[6px_0_8px_-6px_rgba(0,0,0,0.18),0_6px_8px_-6px_rgba(0,0,0,0.18)] dark:bg-gray-800 dark:border-gray-700 print:static print:shadow-none">
+          <div class="flex min-h-[var(--th-h)] w-[var(--label-w)] items-end px-2 py-2 text-[0.65rem] font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400 sm:px-4 sm:text-xs">
+            Critério
+          </div>
+        </th>
+        <% corretoras.each do |corretora| %>
+          <th scope="col" data-col="<%= corretora.slug %>"
+              class="sticky top-0 z-40 p-0 bg-gray-200 border-b border-gray-300 shadow-[0_6px_8px_-6px_rgba(0,0,0,0.18)] dark:bg-gray-800 dark:border-gray-700 print:static print:shadow-none">
+            <div class="flex min-h-[var(--th-h)] w-[var(--col-w)] items-center justify-center px-2 py-2 text-center text-xs font-semibold uppercase leading-tight text-gray-700 dark:text-gray-200 sm:px-3">
+              <span class="line-clamp-2"><%= corretora.nome %></span>
+            </div>
           </th>
-          <% CorretoraExterior.all.each do |corretora| %>
-            <th class="py-3 px-6 text-center font-medium w-1/5">
-              <%= corretora.nome %>
-            </th>
-          <% end %>
-        </tr>
-      </thead>
-      <tbody class="text-gray-700 text-sm">
-        <% current_page.data.structure.each do |section, fields| %>
-          <% if section %>
-            <tr class="bg-gray-200 text-gray-600 text-sm leading-normal">
-              <td class="py-3 px-6 text-left font-medium" colspan="<%= CorretoraExterior.all.count + 1 %>">
+        <% end %>
+      </tr>
+    </thead>
+
+    <%#
+      One <tbody> per section. The row group is the constraint rectangle for a
+      sticky cell, so each section header pins under the column header until its
+      own section scrolls past, then is pushed out by the next one.
+    %>
+    <% structure.each do |section, fields| %>
+      <tbody>
+        <% if section %>
+          <tr id="secao-<%= section.parameterize %>" class="scroll-mt-[var(--th-h)]" data-secao>
+            <th scope="rowgroup" class="sticky left-0 z-30 top-[var(--th-h)] px-2 py-2 text-left align-middle bg-gray-100 border-b border-r border-gray-300 dark:bg-gray-800 dark:border-gray-700 sm:px-4 print:static">
+              <div class="w-[var(--label-w)] text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-300">
                 <%= section %>
-              </td>
-            </tr>
-          <% end %>
-          <% fields.each do |key, contents| %>
-            <tr class="border-b border-gray-200 hover:bg-gray-100">
-              <td class="py-3 px-6 text-left font-medium">
-                <%= contents["text"] %>
-              </td>
-              <% CorretoraExterior.all.each do |corretora| %>
-                <td class="py-3 px-6 text-center">
+              </div>
+            </th>
+            <td colspan="<%= corretoras.count %>" class="sticky z-20 top-[var(--th-h)] px-2 py-2 bg-gray-100 border-b border-gray-300 dark:bg-gray-800 dark:border-gray-700 print:static"></td>
+          </tr>
+        <% end %>
+
+        <% fields.each do |key, contents| %>
+          <% linha += 1 %>
+          <% faixa = linha.odd? ? "bg-white dark:bg-gray-900" : "bg-gray-50 dark:bg-gray-800" %>
+          <tr class="group scroll-mt-[var(--th-h)]" data-criterio="<%= contents["text"] %>">
+            <th scope="row" class="sticky left-0 z-10 px-2 py-2 font-medium text-left align-top text-gray-700 border-b border-r border-gray-200 shadow-[6px_0_8px_-6px_rgba(0,0,0,0.18)] group-hover:bg-blue-50 dark:text-gray-200 dark:border-gray-700 dark:group-hover:bg-blue-950 sm:px-4 sm:py-3 print:static print:shadow-none <%= faixa %>">
+              <div class="w-[var(--label-w)] hyphens-auto"><%= contents["text"] %></div>
+            </th>
+            <% corretoras.each do |corretora| %>
+              <td data-col="<%= corretora.slug %>"
+                  class="px-2 py-2 text-center align-top text-gray-700 border-b border-gray-200 group-hover:bg-blue-50 dark:text-gray-300 dark:border-gray-700 dark:group-hover:bg-blue-950 sm:px-3 sm:py-3 <%= faixa %>">
+                <div class="w-[var(--col-w)]">
                   <%= render "partials/cell", cell: corretora.send(key) %>
-                </td>
-              <% end %>
-            </tr>
-          <% end %>
+                </div>
+              </td>
+            <% end %>
+          </tr>
         <% end %>
       </tbody>
-    </table>
-  </div>
-</main>
+    <% end %>
+
+    <tbody data-sem-resultados hidden>
+      <tr>
+        <td colspan="<%= corretoras.count + 1 %>" class="px-4 py-6 text-sm text-center text-gray-500 dark:text-gray-400">
+          Nenhum critério corresponde ao filtro.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

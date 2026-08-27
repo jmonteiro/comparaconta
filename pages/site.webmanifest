@@ -1,6 +1,9 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "ComparaConta.com",
+  "short_name": "ComparaConta",
+  "description": "Comparativo de corretoras no exterior para residentes fiscais brasileiros.",
+  "lang": "pt-BR",
+  "start_url": "/corretoras-exterior",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,7 +16,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "background_color": "#f3f4f6",
   "display": "standalone"
 }

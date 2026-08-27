@@ -1,5 +1,22 @@
 ---
-title: ComparaConta.com
+title: Comparativo de corretoras no exterior
+description: |
+  Comparativo de corretoras no exterior para residentes fiscais brasileiros.
+layout: application
 ---
 
-<meta http-equiv="refresh" content="0; url=/corretoras-exterior" />
+<%#
+  Cloudflare serves a 301 for "/" (see pages/_redirects); this page is only
+  reached if that edge rule is bypassed, so it needs a working fallback link
+  rather than relying solely on the meta refresh.
+%>
+<% content_for :head do %>
+  <meta http-equiv="refresh" content="0; url=/corretoras-exterior" />
+<% end %>
+
+<div class="px-4 py-10 text-center">
+  <p>
+    Redirecionando para o
+    <a href="/corretoras-exterior">comparativo de corretoras no exterior</a>.
+  </p>
+</div>

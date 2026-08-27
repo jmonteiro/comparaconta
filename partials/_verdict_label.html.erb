@@ -1,0 +1,14 @@
+<%#
+  The cell's own text. A bare "Sim"/"Não" is already conveyed by the icon, so it
+  is rendered visually-hidden to keep the cell uncluttered while remaining in
+  the accessibility tree and findable with Ctrl-F. "n/d" is muted rather than
+  hidden, since an em dash alone reads as missing data.
+%>
+<% value = text.to_s %>
+<% if CellValue.bare_verdict?(value) %>
+  <span class="sr-only"><%= value %></span>
+<% elsif CellValue.unavailable?(value) %>
+  <span class="text-gray-400 dark:text-gray-500" title="Não disponível">n/d</span>
+<% else %>
+  <%= value %>
+<% end %>

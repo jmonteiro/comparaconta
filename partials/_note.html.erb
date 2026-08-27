@@ -1,0 +1,12 @@
+<%#
+  Extra context for a value. Rendered as a real <button> so it is reachable by
+  keyboard and tappable on touch, where a `title` attribute does nothing. The
+  `title` is kept as the no-JavaScript fallback.
+%>
+<% if note.present? %>
+  <button type="button" class="inline-flex flex-none align-middle rounded-full fill-gray-400 hover:fill-gray-600 dark:fill-gray-500 dark:hover:fill-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500"
+          data-nota="<%= note %>" title="<%= note %>" aria-expanded="false"
+          aria-label="Mais informações">
+    <%= render "partials/icon", name: "info", classes: "w-4 h-4" %>
+  </button>
+<% end %>

@@ -1,14 +1,53 @@
 <!doctype html>
-<html lang="pt_BR">
+<html lang="pt-BR" class="[color-scheme:light] dark:[color-scheme:dark]">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
-    <%= [current_page.data["title"], "ComparaConta.com"].compact.join(" | ") %>
-  </title>
+  <meta name="color-scheme" content="light dark" />
 
-  <%= stylesheet_link_tag "build" %>
+  <%#
+    Runs before first paint, so it must stay inline and render-blocking:
+    it applies the stored theme (otherwise the page flashes light before
+    switching to dark) and marks the document as script-capable, which is what
+    reveals the controls that only work with JavaScript.
+  %>
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "dark" || (t !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <title><%= page_title %></title>
+  <meta name="description" content="<%= page_description %>" />
+  <link rel="canonical" href="<%= canonical_url %>" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ComparaConta.com" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="<%= page_title %>" />
+  <meta property="og:description" content="<%= page_description %>" />
+  <meta property="og:url" content="<%= canonical_url %>" />
+  <meta property="og:image" content="<%= File.join(site_url, "og-image.png") %>" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="<%= page_title %>" />
+  <meta name="twitter:description" content="<%= page_description %>" />
+  <meta name="twitter:image" content="<%= File.join(site_url, "og-image.png") %>" />
+
+  <meta name="theme-color" content="#2563eb" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)" />
+
+  <%# `media: "all"` is required: the Rails helper defaults to media="screen",
+      which leaves the page completely unstyled when printed. %>
+  <%= stylesheet_link_tag "build", media: "all" %>
   <link rel="manifest" href="/site.webmanifest">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -16,37 +55,52 @@
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+
+  <%= yield :head %>
 </head>
 
-<body class="w-screen h-screen font-sans leading-relaxed tracking-wide bg-gray-100">
-  <header class="w-full py-4 text-white bg-blue-600 shadow-lg">
-    <div class="container mx-auto text-center">
-      <h1 class="text-2xl font-bold">
+<%#
+  Pages that set `shell: true` in their front matter get the fixed-viewport app
+  shell: the page itself never scrolls, and a region inside it owns the scroll.
+  Any other page keeps ordinary document scrolling.
+%>
+<body class="<%= current_page.data["shell"] ? "h-dvh overflow-hidden" : "min-h-dvh" %> flex flex-col font-sans leading-relaxed tracking-wide bg-gray-100 text-gray-900 dark:bg-gray-950 dark:text-gray-100 print:h-auto print:overflow-visible">
+  <header class="shrink-0 w-full text-white bg-blue-600 shadow-lg dark:bg-blue-900">
+    <div class="relative px-4 py-3 mx-auto text-center container sm:py-4">
+      <h1 class="text-xl font-bold sm:text-2xl">
         <%= current_page.data["title"] %>
       </h1>
-      <p class="text-lg">
-        <%= current_page.data["description"] %>
+      <p class="hidden mt-1 text-sm sm:block sm:text-base">
+        <%= page_description %>
       </p>
+
+      <button type="button" id="theme-toggle"
+              class="js-only absolute p-2 text-white rounded-md right-2 top-2 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white print:hidden"
+              aria-label="Alternar entre tema claro e escuro">
+        <%= render "partials/icon", name: "sun", classes: "w-5 h-5 fill-current block dark:hidden" %>
+        <%= render "partials/icon", name: "moon", classes: "w-5 h-5 fill-current hidden dark:block" %>
+      </button>
     </div>
   </header>
 
-  <main>
+  <main class="flex flex-col flex-1 min-h-0">
     <%= yield %>
   </main>
 
-  <footer class="w-full py-4 mt-6 text-white bg-blue-600">
-    <div class="container mx-auto text-center">
-      <p class="text-sm">
-        &copy; <%= Time.now.strftime("%Y") %> ComparaConta.com
-        | Página compilada em <%= Time.now.strftime("%H:%M %d/%m/%Y") %> UTC
-        (<a href="https://github.com/jmonteiro/comparaconta" rel="noopener noreferrer" target="_blank" class="text-white">Código fonte</a>)
-      </p>
-      <p class="text-sm">
-        Todos os direitos reservados.
-        Este site tem apenas propósito educacional e comparativo e não possui qualquer vínculo com empresas supracitadas.
-        Informações podem estar incorretas ou desatualizadas.
-      </p>
-    </div>
+  <footer class="shrink-0 w-full px-4 py-2 text-xs text-center text-white bg-blue-600 dark:bg-blue-900">
+    <p>
+      &copy; <%= Time.now.strftime("%Y") %> ComparaConta.com
+      | Site publicado em <%= Time.now.strftime("%d/%m/%Y") %><span class="hidden sm:inline"> às <%= Time.now.strftime("%H:%M") %> UTC</span><span class="hidden sm:inline">
+      &mdash; a data acima é a da publicação do site, não a da última revisão dos dados.</span>
+      (<a href="https://github.com/jmonteiro/comparaconta" rel="noopener noreferrer" target="_blank" class="text-white">Código fonte</a>)
+    </p>
+    <p class="hidden sm:block">
+      Todos os direitos reservados.
+      Este site tem apenas propósito educacional e comparativo e não possui qualquer vínculo com empresas supracitadas.
+      Informações podem estar incorretas ou desatualizadas.
+    </p>
   </footer>
+
+  <script src="/javascripts/table.js" defer></script>
 </body>
 </html>

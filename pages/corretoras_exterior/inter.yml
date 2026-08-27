@@ -115,7 +115,9 @@ funcionarios:
   subtext: 2T26
   source: https://www.linkedin.com/company/inter/people/
 aum:
-  text: "?"
+  text: R$ 180 bilhões
+  subtext: dez/2025; AuC do grupo Inter, não só da corretora internacional
+  source: https://www.sec.gov/Archives/edgar/data/1864163/000207097926000185/intr-20251231.htm
 clientes:
   text: 45,3 milhões
   subtext: 2T26; total do banco Inter, não só da corretora internacional

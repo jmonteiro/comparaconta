@@ -108,11 +108,12 @@ sede: São Paulo, SP, Brasil
 funcionarios:
   text: "3.000"
 aum:
-  text: "?"
+  text: n/d
+  alt: O C6 Bank é de capital fechado e não divulga patrimônio de clientes sob custódia. A página "Quem somos" publica apenas número de clientes e quantidade de produtos.
+  source: https://www.c6bank.com.br/quem-somos/
 clientes:
   text: 40 milhões
-  subtext: 2026; total do banco C6, não só da corretora internacional
-  source: https://www.c6bank.com.br/quem-somos/
+  subtext: 2025; total do banco C6, não só da corretora internacional
   source: https://www.c6bank.com.br/quem-somos/
 observacoes:
 - text: Conta bancária em dólar e euro sediada nas ilhas Cayman.

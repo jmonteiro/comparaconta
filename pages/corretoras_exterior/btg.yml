@@ -116,7 +116,7 @@ aum:
   source: https://advisorsearch.org/rias/btg-pactual-asset-management-us-152538
 clientes:
   text: n/d
-  alt: A última referência encontrada era de 1,642 milhão de investidores ativos em 2023, mas a matéria que sustentava esse número saiu do ar e o BTG não publica um total atualizado.
+  alt: O BTG Pactual não divulga número total de clientes; o release trimestral publica apenas WuM, AuM e AuC. A última referência encontrada era de 1,642 milhão de investidores ativos em 2023, mas a matéria que sustentava esse número saiu do ar.
 observacoes:
 - text: Usa a plataforma da DriveWealth, e transferência ACATS entre plataformas DriveWealth são gratuitas.
 

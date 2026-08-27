@@ -36,7 +36,7 @@ spread_brasil:
   source: https://avenue.us/custos/
 acats:
   text: $75
-  source: https://avenue.us/?s=custódia&post_type=faq
+  source: https://avenue.us/custos/
 inatividade:
   text: $2/mês
   subtext: para patrimônio total abaixo de $2.000 e sem aportes há 3 meses ou mais
@@ -79,7 +79,7 @@ crypto:
   source: https://avenue.us/usdc/
 fracoes:
   text: Sim
-  source: https://avenue.us/?s=frações&post_type=faq
+  source: https://avenue.us/custos/
 ach_pull: Não
 cartao_debito_fisico:
   text: Sim (Mastercard)
@@ -115,7 +115,9 @@ sede: Miami, FL, EUA
 funcionarios:
   text: "500"
   source: https://www.linkedin.com/company/avenueus/people/
-aum: "?"
+aum:
+  text: n/d
+  alt: A Avenue não divulga patrimônio de clientes. O Itaú consolida os resultados da Avenue desde o 1T26, mas não divulga separadamente os ativos de clientes da Avenue.
 clientes:
   text: "600.000"
   subtext: 2022

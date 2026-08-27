@@ -6,7 +6,7 @@ link:
   url: https://www.xpi.com.br
 deposito_min_abertura:
   text: $0
-  subtext: precisa ter R$10 mil de patrimônio na XP Investimentos
+  subtext: exige conta digital e conta investimento ativas na XP, e perfil de investidor atualizado
   source: https://atendimento.xpi.com.br/artigo/3314-quem-pode-ter-a-conta-global-xp
 abertura:
   text: $0
@@ -98,6 +98,14 @@ clientes:
   text: 4,772 milhões
   subtext: 2T26, clientes ativos do grupo XP, não só da corretora internacional
   source: https://www.sec.gov/Archives/edgar/data/1787425/000095010326012481/dp251884_6k-ex9901.htm
+
+observacoes:
+- text: Ao abrir a Conta Investimento Global o cliente passa a ser cliente da XP Investments US, LLC, corretora americana registrada na FINRA, e o serviço não é supervisionado pela CVM.
+  source: https://atendimento.xpi.com.br/categoria/investimento-global
+- text: '"Conta Investimento Global" (investimentos nos EUA) e "Conta Global" (conta bancária multimoeda com cartão) são produtos diferentes.'
+  source: https://atendimento.xpi.com.br/categoria/conta-digital/conta-global
+- text: Rico e Clear oferecem a mesma Conta Investimento Global, com a mesma corretora americana por trás.
+  source: https://www.rico.com.vc/produtos/conta-investimento-global/
 
 # Finish these files with a --- (due to Frontmatter)
 ---

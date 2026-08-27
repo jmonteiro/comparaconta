@@ -92,11 +92,15 @@ funcionarios:
   text: "200"
   source: https://www.linkedin.com/company/tastytrade/
 aum:
-  text: n/d
-  alt: A IG Group, holding da tastytrade, publica apenas o total do grupo, que inclui IG, Freetrade e Independent Reserve. Não há número divulgado só da tastytrade.
+  text: $7,1 bilhões
+  subtext: dez/2025, patrimônio de clientes só da tastytrade
+  alt: Divulgado pela IG Group, holding da tastytrade. Exclui a tastyFX.
+  source: https://www.iggroup.com/~/media/Files/I/IG-Group/documents/investors/financial-results/results-reports-and-presentations/2026/igg-cy25-results-presentation.pdf
 clientes:
-  text: n/d
-  alt: A IG Group divulga apenas clientes ativos por segmento no semestre, não o total de clientes da tastytrade.
+  text: 266,7 mil
+  subtext: jun/2026, contas com saldo da divisão americana da IG, inclui a tastyFX
+  alt: A IG Group não divulga o total de clientes só da tastytrade. A medida mais próxima e exclusiva da tastytrade é a de clientes ativos médios mensais, 93,9 mil no segundo semestre de 2025.
+  source: https://www.iggroup.com/~/media/Files/I/IG-Group/documents/investors/financial-results/results-reports-and-presentations/2026/h1-2026-results-presentation.pdf
 observacoes:
 - text: Adquirida pela corretora britânica IG Group em 2021 por $1 bilhão.
 

@@ -48,7 +48,9 @@ chat_humano:
   subtext: atendimento humano em cerca de 5 minutos
   source: https://www.vest.investments/pt/
 horarios:
-  text: "?"
+  text: horário comercial de Nova York
+  alt: 09:00 as 17:00 de segunda a sexta-feira, horário do Leste dos EUA (ET)
+  source: https://intercom.help/helpvest/pt-BR/articles/8665444-fale-conosco
 idiomas:
   text: Português, Espanhol, Inglês
   source: https://intercom.help/helpvest/pt-BR
@@ -78,7 +80,7 @@ cartao_credito_fisico:
   text: Não
 residentes_fiscais:
   text: 130+ países, incluindo o Brasil
-  source: https://vest.investments/en/about-us
+  source: https://www.vest.investments/pt/
 relatorio_irpf_brasil:
   text: Sim
   subtext: relatório anual disponível no app a partir de fevereiro
@@ -94,14 +96,20 @@ conta_bancaria:
 conta_remunerada:
   text: Não
 ano_fundacao: 2021
-sede: Austin, Texas, EUA
+sede:
+  text: Miami, FL, EUA
+  alt: A Northbound Securities informa à SEC que opera a partir de um único escritório em Miami. O endereço registrado na FINRA é em Delray Beach, também na Flórida.
+  source: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001859187
 funcionarios:
   text: "50"
   source: https://www.linkedin.com/company/vestapp/
 aum:
-  text: "?"
+  text: n/d
+  alt: A Vest não divulga patrimônio de clientes. Como é introducing broker, a custódia fica na clearing e o valor não aparece nem no balanço da Northbound Securities na SEC.
 clientes:
-  text: "?"
+  text: n/d
+  alt: A Vest não divulga número de clientes. O site cita apenas investidores de mais de 130 países.
+  source: https://www.vest.investments/pt/
 observacoes:
 - text: Subsidiária da Northbound Securities LLC.
 - text: Antiga Sproutify e STAKE.
